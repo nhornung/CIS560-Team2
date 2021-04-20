@@ -1,0 +1,133 @@
+-- USE nhornung
+
+CREATE SCHEMA WorldCup;
+GO
+
+
+DROP TABLE IF EXISTS WorldCup.Player;
+CREATE TABLE WorldCup.Player (
+	PlayerID INT NOT NULL PRIMARY KEY,
+	Name NVARCHAR(48) NOT NULL,
+	Age TINYINT NOT NULL,
+	Position NVARCHAR(12) NOT NULL,
+	Height INT NOT NULL,
+	Weight INT NOT NULL
+);
+
+
+DROP TABLE IF EXISTS WorldCup.Team;
+CREATE TABLE WorldCup.Team (
+	TeamID INT NOT NULL PRIMARY KEY,
+	Nation NVARCHAR(32) NOT NULL UNIQUE
+)
+
+
+DROP TABLE IF EXISTS WorldCup.TeamPlayer;
+CREATE TABLE WorldCup.TeamPlayer (
+	TeamID INT NOT NULL,
+	PlayerID INT NOT NULL,
+	StartDate DATETIME,
+	EndDate DATETIME
+
+	PRIMARY KEY(TeamID, PlayerID),
+	FOREIGN KEY(TeamID) REFERENCES WorldCup.Team(TeamID),
+	FOREIGN KEY(PlayerID) REFERENCES WorldCup.Player(PlayerID)
+)
+
+
+DROP TABLE IF EXISTS WorldCup.Manager;
+CREATE TABLE WorldCup.Manager (
+	ManagerID INT NOT NULL PRIMARY KEY,
+	Nationality NVARCHAR(32),
+	Name NVARCHAR(48)
+)
+
+
+DROP TABLE IF EXISTS WorldCup.TeamManager;
+CREATE TABLE WorldCup.TeamManager (
+	TeamID INT NOT NULL,
+	ManagerID INT NOT NULL,
+	StartDate DATETIME NOT NULL,
+	EndDate DATETIME NOT NULL
+
+	PRIMARY KEY(TeamID, ManagerID),
+	FOREIGN KEY(TeamID) REFERENCES WorldCup.Team(TeamID),
+	FOREIGN KEY(ManagerID) REFERENCES WorldCup.Manager(ManagerID)
+)
+
+
+DROP TABLE IF EXISTS WorldCup.Stadium;
+CREATE TABLE WorldCup.Stadium (
+	StadiumID INT NOT NULL PRIMARY KEY,
+	[Name] NVARCHAR(64) NOT NULL,
+	Capacity SMALLINT NOT NULL
+)
+
+
+DROP TABLE IF EXISTS WorldCup.[Location];
+CREATE TABLE WorldCup.[Location] (
+	LocationID INT NOT NULL PRIMARY KEY,
+	Country NVARCHAR(32) NOT NULL
+)
+
+
+DROP TABLE IF EXISTS WorldCup.Tournament;
+CREATE TABLE WorldCup.Tournament (
+	TournamentID INT NOT NULL PRIMARY KEY,
+	LocationID INT NOT NULL,
+	StartDate DATETIME NOT NULL UNIQUE,
+	EndDate DATETIME NOT NULL UNIQUE,
+	Winner INT NOT NULL
+
+	FOREIGN KEY(LocationID) REFERENCES WorldCup.[Location](LocationID),
+	FOREIGN KEY(Winner) REFERENCES WorldCup.Team(TeamID)
+)
+
+
+DROP TABLE IF EXISTS WorldCup.Game;
+CREATE TABLE WorldCup.Game (
+	GameID INT NOT NULL PRIMARY KEY,
+	StadiumID INT NOT NULL,
+	TournamentID INT NOT NULL,
+	TeamA INT NOT NULL,
+	TeamB INT NOT NULL,
+	GameDate DATETIME NOT NULL,
+	Attendance INT NOT NULL,
+	TournamentStage INT NOT NULL
+
+	FOREIGN KEY(StadiumID) REFERENCES WorldCup.Stadium(StadiumID),
+	FOREIGN KEY(TournamentID) REFERENCES WorldCup.Tournament(TournamentID),
+	FOREIGN KEY(TeamA) REFERENCES WorldCup.Team(TeamID),
+	FOREIGN KEY(TeamB) REFERENCES WorldCup.Team(TeamID),
+)
+
+
+DROP TABLE IF EXISTS WorldCup.[Stat];
+CREATE TABLE WorldCup.[Stat] (
+	StatID INT NOT NULL PRIMARY KEY,
+	Stat NVARCHAR(24) NOT NULL
+)
+
+DROP TABLE IF EXISTS WorldCup.PlayerGameStat;
+CREATE TABLE WorldCup.PlayerGameStat (
+	GameId INT NOT NULL,
+	PlayerId INT NOT NULL,
+	StatId Int NOT NULL,
+	CurrMinute INT NOT NULL,
+
+	PRIMARY KEY(GameId, PlayerId, StatId),
+	FOREIGN KEY(GameID) REFERENCES WorldCup.Game(GameID),
+	FOREIGN KEY(PlayerID) REFERENCES WorldCup.Player(PlayerID),
+	FOREIGN KEY(StatId) REFERENCES WorldCup.[Stat](StatId)
+)
+
+DROP TABLE IF EXISTS WorldCup.Network;
+CREATE TABLE WorldCup.Network (
+	NetworkID INT NOT NULL PRIMARY KEY,
+	GameID INT NOT NULL,
+	NetWorkName NVARCHAR(32) NOT NULL UNIQUE,
+	Channel INT NOT NULL UNIQUE,
+	Viewers INT NOT NULL
+
+	FOREIGN KEY(GameID) REFERENCES WorldCup.Game(GameID)
+)
