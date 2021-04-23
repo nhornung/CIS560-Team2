@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="FifaDatabase.Views.Header"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FifaDatabase.Views"
+             mc:Ignorable="d" d:DesignWidth="1000" Height="150">
+    <Grid Margin="0,0,0,62.857">
+        <TextBlock HorizontalAlignment="Left" Height="67.665" Margin="131.066,10,0,0" TextWrapping="Wrap" Text="World Cup Database" VerticalAlignment="Top" Width="744.67" TextAlignment="Center" FontFamily="Century Gothic" FontSize="50"/>
+        <TextBlock HorizontalAlignment="Left" Height="65.117" Margin="28.274,82.665,0,-60.639" TextWrapping="Wrap" Text="By Robert Clancy, Nick Hornung, and Kevin Sutcliffe" VerticalAlignment="Top" Width="971.726" FontSize="25" FontFamily="Century Gothic" TextAlignment="Center"/>
+
+    </Grid>
+</UserControl>
