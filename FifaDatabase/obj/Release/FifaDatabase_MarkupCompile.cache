@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Kevin\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\
+C:\Users\Kevin\source\repos\CIS560-Team2\FifaDatabase\obj\Release\
 FifaDatabase
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Kevin\source\repos\CIS560-Team2\FifaDatabase\App.xaml
 18-1974107151
 

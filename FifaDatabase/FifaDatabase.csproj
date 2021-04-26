@@ -88,6 +88,9 @@
     <Compile Include="Views\CreateViews\ManagerCreate.xaml.cs">
       <DependentUpon>ManagerCreate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CreateViews\StadiumCreate.xaml.cs">
+      <DependentUpon>StadiumCreate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
@@ -130,6 +133,9 @@
     <Compile Include="Views\SearchViews\TeamSearch.xaml.cs">
       <DependentUpon>TeamSearch.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UpdateViews\Stadium.xaml.cs">
+      <DependentUpon>Stadium.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -151,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\CreateViews\ManagerCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CreateViews\StadiumCreate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -207,6 +217,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SearchViews\TeamSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UpdateViews\Stadium.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
