@@ -14,17 +14,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FifaDatabase.Views
+namespace FifaDatabase.Views.SearchViews
 {
     
     /// <summary>
     /// Interaction logic for Players.xaml
     /// </summary>
-    public partial class Players : UserControl
+    public partial class PlayerSearch : UserControl
     {
         List<FifaDatabase.Models.PlayerModel> players = new List<FifaDatabase.Models.PlayerModel>();
 
-        public Players()
+        public PlayerSearch()
         {
             InitializeComponent();
             Fill();

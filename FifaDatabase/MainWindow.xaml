@@ -15,6 +15,6 @@
         </Grid.RowDefinitions>
         <views:Header Grid.Row="0" x:Name="HeaderView" HorizontalAlignment="Center"/>
         <views:NavBar Grid.Row="1" x:Name="NavBarView" HorizontalAlignment="Center"/>
-        <views:Team x:Name="PlayersView" Grid.Row="2" HorizontalAlignment="Center"/>
+        <Border x:Name="DisplayBorder" Grid.Row="2"></Border>
     </Grid>
 </Window>

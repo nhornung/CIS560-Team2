@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FifaDatabase.Views.SearchViews;
+using FifaDatabase.Views;
+
 
 namespace FifaDatabase
 {
@@ -22,6 +25,7 @@ namespace FifaDatabase
         public MainWindow()
         {
             InitializeComponent();
+            DisplayBorder.Child = new Views.SearchViews.GameSearch();
         }
     }
 }

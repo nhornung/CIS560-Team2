@@ -19,10 +19,10 @@ namespace FifaDatabase.Views
     /// <summary>
     /// Interaction logic for Team.xaml
     /// </summary>
-    public partial class Team : UserControl
+    public partial class TeamSearch : UserControl
     {
         List<FifaDatabase.Models.TeamModel> teams = new List<FifaDatabase.Models.TeamModel>();
-        public Team()
+        public TeamSearch()
         {
             InitializeComponent();
             Fill();

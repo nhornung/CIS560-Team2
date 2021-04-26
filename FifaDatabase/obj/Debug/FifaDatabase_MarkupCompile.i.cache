@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\rob\source\repos\FifaDatabase\FifaDatabase\App.xaml
-15288799911
+14-5438739
 
-35-953024726
-15180654143
-MainWindow.xaml;Simple Styles.xaml;Views\Header.xaml;Views\HomePage.xaml;Views\NavBar.xaml;Views\CreateViews\PlayerCreate.xaml;Views\SearchViews\GameSearch.xaml;Views\SearchViews\LocationSearch.xaml;Views\SearchViews\ManagerSearch.xaml;Views\SearchViews\NetworkSearch.xaml;Views\SearchViews\PlayerSearch.xaml;Views\SearchViews\StadiumSearch.xaml;Views\SearchViews\StatsView.xaml;Views\UpdateViews\PlayerUpdate.xaml;Views\SearchViews\TeamSearch.xaml;
+35-860376870
+16-724498999
+MainWindow.xaml;Simple Styles.xaml;Views\Header.xaml;Views\NavBar.xaml;Views\CreateViews\PlayerCreate.xaml;Views\SearchViews\GameSearch.xaml;Views\SearchViews\LocationSearch.xaml;Views\SearchViews\ManagerSearch.xaml;Views\SearchViews\NetworkSearch.xaml;Views\SearchViews\PlayerSearch.xaml;Views\SearchViews\StadiumSearch.xaml;Views\SearchViews\StatsView.xaml;Views\UpdateViews\PlayerUpdate.xaml;Views\SearchViews\TeamSearch.xaml;
 
 True
 

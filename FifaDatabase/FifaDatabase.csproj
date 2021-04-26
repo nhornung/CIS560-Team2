@@ -56,6 +56,9 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="WindowsBase" />
+    <Reference Include="Xceed.Wpf.Samples.SampleData">
+      <HintPath>Views\wpftoolkit-master\ExtendedWPFToolkitSolution\Libs\Xceed.Wpf.Samples.SampleData.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -75,14 +78,12 @@
     <Compile Include="Models\ManagerModel.cs" />
     <Compile Include="Models\NetworkModel.cs" />
     <Compile Include="Models\PlayerModel.cs" />
+    <Compile Include="Models\PositionEnum.cs" />
     <Compile Include="Models\StadiumModel.cs" />
     <Compile Include="Models\TableEnums.cs" />
     <Compile Include="Models\TeamModel.cs" />
     <Compile Include="Views\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\HomePage.xaml.cs">
-      <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\NavBar.xaml.cs">
       <DependentUpon>NavBar.xaml</DependentUpon>
@@ -134,10 +135,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Header.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
