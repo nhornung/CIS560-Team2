@@ -128,12 +128,20 @@ namespace FifaDatabase.Views.UpdateViews {
             this.AgeText_Copy4 = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 4:
-            this.Nationality_Copy4 = ((System.Windows.Controls.TextBlock)(target));
+            
+            #line 17 "..\..\..\..\Views\UpdateViews\ManagerUpdate.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            
+            #line default
+            #line hidden
             return;
             case 5:
-            this.Nationality = ((System.Windows.Controls.TextBox)(target));
+            this.Nationality_Copy4 = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 6:
+            this.Nationality = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 7:
             this.TextBoxBorder_Copy = ((System.Windows.Controls.Border)(target));
             return;
             }

@@ -1,14 +1,14 @@
-﻿using System.Data.SqlClient;
+﻿using System;
 
 namespace DAL
 {
-    public abstract class NonQueryDataDelegate<T> : DataDelegate, INonQueryDataDelegate<T>
+    public interface IDataRowReader
     {
-        protected NonQueryDataDelegate(string procedureName)
-           : base(procedureName)
-        {
-        }
-
-        public abstract T Translate(SqlCommand command);
+        bool Read();
+        byte GetByte(string name);
+        DateTimeOffset GetDateTimeOffset(string name);
+        int GetInt32(string name);
+        string GetString(string name);
+        T GetValue<T>(string name);
     }
 }

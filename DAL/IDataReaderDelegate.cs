@@ -1,14 +1,9 @@
-﻿using System;
+﻿using System.Data.SqlClient;
 
 namespace DAL
 {
-    public interface IDataRowReader
+    public interface IDataReaderDelegate<out T> : IDataDelegate
     {
-        bool Read();
-        byte GetByte(string name);
-        DateTimeOffset GetDateTimeOffset(string name);
-        int GetInt32(string name);
-        string GetString(string name);
-        T GetValue<T>(string name);
+        T Translate(SqlCommand command, IDataRowReader reader);
     }
 }

@@ -67,7 +67,7 @@ namespace FifaDatabase.Views {
         
         #line 16 "..\..\..\..\Views\CreateViews\PlayerCreate.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBlock AgeText_Copy1;
+        internal System.Windows.Controls.TextBlock AgeText;
         
         #line default
         #line hidden
@@ -83,7 +83,7 @@ namespace FifaDatabase.Views {
         
         #line 18 "..\..\..\..\Views\CreateViews\PlayerCreate.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBlock AgeText_Copy2;
+        internal System.Windows.Controls.TextBlock WeightText;
         
         #line default
         #line hidden
@@ -99,7 +99,7 @@ namespace FifaDatabase.Views {
         
         #line 20 "..\..\..\..\Views\CreateViews\PlayerCreate.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBlock AgeText_Copy3;
+        internal System.Windows.Controls.TextBlock HeightText;
         
         #line default
         #line hidden
@@ -115,7 +115,7 @@ namespace FifaDatabase.Views {
         
         #line 22 "..\..\..\..\Views\CreateViews\PlayerCreate.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBlock AgeText_Copy;
+        internal System.Windows.Controls.TextBlock PositionText;
         
         #line default
         #line hidden
@@ -123,7 +123,7 @@ namespace FifaDatabase.Views {
         
         #line 23 "..\..\..\..\Views\CreateViews\PlayerCreate.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBlock AgeText_Copy4;
+        internal System.Windows.Controls.TextBlock PlayerNameText;
         
         #line default
         #line hidden
@@ -131,7 +131,7 @@ namespace FifaDatabase.Views {
         
         #line 26 "..\..\..\..\Views\CreateViews\PlayerCreate.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBlock Nationality_Copy4;
+        internal System.Windows.Controls.TextBlock NationalityText;
         
         #line default
         #line hidden
@@ -139,7 +139,7 @@ namespace FifaDatabase.Views {
         
         #line 28 "..\..\..\..\Views\CreateViews\PlayerCreate.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox Nationality;
+        internal System.Windows.Controls.TextBox NationalityTextBox;
         
         #line default
         #line hidden
@@ -192,34 +192,34 @@ namespace FifaDatabase.Views {
             this.AgeSlider = ((System.Windows.Controls.Slider)(target));
             return;
             case 4:
-            this.AgeText_Copy1 = ((System.Windows.Controls.TextBlock)(target));
+            this.AgeText = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 5:
             this.WeightSlider = ((System.Windows.Controls.Slider)(target));
             return;
             case 6:
-            this.AgeText_Copy2 = ((System.Windows.Controls.TextBlock)(target));
+            this.WeightText = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 7:
             this.HeightSlider = ((System.Windows.Controls.Slider)(target));
             return;
             case 8:
-            this.AgeText_Copy3 = ((System.Windows.Controls.TextBlock)(target));
+            this.HeightText = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 9:
             this.PositionBox = ((System.Windows.Controls.ComboBox)(target));
             return;
             case 10:
-            this.AgeText_Copy = ((System.Windows.Controls.TextBlock)(target));
+            this.PositionText = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 11:
-            this.AgeText_Copy4 = ((System.Windows.Controls.TextBlock)(target));
+            this.PlayerNameText = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 12:
-            this.Nationality_Copy4 = ((System.Windows.Controls.TextBlock)(target));
+            this.NationalityText = ((System.Windows.Controls.TextBlock)(target));
             return;
             case 13:
-            this.Nationality = ((System.Windows.Controls.TextBox)(target));
+            this.NationalityTextBox = ((System.Windows.Controls.TextBox)(target));
             return;
             case 14:
             this.TextBoxBorder_Copy = ((System.Windows.Controls.Border)(target));
