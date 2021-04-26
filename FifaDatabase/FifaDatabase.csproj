@@ -71,6 +71,7 @@
     <Compile Include="Helper_Code\DALNetworks.cs" />
     <Compile Include="Helper_Code\DALPlayers.cs" />
     <Compile Include="Helper_Code\DALTeams.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Players\CreatePlayerDelegate.cs" />
     <Compile Include="Models\ActionsEnums.cs" />
     <Compile Include="Helper_Code\DataAccess.cs" />
     <Compile Include="Models\GameModel.cs" />
@@ -239,6 +240,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{74ccda5a-c13d-43da-8f30-9c7c382effaa}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

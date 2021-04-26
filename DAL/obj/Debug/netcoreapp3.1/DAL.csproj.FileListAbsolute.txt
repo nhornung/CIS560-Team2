@@ -1,0 +1,4 @@
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache

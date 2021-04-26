@@ -33,15 +33,15 @@ namespace FifaDatabase.Views.SearchViews
         {
             DALGames db = new DALGames();
             games = db.GetAllGames();
-            PlayerDataGrid.ItemsSource = games;
+            dataGrid.ItemsSource = games;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             DataAccess db = new DataAccess();
 
-            games = db.GetPlayers(this.NameSearchTextBox.Text);
-            PlayerDataGrid.ItemsSource = games;
+            //games = db.GetPlayers(this.NameSearchTextBox.Text);
+            //PlayerDataGrid.ItemsSource = games;
 
         }
     }

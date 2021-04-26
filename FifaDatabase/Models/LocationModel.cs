@@ -8,7 +8,7 @@ namespace FifaDatabase.Models
 {
     class LocationModel
     {
-        public int LocatonID { get; set; }
-        public string Country { get; set; }
+        public int LOCATIONID { get; set; }
+        public string COUNTRY { get; set; }
     }
 }

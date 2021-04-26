@@ -34,7 +34,7 @@ namespace FifaDatabase.Views.SearchViews
         {
             DataAccess db = new DataAccess();
             players = db.GetAllPlayers();
-            PlayerDataGrid.ItemsSource = players;
+            dataGrid.ItemsSource = players;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -42,7 +42,7 @@ namespace FifaDatabase.Views.SearchViews
             DataAccess db = new DataAccess();
 
             players = db.GetPlayers(this.NameSearchTextBox.Text);
-            PlayerDataGrid.ItemsSource = players;
+            dataGrid.ItemsSource = players;
 
         }
     }

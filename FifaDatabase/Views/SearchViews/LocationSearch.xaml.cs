@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FifaDatabase.Helper_Code;
+using FifaDatabase.Helper_Code.Common;
+using FifaDatabase.Models;
 
 namespace FifaDatabase.Views.SearchViews
 {
@@ -20,13 +23,27 @@ namespace FifaDatabase.Views.SearchViews
     /// </summary>
     public partial class LocationSearch : UserControl
     {
+        //List<LocationModel> locations = new List<LocationModel>();
+
         public LocationSearch()
         {
             InitializeComponent();
+            Fill();
+        }
+        List<LocationModel> locations = new List<LocationModel>();
+        private void Fill()
+        {
+            DALLocations db = new DALLocations();
+            locations = db.GetAllLocations();
+            PlayerDataGrid.ItemsSource = locations;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            DALLocations db = new DALLocations();
+
+            locations = db.GetLocations(this.NameSearchTextBox.Text);
+            PlayerDataGrid.ItemsSource = locations;
 
         }
     }

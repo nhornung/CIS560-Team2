@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Blend for Visual Studio Version 16
+# Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifaDatabase", "FifaDatabase\FifaDatabase.csproj", "{BA1D698B-9B97-490D-A0EC-3581A3924350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{74CCDA5A-C13D-43DA-8F30-9C7C382EFFAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BA1D698B-9B97-490D-A0EC-3581A3924350}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA1D698B-9B97-490D-A0EC-3581A3924350}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA1D698B-9B97-490D-A0EC-3581A3924350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CCDA5A-C13D-43DA-8F30-9C7C382EFFAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CCDA5A-C13D-43DA-8F30-9C7C382EFFAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CCDA5A-C13D-43DA-8F30-9C7C382EFFAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CCDA5A-C13D-43DA-8F30-9C7C382EFFAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

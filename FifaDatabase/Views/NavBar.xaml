@@ -41,8 +41,8 @@
             <RowDefinition Height=".5*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <ComboBox SelectedIndex="0"  x:Name="CategoryCombo" ItemsSource="{Binding Source={StaticResource table_enums}}" HorizontalAlignment="Left" Width="118.5" FontFamily="Century Gothic" Text="Data Categories" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <ComboBox SelectedIndex="0" x:Name="QueryTypeCombo" ItemsSource="{Binding Source={StaticResource eactions_enums}}" HorizontalAlignment="Left" Height="23.3" VerticalAlignment="Top" Width="110.333" FontFamily="Century Gothic" Text="Action" Grid.Column="2" Grid.Row="1" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="CategoryCombo" ItemsSource="{Binding Source={StaticResource table_enums}}" HorizontalAlignment="Left" Width="118.5" FontFamily="Century Gothic" Text="Data Categories" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="CategoryCombo_SelectionChanged"/>
+        <ComboBox  x:Name="QueryTypeCombo" ItemsSource="{Binding Source={StaticResource eactions_enums}}" HorizontalAlignment="Left" Height="23.3" VerticalAlignment="Top" Width="110.333" FontFamily="Century Gothic" Text="Action" Grid.Column="2" Grid.Row="1" VerticalContentAlignment="Center"/>
 
         <Rectangle Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="1.5" Margin="38,33,0,-1.167" Grid.Row="1" VerticalAlignment="Top" Width="907.333" Fill="#FFDC7E7E"/>
         <Rectangle Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="1.5" Margin="38,-1,0,0" VerticalAlignment="Top" Width="907.333" Fill="#FFDC7E7E"/>

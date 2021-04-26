@@ -27,6 +27,9 @@ namespace FifaDatabase.Views
         public NavBar()
         {
             InitializeComponent();
+            QueryTypeCombo.SelectedIndex = 0;
+            CategoryCombo.SelectedIndex = 0;
+            QueryTypeCombo.IsEnabled = true;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -57,14 +60,7 @@ namespace FifaDatabase.Views
                     {
                         displayBorder.Child = new LocationSearch();
                     }
-                    else if (Action == "Modify")
-                    {
 
-                    }
-                    else if (Action == "Create")
-                    {
-
-                    }
                     break;
                 case "Managers":
                     if (Action == "Search")
@@ -85,14 +81,7 @@ namespace FifaDatabase.Views
                     {
                         displayBorder.Child = new NetworkSearch();
                     }
-                    else if (Action == "Modify")
-                    {
 
-                    }
-                    else if (Action == "Create")
-                    {
-
-                    }
                     break;
                 case "Players":
                     if (Action == "Search")
@@ -113,56 +102,28 @@ namespace FifaDatabase.Views
                     {
                         displayBorder.Child = new StadiumSearch();
                     }
-                    else if (Action == "Modify")
-                    {
 
-                    }
-                    else if (Action == "Create")
-                    {
-
-                    }
                     break;
                 case "Stats":
                     if (Action == "Search")
                     {
                         displayBorder.Child = new StatsView();
                     }
-                    else if (Action == "Modify")
-                    {
 
-                    }
-                    else if (Action == "Create")
-                    {
-
-                    }
                     break;
                 case "Teams":
                     if (Action == "Search")
                     {
                         displayBorder.Child = new TeamSearch();
                     }
-                    else if (Action == "Modify")
-                    {
 
-                    }
-                    else if (Action == "Create")
-                    {
-
-                    }
                     break;
                 case "Tournaments":
                     if (Action == "Search")
                     {
                         break;//displayBorder.Child = new Tournam();
                     }
-                    else if (Action == "Modify")
-                    {
 
-                    }
-                    else if (Action == "Create")
-                    {
-
-                    }
                     break;
             }
         }
@@ -181,6 +142,21 @@ namespace FifaDatabase.Views
             MainWindow main = (MainWindow)parent;
             Border displayBorder = (Border)main.DisplayBorder;
             return displayBorder;
+        }
+
+        private void CategoryCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(sender is ComboBox categoryCombo)
+            {
+                if (categoryCombo.SelectedIndex == 0 | categoryCombo.SelectedIndex == 2 | categoryCombo.SelectedIndex == 4)
+                {
+                    QueryTypeCombo.IsEnabled = true;
+                }
+                else
+                {
+                    QueryTypeCombo.IsEnabled = false;
+                }
+            }
         }
     }
 }
