@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FifaDatabase.Views.SearchViews;
+using FifaDatabase.Views.CreateViews;
+using FifaDatabase.Views.UpdateViews;
 
 namespace FifaDatabase.Views
 {
@@ -43,11 +45,11 @@ namespace FifaDatabase.Views
                     }
                     else if (Action == "Modify")
                     {
-
+                        displayBorder.Child = new GameUpdate();
                     }
                     else if (Action == "Create")
                     {
-
+                        displayBorder.Child = new GameCreate();
                     }
                     break;
                 case "Locations":
@@ -71,11 +73,11 @@ namespace FifaDatabase.Views
                     }
                     else if (Action == "Modify")
                     {
-
+                        displayBorder.Child = new ManagerUpdate();
                     }
                     else if (Action == "Create")
                     {
-
+                        displayBorder.Child = new ManagerCreate();
                     }
                     break;
                 case "Networks":
@@ -99,11 +101,11 @@ namespace FifaDatabase.Views
                     }
                     else if (Action == "Modify")
                     {
-
+                        displayBorder.Child = new PlayerUpdate();
                     }
                     else if (Action == "Create")
                     {
-
+                        displayBorder.Child = new PlayerCreate();
                     }
                     break;
                 case "Stadiums":

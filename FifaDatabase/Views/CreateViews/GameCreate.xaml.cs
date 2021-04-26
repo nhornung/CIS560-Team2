@@ -18,7 +18,7 @@ namespace FifaDatabase.Views.CreateViews
     /// <summary>
     /// Interaction logic for GameCreate.xaml
     /// </summary>
-    public partial class GameCreate : Page
+    public partial class GameCreate : UserControl
     {
         public GameCreate()
         {

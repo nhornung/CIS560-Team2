@@ -18,7 +18,7 @@ namespace FifaDatabase.Views.UpdateViews
     /// <summary>
     /// Interaction logic for ManagerUpdate.xaml
     /// </summary>
-    public partial class ManagerUpdate : Page
+    public partial class ManagerUpdate : UserControl
     {
         public ManagerUpdate()
         {

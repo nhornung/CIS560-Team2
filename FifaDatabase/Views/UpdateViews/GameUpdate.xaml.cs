@@ -18,7 +18,7 @@ namespace FifaDatabase.Views.UpdateViews
     /// <summary>
     /// Interaction logic for GameUpdate.xaml
     /// </summary>
-    public partial class GameUpdate : Page
+    public partial class GameUpdate : UserControl
     {
         public GameUpdate()
         {

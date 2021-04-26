@@ -18,7 +18,7 @@ namespace FifaDatabase.Views.CreateViews
     /// <summary>
     /// Interaction logic for ManagerCreate.xaml
     /// </summary>
-    public partial class ManagerCreate : Page
+    public partial class ManagerCreate : UserControl
     {
         public ManagerCreate()
         {

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FifaDatabase.Helper_Code;
+using FifaDatabase.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,13 +22,26 @@ namespace FifaDatabase.Views.SearchViews
     /// </summary>
     public partial class GameSearch : UserControl
     {
+        List<FifaDatabase.Models.GameModel> games = new List<FifaDatabase.Models.GameModel>();
         public GameSearch()
         {
             InitializeComponent();
+            Fill();
+        }
+
+        private void Fill()
+        {
+            DALGames db = new DALGames();
+            games = db.GetAllGames();
+            PlayerDataGrid.ItemsSource = games;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            DataAccess db = new DataAccess();
+
+            games = db.GetPlayers(this.NameSearchTextBox.Text);
+            PlayerDataGrid.ItemsSource = games;
 
         }
     }
