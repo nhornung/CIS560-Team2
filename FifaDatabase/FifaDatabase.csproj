@@ -82,6 +82,12 @@
     <Compile Include="Models\StadiumModel.cs" />
     <Compile Include="Models\TableEnums.cs" />
     <Compile Include="Models\TeamModel.cs" />
+    <Compile Include="Views\CreateViews\GameCreate.xaml.cs">
+      <DependentUpon>GameCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateViews\ManagerCreate.xaml.cs">
+      <DependentUpon>ManagerCreate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
@@ -112,6 +118,12 @@
     <Compile Include="Views\SearchViews\StatsView.xaml.cs">
       <DependentUpon>StatsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\UpdateViews\GameUpdate.xaml.cs">
+      <DependentUpon>GameUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UpdateViews\ManagerUpdate.xaml.cs">
+      <DependentUpon>ManagerUpdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UpdateViews\PlayerUpdate.xaml.cs">
       <DependentUpon>PlayerUpdate.xaml</DependentUpon>
     </Compile>
@@ -133,6 +145,14 @@
     <Page Include="Simple Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\CreateViews\GameCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CreateViews\ManagerCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Header.xaml">
       <SubType>Designer</SubType>
@@ -171,6 +191,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SearchViews\StatsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UpdateViews\GameUpdate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UpdateViews\ManagerUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
