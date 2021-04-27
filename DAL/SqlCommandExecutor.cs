@@ -2,7 +2,7 @@
 using System.Data.SqlClient;
 using System.Transactions;
 
-namespace DAL
+namespace DataAccess
 {
     public class SqlCommandExecutor
     {

@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace DAL
+namespace DataAccess
 {
     public abstract class NonQueryDataDelegate<T> : DataDelegate, INonQueryDataDelegate<T>
     {

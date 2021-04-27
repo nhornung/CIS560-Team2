@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\DAL.csproj": {}
+    "C:\\Users\\rob\\source\\repos\\FifaDatabase\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\DAL.csproj": {
+    "C:\\Users\\rob\\source\\repos\\FifaDatabase\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\rob\\source\\repos\\FifaDatabase\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\robbo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\rob\\source\\repos\\FifaDatabase\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\rob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rob\\source\\repos\\FifaDatabase\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\robbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\rob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +45,7 @@
               "version": "[4.8.2, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

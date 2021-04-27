@@ -24,7 +24,7 @@ namespace FifaDatabase.SqlRepos
         ///// <exception cref="DataAccess.RecordNotFoundException">
         ///// Thrown if <paramref name="personId"/> does not exist.
         ///// </exception>
-        //PlayerModel FetchPerson(int playerID);
+        PlayerModel GetPlayerByID(int playerID);
 
         ///// <summary>
         ///// Gets the person with the given <paramref name="personId"/> if it exists.
@@ -35,7 +35,7 @@ namespace FifaDatabase.SqlRepos
         ///// if one exists with with the provided <paramref name="email"/>.
         ///// If one is not found, <c>null</c> is returned.
         ///// </returns>
-        //PlayerModel GetPerson(string email);
+        PlayerModel GetPlayerByName(string name);
 
         /// <summary>
         /// Creates a new person in the repository.

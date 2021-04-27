@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\
+C:\Users\rob\source\repos\FifaDatabase\FifaDatabase\obj\Debug\
 FifaDatabase
 none
 false
 DEBUG;TRACE
-C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\App.xaml
+C:\Users\rob\source\repos\FifaDatabase\FifaDatabase\App.xaml
 20477623703
-3219995303
-44973403953
-18558866133
+3-2078476038
+40-961038989
+18-2117922941
 MainWindow.xaml;Simple Styles.xaml;Views\CreateViews\GameCreate.xaml;Views\CreateViews\ManagerCreate.xaml;Views\CreateViews\StadiumCreate.xaml;Views\Header.xaml;Views\NavBar.xaml;Views\CreateViews\PlayerCreate.xaml;Views\SearchViews\GameSearch.xaml;Views\SearchViews\LocationSearch.xaml;Views\SearchViews\ManagerSearch.xaml;Views\SearchViews\NetworkSearch.xaml;Views\SearchViews\PlayerSearch.xaml;Views\SearchViews\StadiumSearch.xaml;Views\SearchViews\StatsView.xaml;Views\UpdateViews\GameUpdate.xaml;Views\UpdateViews\ManagerUpdate.xaml;Views\UpdateViews\PlayerUpdate.xaml;Views\SearchViews\TeamSearch.xaml;Views\UpdateViews\Stadium.xaml;
 
 False

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace DAL
+namespace DataAccess
 {
     [Serializable]
     public class RecordNotFoundException : Exception

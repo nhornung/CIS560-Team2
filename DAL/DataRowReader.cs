@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 
-namespace DAL
+namespace DataAccess
 {
     /// <summary>
     /// Simple wrapper class for more concise code by the callers.

@@ -1,12 +1,12 @@
-BULK INSERT WorldCupSchema.Players
-FROM 'D:\pythonRepos\GetSoccerStats\players.csv'
-WITH
-(
-    FIRSTROW = 2,
-    FIELDTERMINATOR = ',',  --CSV field delimiter
-    ROWTERMINATOR = '\n',   --Use to shift the control to next row
-    TABLOCK
-)
-GO
+--BULK INSERT WorldCupSchema.Players
+--FROM 'C:\Users\rob\source\repos\FifaDatabase\scraped_webdata\GetSoccerStats\players.csv'
+--WITH
+--(
+--    FIRSTROW = 1,
+--    FIELDTERMINATOR = ',',  --CSV field delimiter
+--    ROWTERMINATOR = '\n',   --Use to shift the control to next row
+--    TABLOCK
+--)
+--GO
 --DELETE FROM WorldCupSchema.Players WHERE 1 != 2;
---SELECT * FROM WorldCupSchema.Players;
+SELECT * FROM WorldCupSchema.Players;

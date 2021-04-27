@@ -17,6 +17,7 @@ using System.Windows.Navigation;
 using System.Diagnostics;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using PersonData;
 
 namespace FifaDatabase.Views.SearchViews
 {
@@ -26,29 +27,24 @@ namespace FifaDatabase.Views.SearchViews
     /// </summary>
     public partial class PlayerSearch : UserControl
     {
-        
+        const string connectionString = "Server=(localdb)\\MSSQLLocalDb;Database=FifaWorldCup;Trusted_Connection=True;";
+        private IPlayerRepository repo;
+        private TransactionScope transaction;
+
         public PlayerSearch()
         {
             InitializeComponent();
+            repo = new SqlPlayerRepository(connectionString);
             Fill();
         }
 
         private void Fill()
         {
             
-            try
-            {
-                SqlConnection conn = new SqlConnection("Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True");
-                SqlCommand cmd = new SqlCommand("SELECT * FROM WorldCupSchema.Players", conn);
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                PlayerDataGrid.ItemsSource = reader;
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+                var actual = repo.CreatePlayer("Johnny Bummers", new DateTime(2015, 12, 25), "FM", 177, 81);
+                MessageBox.Show(actual.Name.ToString() + actual.Height.ToString() + actual.PlayerId.ToString());
+               
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

@@ -28,23 +28,6 @@ namespace FifaDatabase.Views.SearchViews
         public LocationSearch()
         {
             InitializeComponent();
-            Fill();
-        }
-        List<LocationModel> locations = new List<LocationModel>();
-        private void Fill()
-        {
-            DALLocations db = new DALLocations();
-            locations = db.GetAllLocations();
-            dataGRid.ItemsSource = locations;
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            DALLocations db = new DALLocations();
-
-            locations = db.GetLocations(this.NameSearchTextBox.Text);
-            dataGRid.ItemsSource = locations;
-
         }
     }
 }

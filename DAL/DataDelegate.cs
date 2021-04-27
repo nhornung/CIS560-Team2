@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace DAL
+namespace DataAccess
 {
     public abstract class DataDelegate : IDataDelegate
     {

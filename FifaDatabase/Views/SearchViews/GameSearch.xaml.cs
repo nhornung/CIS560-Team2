@@ -31,9 +31,6 @@ namespace FifaDatabase.Views.SearchViews
 
         private void Fill()
         {
-            DALGames db = new DALGames();
-            games = db.GetAllGames();
-            dataGrid.ItemsSource = games;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
