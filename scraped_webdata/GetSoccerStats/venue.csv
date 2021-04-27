@@ -1,0 +1,946 @@
+1,Estadio Olmpico Universitario,54311
+2,Cuauhtemoc,54084
+3,Estadio Azteca,90782
+4,Estadio Universitario,98659
+5,Bombonera - Estadio Nemesio Diez,88434
+6,Nou Camp - Estadio Len,75216
+7,Estadio Irapuato,68616
+8,Jalisco,97995
+9,Tres de Marzo,87269
+10,Tecnologico,56149
+11,Estadio Corregidora,74422
+12,Neza,94150
+13,Stadio Olimpico,89949
+14,San Paolo,49855
+15,Stadio San Nicola,62821
+16,Comunale,79952
+17,Giuseppe Meazza,62710
+18,Luigi Ferraris,64852
+19,Stadio delle Alpi,55002
+20,Renato Dall Ara,59089
+21,Marc Antonio Bentegodi,62873
+22,Dacia Arena,79567
+23,Friuli,84248
+24,Sant Elia,47745
+25,Della Favorita,71186
+26,Rose Bowl,81086
+27,Pontiac Silverdome,71367
+28,Stanford Stadium,50473
+29,RFK Stadium,77033
+30,Cotton Bowl,96009
+31,Soldier Field,57615
+32,Giants Stadium,95226
+33,Foxboro Stadium,83986
+34,Citrus Bowl,64383
+35,Stade de France,87971
+36,Stade de la Beaujoire - Louis Fonteneau,56830
+37,Orange Vlodrome,71186
+38,Parc des Princes,48667
+39,Stade de la Mosson,48053
+40,Stade Jacques Chaban-Delmas,74572
+41,Stade Geoffroy-Guichard,86208
+42,Stadium Municipal,61794
+43,Matmut Stadium de Gerland,75325
+44,Stade Bollaert-Delelis,54085
+45,Munsu Cup Stadium,99855
+46,Daegu Main Stadium,51954
+47,Incheon Munhak Stadium,73375
+48,Denka Big Swan Stadium,88639
+49,Seoul World Cup Stadium,97020
+50,Suwon World Cup Stadium,90894
+51,ita Bank Dome,95482
+52,Yanmar Stadium Nagai,83024
+53,Busan Sport Complex Asiad Stadium,80488
+54,Guus Hiddink Stadium,61326
+55,Jeonju World Cup Stadium,59678
+56,Daejeon World Cup Stadium,68566
+57,Jeju World Cup Stadium,52606
+58,NOEVIR Stadium Kobe,44042
+59,Saitama Stadium 2002,45263
+60,Nissan Stadium,76832
+61,Miyagi Stadium,72906
+62,Sapporo Dome,61289
+63,Kashima Soccer Stadium,57087
+64,Shizuoka Stadium Ecopa,58722
+65,Allianz Arena,52207
+66,Signal Iduna Park,70935
+67,Olympiastadion Berlin,99704
+68,Mercedes-Benz Arena,73344
+69,Veltins-Arena,52484
+70,HDI-Arena,72262
+71,Commerzbank-Arena,65948
+72,Max-Morlock-Stadion,50464
+73,RheinEnergieSTADION,91305
+74,Fritz-Walter-Stadion,77700
+75,Volksparkstadion,82887
+76,Red Bull Arena,59605
+77,Cape Town Stadium,46233
+78,Loftus Versfeld Stadium,76773
+79,Royal Bafokeng Stadium,63824
+80,Nelson Mandela Bay Stadium,49368
+81,Soccer City,89470
+82,Peter Mokaba Stadium,54865
+83,Toyota Stadium,89379
+84,Emirates Airline Park,77917
+85,Moses Mabhida Stadium,49364
+86,Mbombela Stadium,66529
+1,Estadio Olmpico Universitario,88154
+2,Cuauhtemoc,71677
+3,Estadio Azteca,65059
+4,Estadio Universitario,72410
+5,Bombonera - Estadio Nemesio Diez,45247
+6,Nou Camp - Estadio Len,90808
+7,Estadio Irapuato,63975
+8,Jalisco,76977
+9,Tres de Marzo,78022
+10,Tecnologico,59512
+11,Estadio Corregidora,65075
+12,Neza,59163
+13,Stadio Olimpico,61590
+14,San Paolo,73189
+15,Stadio San Nicola,71777
+16,Comunale,52823
+17,Giuseppe Meazza,63461
+18,Luigi Ferraris,88427
+19,Stadio delle Alpi,83078
+20,Renato Dall Ara,72078
+21,Marc Antonio Bentegodi,52892
+22,Dacia Arena,66936
+23,Friuli,49046
+24,Sant Elia,67212
+25,Della Favorita,66552
+26,Rose Bowl,83659
+27,Pontiac Silverdome,48193
+28,Stanford Stadium,63781
+29,RFK Stadium,98484
+30,Cotton Bowl,70926
+31,Soldier Field,86062
+32,Giants Stadium,59797
+33,Foxboro Stadium,45667
+34,Citrus Bowl,97832
+35,Stade de France,73885
+36,Stade de la Beaujoire - Louis Fonteneau,99433
+37,Orange Vlodrome,64788
+38,Parc des Princes,73086
+39,Stade de la Mosson,56208
+40,Stade Jacques Chaban-Delmas,95634
+41,Stade Geoffroy-Guichard,92358
+42,Stadium Municipal,50300
+43,Matmut Stadium de Gerland,63622
+44,Stade Bollaert-Delelis,59898
+45,Munsu Cup Stadium,93076
+46,Daegu Main Stadium,77169
+47,Incheon Munhak Stadium,95242
+48,Denka Big Swan Stadium,85865
+49,Seoul World Cup Stadium,93797
+50,Suwon World Cup Stadium,55796
+51,ita Bank Dome,46938
+52,Yanmar Stadium Nagai,57222
+53,Busan Sport Complex Asiad Stadium,77963
+54,Guus Hiddink Stadium,57395
+55,Jeonju World Cup Stadium,59286
+56,Daejeon World Cup Stadium,90195
+57,Jeju World Cup Stadium,51573
+58,NOEVIR Stadium Kobe,70110
+59,Saitama Stadium 2002,98093
+60,Nissan Stadium,78326
+61,Miyagi Stadium,47522
+62,Sapporo Dome,95906
+63,Kashima Soccer Stadium,86241
+64,Shizuoka Stadium Ecopa,53412
+65,Allianz Arena,78381
+66,Signal Iduna Park,77646
+67,Olympiastadion Berlin,81189
+68,Mercedes-Benz Arena,61908
+69,Veltins-Arena,50330
+70,HDI-Arena,85386
+71,Commerzbank-Arena,76737
+72,Max-Morlock-Stadion,68741
+73,RheinEnergieSTADION,53352
+74,Fritz-Walter-Stadion,83295
+75,Volksparkstadion,46973
+76,Red Bull Arena,74055
+77,Cape Town Stadium,71690
+78,Loftus Versfeld Stadium,44350
+79,Royal Bafokeng Stadium,78373
+80,Nelson Mandela Bay Stadium,88989
+81,Soccer City,63137
+82,Peter Mokaba Stadium,51488
+83,Toyota Stadium,62933
+84,Emirates Airline Park,54360
+85,Moses Mabhida Stadium,60000
+86,Mbombela Stadium,79527
+1,Estadio Olmpico Universitario,56848
+2,Cuauhtemoc,61107
+3,Estadio Azteca,84944
+4,Estadio Universitario,59665
+5,Bombonera - Estadio Nemesio Diez,59971
+6,Nou Camp - Estadio Len,83776
+7,Estadio Irapuato,67883
+8,Jalisco,95119
+9,Tres de Marzo,51187
+10,Tecnologico,48964
+11,Estadio Corregidora,67298
+12,Neza,71043
+13,Stadio Olimpico,95281
+14,San Paolo,67212
+15,Stadio San Nicola,80617
+16,Comunale,73409
+17,Giuseppe Meazza,74288
+18,Luigi Ferraris,58707
+19,Stadio delle Alpi,73622
+20,Renato Dall Ara,89691
+21,Marc Antonio Bentegodi,64304
+22,Dacia Arena,88609
+23,Friuli,61946
+24,Sant Elia,79555
+25,Della Favorita,52391
+26,Rose Bowl,59034
+27,Pontiac Silverdome,65143
+28,Stanford Stadium,80125
+29,RFK Stadium,73051
+30,Cotton Bowl,81987
+31,Soldier Field,93640
+32,Giants Stadium,45968
+33,Foxboro Stadium,56402
+34,Citrus Bowl,78600
+35,Stade de France,93430
+36,Stade de la Beaujoire - Louis Fonteneau,67621
+37,Orange Vlodrome,64847
+38,Parc des Princes,44723
+39,Stade de la Mosson,50174
+40,Stade Jacques Chaban-Delmas,51403
+41,Stade Geoffroy-Guichard,60365
+42,Stadium Municipal,49258
+43,Matmut Stadium de Gerland,82244
+44,Stade Bollaert-Delelis,86090
+45,Munsu Cup Stadium,65626
+46,Daegu Main Stadium,44824
+47,Incheon Munhak Stadium,97725
+48,Denka Big Swan Stadium,58144
+49,Seoul World Cup Stadium,85256
+50,Suwon World Cup Stadium,80097
+51,ita Bank Dome,96983
+52,Yanmar Stadium Nagai,49417
+53,Busan Sport Complex Asiad Stadium,89498
+54,Guus Hiddink Stadium,57886
+55,Jeonju World Cup Stadium,87652
+56,Daejeon World Cup Stadium,53602
+57,Jeju World Cup Stadium,70203
+58,NOEVIR Stadium Kobe,71109
+59,Saitama Stadium 2002,73672
+60,Nissan Stadium,61615
+61,Miyagi Stadium,75828
+62,Sapporo Dome,81514
+63,Kashima Soccer Stadium,45680
+64,Shizuoka Stadium Ecopa,53706
+65,Allianz Arena,94220
+66,Signal Iduna Park,48737
+67,Olympiastadion Berlin,89312
+68,Mercedes-Benz Arena,91805
+69,Veltins-Arena,90549
+70,HDI-Arena,83664
+71,Commerzbank-Arena,63763
+72,Max-Morlock-Stadion,70017
+73,RheinEnergieSTADION,44989
+74,Fritz-Walter-Stadion,66779
+75,Volksparkstadion,78781
+76,Red Bull Arena,51870
+77,Cape Town Stadium,80824
+78,Loftus Versfeld Stadium,52660
+79,Royal Bafokeng Stadium,95396
+80,Nelson Mandela Bay Stadium,85191
+81,Soccer City,98650
+82,Peter Mokaba Stadium,91316
+83,Toyota Stadium,84885
+84,Emirates Airline Park,79223
+85,Moses Mabhida Stadium,71458
+86,Mbombela Stadium,47988
+1,Estadio Olmpico Universitario,96927
+2,Cuauhtemoc,83562
+3,Estadio Azteca,65059
+4,Estadio Universitario,89031
+5,Bombonera - Estadio Nemesio Diez,92828
+6,Nou Camp - Estadio Len,75188
+7,Estadio Irapuato,48651
+8,Jalisco,92385
+9,Tres de Marzo,87359
+10,Tecnologico,95545
+11,Estadio Corregidora,97209
+12,Neza,85312
+13,Stadio Olimpico,69010
+14,San Paolo,63206
+15,Stadio San Nicola,56006
+16,Comunale,64104
+17,Giuseppe Meazza,96430
+18,Luigi Ferraris,76555
+19,Stadio delle Alpi,50565
+20,Renato Dall Ara,74743
+21,Marc Antonio Bentegodi,64890
+22,Dacia Arena,61969
+23,Friuli,83421
+24,Sant Elia,73908
+25,Della Favorita,65240
+26,Rose Bowl,73229
+27,Pontiac Silverdome,95697
+28,Stanford Stadium,63101
+29,RFK Stadium,52214
+30,Cotton Bowl,86598
+31,Soldier Field,60285
+32,Giants Stadium,92787
+33,Foxboro Stadium,74878
+34,Citrus Bowl,45763
+35,Stade de France,89251
+36,Stade de la Beaujoire - Louis Fonteneau,53488
+37,Orange Vlodrome,47320
+38,Parc des Princes,44777
+39,Stade de la Mosson,68489
+40,Stade Jacques Chaban-Delmas,81771
+41,Stade Geoffroy-Guichard,73211
+42,Stadium Municipal,93941
+43,Matmut Stadium de Gerland,91981
+44,Stade Bollaert-Delelis,56112
+45,Munsu Cup Stadium,59539
+46,Daegu Main Stadium,87851
+47,Incheon Munhak Stadium,71245
+48,Denka Big Swan Stadium,93170
+49,Seoul World Cup Stadium,63475
+50,Suwon World Cup Stadium,90134
+51,ita Bank Dome,67608
+52,Yanmar Stadium Nagai,56193
+53,Busan Sport Complex Asiad Stadium,84017
+54,Guus Hiddink Stadium,99267
+55,Jeonju World Cup Stadium,84869
+56,Daejeon World Cup Stadium,90007
+57,Jeju World Cup Stadium,61298
+58,NOEVIR Stadium Kobe,73943
+59,Saitama Stadium 2002,83478
+60,Nissan Stadium,74159
+61,Miyagi Stadium,48235
+62,Sapporo Dome,78950
+63,Kashima Soccer Stadium,92361
+64,Shizuoka Stadium Ecopa,45757
+65,Allianz Arena,47720
+66,Signal Iduna Park,53978
+67,Olympiastadion Berlin,66123
+68,Mercedes-Benz Arena,80043
+69,Veltins-Arena,81691
+70,HDI-Arena,53516
+71,Commerzbank-Arena,89147
+72,Max-Morlock-Stadion,45544
+73,RheinEnergieSTADION,95898
+74,Fritz-Walter-Stadion,74768
+75,Volksparkstadion,97442
+76,Red Bull Arena,73297
+77,Cape Town Stadium,90624
+78,Loftus Versfeld Stadium,62693
+79,Royal Bafokeng Stadium,85450
+80,Nelson Mandela Bay Stadium,85838
+81,Soccer City,97843
+82,Peter Mokaba Stadium,57567
+83,Toyota Stadium,93880
+84,Emirates Airline Park,83041
+85,Moses Mabhida Stadium,76020
+86,Mbombela Stadium,60667
+1,Estadio Olmpico Universitario,66060
+2,Cuauhtemoc,55735
+3,Estadio Azteca,52271
+4,Estadio Universitario,59519
+5,Bombonera - Estadio Nemesio Diez,50278
+6,Nou Camp - Estadio Len,58872
+7,Estadio Irapuato,50291
+8,Jalisco,63321
+9,Tres de Marzo,96489
+10,Tecnologico,99618
+11,Estadio Corregidora,62070
+12,Neza,60508
+13,Stadio Olimpico,46507
+14,San Paolo,79267
+15,Stadio San Nicola,51940
+16,Comunale,85289
+17,Giuseppe Meazza,54859
+18,Luigi Ferraris,54942
+19,Stadio delle Alpi,64694
+20,Renato Dall Ara,64280
+21,Marc Antonio Bentegodi,56068
+22,Dacia Arena,87040
+23,Friuli,78480
+24,Sant Elia,96185
+25,Della Favorita,74799
+26,Rose Bowl,56895
+27,Pontiac Silverdome,89232
+28,Stanford Stadium,81889
+29,RFK Stadium,53233
+30,Cotton Bowl,78010
+31,Soldier Field,71941
+32,Giants Stadium,93396
+33,Foxboro Stadium,64351
+34,Citrus Bowl,50571
+35,Stade de France,59586
+36,Stade de la Beaujoire - Louis Fonteneau,53547
+37,Orange Vlodrome,57938
+38,Parc des Princes,86630
+39,Stade de la Mosson,71763
+40,Stade Jacques Chaban-Delmas,91590
+41,Stade Geoffroy-Guichard,85025
+42,Stadium Municipal,73635
+43,Matmut Stadium de Gerland,58591
+44,Stade Bollaert-Delelis,92247
+45,Munsu Cup Stadium,46447
+46,Daegu Main Stadium,68719
+47,Incheon Munhak Stadium,65224
+48,Denka Big Swan Stadium,49811
+49,Seoul World Cup Stadium,59172
+50,Suwon World Cup Stadium,75120
+51,ita Bank Dome,53541
+52,Yanmar Stadium Nagai,93424
+53,Busan Sport Complex Asiad Stadium,87647
+54,Guus Hiddink Stadium,73062
+55,Jeonju World Cup Stadium,98687
+56,Daejeon World Cup Stadium,64673
+57,Jeju World Cup Stadium,98843
+58,NOEVIR Stadium Kobe,61115
+59,Saitama Stadium 2002,57307
+60,Nissan Stadium,50553
+61,Miyagi Stadium,77224
+62,Sapporo Dome,95161
+63,Kashima Soccer Stadium,65955
+64,Shizuoka Stadium Ecopa,63069
+65,Allianz Arena,71088
+66,Signal Iduna Park,50241
+67,Olympiastadion Berlin,71764
+68,Mercedes-Benz Arena,96897
+69,Veltins-Arena,80854
+70,HDI-Arena,49871
+71,Commerzbank-Arena,59516
+72,Max-Morlock-Stadion,56132
+73,RheinEnergieSTADION,86502
+74,Fritz-Walter-Stadion,76962
+75,Volksparkstadion,59619
+76,Red Bull Arena,85543
+77,Cape Town Stadium,55413
+78,Loftus Versfeld Stadium,86440
+79,Royal Bafokeng Stadium,66725
+80,Nelson Mandela Bay Stadium,60485
+81,Soccer City,93243
+82,Peter Mokaba Stadium,68342
+83,Toyota Stadium,80687
+84,Emirates Airline Park,56254
+85,Moses Mabhida Stadium,49949
+86,Mbombela Stadium,47875
+1,Estadio Olmpico Universitario,65232
+2,Cuauhtemoc,69615
+3,Estadio Azteca,97863
+4,Estadio Universitario,99336
+5,Bombonera - Estadio Nemesio Diez,91322
+6,Nou Camp - Estadio Len,69996
+7,Estadio Irapuato,75234
+8,Jalisco,79993
+9,Tres de Marzo,70699
+10,Tecnologico,92995
+11,Estadio Corregidora,54975
+12,Neza,85452
+13,Stadio Olimpico,86345
+14,San Paolo,85218
+15,Stadio San Nicola,93558
+16,Comunale,71677
+17,Giuseppe Meazza,85091
+18,Luigi Ferraris,63360
+19,Stadio delle Alpi,45428
+20,Renato Dall Ara,55365
+21,Marc Antonio Bentegodi,53393
+22,Dacia Arena,69580
+23,Friuli,58164
+24,Sant Elia,62606
+25,Della Favorita,54806
+26,Rose Bowl,94433
+27,Pontiac Silverdome,96856
+28,Stanford Stadium,70253
+29,RFK Stadium,50771
+30,Cotton Bowl,98255
+31,Soldier Field,56793
+32,Giants Stadium,79040
+33,Foxboro Stadium,54921
+34,Citrus Bowl,59729
+35,Stade de France,72807
+36,Stade de la Beaujoire - Louis Fonteneau,46187
+37,Orange Vlodrome,46077
+38,Parc des Princes,81194
+39,Stade de la Mosson,97673
+40,Stade Jacques Chaban-Delmas,91510
+41,Stade Geoffroy-Guichard,49430
+42,Stadium Municipal,82319
+43,Matmut Stadium de Gerland,45729
+44,Stade Bollaert-Delelis,48240
+45,Munsu Cup Stadium,74168
+46,Daegu Main Stadium,88116
+47,Incheon Munhak Stadium,52863
+48,Denka Big Swan Stadium,50470
+49,Seoul World Cup Stadium,67798
+50,Suwon World Cup Stadium,96330
+51,ita Bank Dome,56297
+52,Yanmar Stadium Nagai,45643
+53,Busan Sport Complex Asiad Stadium,97968
+54,Guus Hiddink Stadium,67527
+55,Jeonju World Cup Stadium,84981
+56,Daejeon World Cup Stadium,95546
+57,Jeju World Cup Stadium,59945
+58,NOEVIR Stadium Kobe,58166
+59,Saitama Stadium 2002,48110
+60,Nissan Stadium,52138
+61,Miyagi Stadium,49249
+62,Sapporo Dome,63046
+63,Kashima Soccer Stadium,63129
+64,Shizuoka Stadium Ecopa,58408
+65,Allianz Arena,54345
+66,Signal Iduna Park,69095
+67,Olympiastadion Berlin,73422
+68,Mercedes-Benz Arena,56630
+69,Veltins-Arena,46511
+70,HDI-Arena,49899
+71,Commerzbank-Arena,72591
+72,Max-Morlock-Stadion,92269
+73,RheinEnergieSTADION,58396
+74,Fritz-Walter-Stadion,98163
+75,Volksparkstadion,45104
+76,Red Bull Arena,91040
+77,Cape Town Stadium,57115
+78,Loftus Versfeld Stadium,71017
+79,Royal Bafokeng Stadium,67484
+80,Nelson Mandela Bay Stadium,45379
+81,Soccer City,93413
+82,Peter Mokaba Stadium,83530
+83,Toyota Stadium,57780
+84,Emirates Airline Park,77116
+85,Moses Mabhida Stadium,72820
+86,Mbombela Stadium,53941
+1,Estadio Olmpico Universitario,51184
+2,Cuauhtemoc,88470
+3,Estadio Azteca,51327
+4,Estadio Universitario,87781
+5,Bombonera - Estadio Nemesio Diez,74897
+6,Nou Camp - Estadio Len,53081
+7,Estadio Irapuato,96457
+8,Jalisco,72061
+9,Tres de Marzo,96425
+10,Tecnologico,71052
+11,Estadio Corregidora,60482
+12,Neza,85087
+13,Stadio Olimpico,54199
+14,San Paolo,94219
+15,Stadio San Nicola,78850
+16,Comunale,48377
+17,Giuseppe Meazza,96049
+18,Luigi Ferraris,49669
+19,Stadio delle Alpi,80319
+20,Renato Dall Ara,61827
+21,Marc Antonio Bentegodi,69730
+22,Dacia Arena,67001
+23,Friuli,53339
+24,Sant Elia,51273
+25,Della Favorita,81709
+26,Rose Bowl,69547
+27,Pontiac Silverdome,66099
+28,Stanford Stadium,98702
+29,RFK Stadium,64336
+30,Cotton Bowl,73804
+31,Soldier Field,56514
+32,Giants Stadium,80957
+33,Foxboro Stadium,68022
+34,Citrus Bowl,81047
+35,Stade de France,94685
+36,Stade de la Beaujoire - Louis Fonteneau,61100
+37,Orange Vlodrome,86334
+38,Parc des Princes,61384
+39,Stade de la Mosson,59909
+40,Stade Jacques Chaban-Delmas,53861
+41,Stade Geoffroy-Guichard,71852
+42,Stadium Municipal,69338
+43,Matmut Stadium de Gerland,59518
+44,Stade Bollaert-Delelis,77250
+45,Munsu Cup Stadium,58501
+46,Daegu Main Stadium,61007
+47,Incheon Munhak Stadium,94821
+48,Denka Big Swan Stadium,50015
+49,Seoul World Cup Stadium,92226
+50,Suwon World Cup Stadium,90737
+51,ita Bank Dome,72497
+52,Yanmar Stadium Nagai,65849
+53,Busan Sport Complex Asiad Stadium,98057
+54,Guus Hiddink Stadium,68865
+55,Jeonju World Cup Stadium,55857
+56,Daejeon World Cup Stadium,88641
+57,Jeju World Cup Stadium,53091
+58,NOEVIR Stadium Kobe,90193
+59,Saitama Stadium 2002,74360
+60,Nissan Stadium,70514
+61,Miyagi Stadium,65461
+62,Sapporo Dome,75434
+63,Kashima Soccer Stadium,62078
+64,Shizuoka Stadium Ecopa,64213
+65,Allianz Arena,80729
+66,Signal Iduna Park,71295
+67,Olympiastadion Berlin,72177
+68,Mercedes-Benz Arena,51432
+69,Veltins-Arena,91470
+70,HDI-Arena,63488
+71,Commerzbank-Arena,57655
+72,Max-Morlock-Stadion,80080
+73,RheinEnergieSTADION,48104
+74,Fritz-Walter-Stadion,85182
+75,Volksparkstadion,64077
+76,Red Bull Arena,58115
+77,Cape Town Stadium,78217
+78,Loftus Versfeld Stadium,88871
+79,Royal Bafokeng Stadium,77455
+80,Nelson Mandela Bay Stadium,44202
+81,Soccer City,86597
+82,Peter Mokaba Stadium,63374
+83,Toyota Stadium,71579
+84,Emirates Airline Park,93001
+85,Moses Mabhida Stadium,68427
+86,Mbombela Stadium,72601
+1,Estadio Olmpico Universitario,74398
+2,Cuauhtemoc,91741
+3,Estadio Azteca,76763
+4,Estadio Universitario,79172
+5,Bombonera - Estadio Nemesio Diez,55663
+6,Nou Camp - Estadio Len,96180
+7,Estadio Irapuato,49011
+8,Jalisco,87810
+9,Tres de Marzo,90092
+10,Tecnologico,47894
+11,Estadio Corregidora,50449
+12,Neza,92084
+13,Stadio Olimpico,65484
+14,San Paolo,74734
+15,Stadio San Nicola,48623
+16,Comunale,47886
+17,Giuseppe Meazza,44326
+18,Luigi Ferraris,84730
+19,Stadio delle Alpi,73822
+20,Renato Dall Ara,52675
+21,Marc Antonio Bentegodi,47226
+22,Dacia Arena,63550
+23,Friuli,47423
+24,Sant Elia,53405
+25,Della Favorita,87317
+26,Rose Bowl,84287
+27,Pontiac Silverdome,69943
+28,Stanford Stadium,68932
+29,RFK Stadium,91369
+30,Cotton Bowl,68988
+31,Soldier Field,50167
+32,Giants Stadium,92096
+33,Foxboro Stadium,78645
+34,Citrus Bowl,66464
+35,Stade de France,94495
+36,Stade de la Beaujoire - Louis Fonteneau,99411
+37,Orange Vlodrome,44428
+38,Parc des Princes,60484
+39,Stade de la Mosson,82111
+40,Stade Jacques Chaban-Delmas,84228
+41,Stade Geoffroy-Guichard,89864
+42,Stadium Municipal,64830
+43,Matmut Stadium de Gerland,84706
+44,Stade Bollaert-Delelis,98022
+45,Munsu Cup Stadium,86171
+46,Daegu Main Stadium,88247
+47,Incheon Munhak Stadium,80282
+48,Denka Big Swan Stadium,84262
+49,Seoul World Cup Stadium,72635
+50,Suwon World Cup Stadium,72449
+51,ita Bank Dome,79666
+52,Yanmar Stadium Nagai,67794
+53,Busan Sport Complex Asiad Stadium,68191
+54,Guus Hiddink Stadium,77993
+55,Jeonju World Cup Stadium,47949
+56,Daejeon World Cup Stadium,54695
+57,Jeju World Cup Stadium,45497
+58,NOEVIR Stadium Kobe,96736
+59,Saitama Stadium 2002,74859
+60,Nissan Stadium,52652
+61,Miyagi Stadium,94376
+62,Sapporo Dome,80913
+63,Kashima Soccer Stadium,83751
+64,Shizuoka Stadium Ecopa,48279
+65,Allianz Arena,66373
+66,Signal Iduna Park,59959
+67,Olympiastadion Berlin,76400
+68,Mercedes-Benz Arena,59637
+69,Veltins-Arena,78585
+70,HDI-Arena,64660
+71,Commerzbank-Arena,78587
+72,Max-Morlock-Stadion,51000
+73,RheinEnergieSTADION,67022
+74,Fritz-Walter-Stadion,51509
+75,Volksparkstadion,91125
+76,Red Bull Arena,76281
+77,Cape Town Stadium,59278
+78,Loftus Versfeld Stadium,75178
+79,Royal Bafokeng Stadium,80951
+80,Nelson Mandela Bay Stadium,90237
+81,Soccer City,77133
+82,Peter Mokaba Stadium,96937
+83,Toyota Stadium,84642
+84,Emirates Airline Park,50326
+85,Moses Mabhida Stadium,98923
+86,Mbombela Stadium,82367
+1,Estadio Olmpico Universitario,98790
+2,Cuauhtemoc,80569
+3,Estadio Azteca,79962
+4,Estadio Universitario,87380
+5,Bombonera - Estadio Nemesio Diez,59295
+6,Nou Camp - Estadio Len,83939
+7,Estadio Irapuato,45454
+8,Jalisco,87755
+9,Tres de Marzo,85611
+10,Tecnologico,67269
+11,Estadio Corregidora,60992
+12,Neza,51979
+13,Stadio Olimpico,88594
+14,San Paolo,49401
+15,Stadio San Nicola,51132
+16,Comunale,88115
+17,Giuseppe Meazza,46892
+18,Luigi Ferraris,70317
+19,Stadio delle Alpi,71221
+20,Renato Dall Ara,99190
+21,Marc Antonio Bentegodi,55379
+22,Dacia Arena,96470
+23,Friuli,72103
+24,Sant Elia,73244
+25,Della Favorita,66860
+26,Rose Bowl,77130
+27,Pontiac Silverdome,91751
+28,Stanford Stadium,46873
+29,RFK Stadium,61876
+30,Cotton Bowl,57840
+31,Soldier Field,55445
+32,Giants Stadium,50890
+33,Foxboro Stadium,56246
+34,Citrus Bowl,73436
+35,Stade de France,52077
+36,Stade de la Beaujoire - Louis Fonteneau,70327
+37,Orange Vlodrome,59384
+38,Parc des Princes,57926
+39,Stade de la Mosson,61524
+40,Stade Jacques Chaban-Delmas,95133
+41,Stade Geoffroy-Guichard,67001
+42,Stadium Municipal,84226
+43,Matmut Stadium de Gerland,87117
+44,Stade Bollaert-Delelis,93389
+45,Munsu Cup Stadium,67401
+46,Daegu Main Stadium,55837
+47,Incheon Munhak Stadium,69200
+48,Denka Big Swan Stadium,84326
+49,Seoul World Cup Stadium,48763
+50,Suwon World Cup Stadium,46018
+51,ita Bank Dome,76173
+52,Yanmar Stadium Nagai,73119
+53,Busan Sport Complex Asiad Stadium,72172
+54,Guus Hiddink Stadium,76469
+55,Jeonju World Cup Stadium,70476
+56,Daejeon World Cup Stadium,80070
+57,Jeju World Cup Stadium,46140
+58,NOEVIR Stadium Kobe,94130
+59,Saitama Stadium 2002,68845
+60,Nissan Stadium,46566
+61,Miyagi Stadium,89742
+62,Sapporo Dome,98732
+63,Kashima Soccer Stadium,67382
+64,Shizuoka Stadium Ecopa,59813
+65,Allianz Arena,93918
+66,Signal Iduna Park,59461
+67,Olympiastadion Berlin,48079
+68,Mercedes-Benz Arena,51947
+69,Veltins-Arena,53956
+70,HDI-Arena,87050
+71,Commerzbank-Arena,44897
+72,Max-Morlock-Stadion,51666
+73,RheinEnergieSTADION,56999
+74,Fritz-Walter-Stadion,82247
+75,Volksparkstadion,74129
+76,Red Bull Arena,49453
+77,Cape Town Stadium,62072
+78,Loftus Versfeld Stadium,67899
+79,Royal Bafokeng Stadium,73907
+80,Nelson Mandela Bay Stadium,71190
+81,Soccer City,61049
+82,Peter Mokaba Stadium,58260
+83,Toyota Stadium,49989
+84,Emirates Airline Park,76908
+85,Moses Mabhida Stadium,72889
+86,Mbombela Stadium,57035
+1,Estadio Olmpico Universitario,86266
+2,Cuauhtemoc,73675
+3,Estadio Azteca,70676
+4,Estadio Universitario,70032
+5,Bombonera - Estadio Nemesio Diez,61912
+6,Nou Camp - Estadio Len,44679
+7,Estadio Irapuato,58346
+8,Jalisco,56405
+9,Tres de Marzo,72391
+10,Tecnologico,47721
+11,Estadio Corregidora,54010
+12,Neza,66055
+13,Stadio Olimpico,45229
+14,San Paolo,48083
+15,Stadio San Nicola,82698
+16,Comunale,59115
+17,Giuseppe Meazza,59472
+18,Luigi Ferraris,66440
+19,Stadio delle Alpi,64492
+20,Renato Dall Ara,99072
+21,Marc Antonio Bentegodi,56438
+22,Dacia Arena,44412
+23,Friuli,54754
+24,Sant Elia,94569
+25,Della Favorita,82267
+26,Rose Bowl,91427
+27,Pontiac Silverdome,59889
+28,Stanford Stadium,50841
+29,RFK Stadium,80512
+30,Cotton Bowl,98061
+31,Soldier Field,99753
+32,Giants Stadium,98521
+33,Foxboro Stadium,98340
+34,Citrus Bowl,74115
+35,Stade de France,78667
+36,Stade de la Beaujoire - Louis Fonteneau,49177
+37,Orange Vlodrome,90854
+38,Parc des Princes,76163
+39,Stade de la Mosson,99193
+40,Stade Jacques Chaban-Delmas,82996
+41,Stade Geoffroy-Guichard,47291
+42,Stadium Municipal,99990
+43,Matmut Stadium de Gerland,57289
+44,Stade Bollaert-Delelis,87883
+45,Munsu Cup Stadium,62135
+46,Daegu Main Stadium,82919
+47,Incheon Munhak Stadium,61686
+48,Denka Big Swan Stadium,98064
+49,Seoul World Cup Stadium,75863
+50,Suwon World Cup Stadium,72342
+51,ita Bank Dome,91737
+52,Yanmar Stadium Nagai,57063
+53,Busan Sport Complex Asiad Stadium,75269
+54,Guus Hiddink Stadium,51619
+55,Jeonju World Cup Stadium,63624
+56,Daejeon World Cup Stadium,67458
+57,Jeju World Cup Stadium,73776
+58,NOEVIR Stadium Kobe,56808
+59,Saitama Stadium 2002,52957
+60,Nissan Stadium,56396
+61,Miyagi Stadium,84958
+62,Sapporo Dome,54179
+63,Kashima Soccer Stadium,77740
+64,Shizuoka Stadium Ecopa,95045
+65,Allianz Arena,83640
+66,Signal Iduna Park,76766
+67,Olympiastadion Berlin,65266
+68,Mercedes-Benz Arena,52148
+69,Veltins-Arena,75883
+70,HDI-Arena,75282
+71,Commerzbank-Arena,77492
+72,Max-Morlock-Stadion,61204
+73,RheinEnergieSTADION,67223
+74,Fritz-Walter-Stadion,67194
+75,Volksparkstadion,77097
+76,Red Bull Arena,53480
+77,Cape Town Stadium,84376
+78,Loftus Versfeld Stadium,85193
+79,Royal Bafokeng Stadium,74740
+80,Nelson Mandela Bay Stadium,82089
+81,Soccer City,57489
+82,Peter Mokaba Stadium,77707
+83,Toyota Stadium,72282
+84,Emirates Airline Park,60796
+85,Moses Mabhida Stadium,66096
+86,Mbombela Stadium,83498
+1,Estadio Olmpico Universitario,66808
+2,Cuauhtemoc,58706
+3,Estadio Azteca,91500
+4,Estadio Universitario,57814
+5,Bombonera - Estadio Nemesio Diez,92415
+6,Nou Camp - Estadio Len,47179
+7,Estadio Irapuato,57378
+8,Jalisco,50679
+9,Tres de Marzo,82260
+10,Tecnologico,81803
+11,Estadio Corregidora,66329
+12,Neza,53330
+13,Stadio Olimpico,60664
+14,San Paolo,67284
+15,Stadio San Nicola,45569
+16,Comunale,50280
+17,Giuseppe Meazza,52445
+18,Luigi Ferraris,94411
+19,Stadio delle Alpi,79594
+20,Renato Dall Ara,53032
+21,Marc Antonio Bentegodi,63376
+22,Dacia Arena,86489
+23,Friuli,58244
+24,Sant Elia,74538
+25,Della Favorita,92501
+26,Rose Bowl,68882
+27,Pontiac Silverdome,87537
+28,Stanford Stadium,64640
+29,RFK Stadium,92395
+30,Cotton Bowl,91009
+31,Soldier Field,65416
+32,Giants Stadium,48839
+33,Foxboro Stadium,91325
+34,Citrus Bowl,87149
+35,Stade de France,66349
+36,Stade de la Beaujoire - Louis Fonteneau,80255
+37,Orange Vlodrome,52155
+38,Parc des Princes,70823
+39,Stade de la Mosson,81838
+40,Stade Jacques Chaban-Delmas,86248
+41,Stade Geoffroy-Guichard,99255
+42,Stadium Municipal,89451
+43,Matmut Stadium de Gerland,56216
+44,Stade Bollaert-Delelis,58262
+45,Munsu Cup Stadium,98700
+46,Daegu Main Stadium,59630
+47,Incheon Munhak Stadium,51860
+48,Denka Big Swan Stadium,51822
+49,Seoul World Cup Stadium,66322
+50,Suwon World Cup Stadium,45156
+51,ita Bank Dome,44693
+52,Yanmar Stadium Nagai,57361
+53,Busan Sport Complex Asiad Stadium,64077
+54,Guus Hiddink Stadium,91214
+55,Jeonju World Cup Stadium,70497
+56,Daejeon World Cup Stadium,58394
+57,Jeju World Cup Stadium,69779
+58,NOEVIR Stadium Kobe,89889
+59,Saitama Stadium 2002,66926
+60,Nissan Stadium,97745
+61,Miyagi Stadium,68382
+62,Sapporo Dome,85948
+63,Kashima Soccer Stadium,87408
+64,Shizuoka Stadium Ecopa,68959
+65,Allianz Arena,72208
+66,Signal Iduna Park,64436
+67,Olympiastadion Berlin,48547
+68,Mercedes-Benz Arena,71073
+69,Veltins-Arena,61657
+70,HDI-Arena,86666
+71,Commerzbank-Arena,80779
+72,Max-Morlock-Stadion,67223
+73,RheinEnergieSTADION,87547
+74,Fritz-Walter-Stadion,66333
+75,Volksparkstadion,68964
+76,Red Bull Arena,51128
+77,Cape Town Stadium,55985
+78,Loftus Versfeld Stadium,55463
+79,Royal Bafokeng Stadium,88350
+80,Nelson Mandela Bay Stadium,74792
+81,Soccer City,99901
+82,Peter Mokaba Stadium,78005
+83,Toyota Stadium,65927
+84,Emirates Airline Park,70060
+85,Moses Mabhida Stadium,63453
+86,Mbombela Stadium,99378

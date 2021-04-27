@@ -38,7 +38,7 @@ namespace FifaDatabase.Views.SearchViews
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DataAccess db = new DataAccess();
+            //DataAccess db = new DataAccess();
 
             //games = db.GetPlayers(this.NameSearchTextBox.Text);
             //PlayerDataGrid.ItemsSource = games;

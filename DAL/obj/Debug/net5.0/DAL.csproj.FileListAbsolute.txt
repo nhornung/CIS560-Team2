@@ -1,0 +1,12 @@
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\bin\Debug\net5.0\DAL.deps.json
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\bin\Debug\net5.0\DAL.dll
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\bin\Debug\net5.0\ref\DAL.dll
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\bin\Debug\net5.0\DAL.pdb
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\net5.0\DAL.csprojAssemblyReference.cache
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\net5.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\net5.0\DAL.AssemblyInfoInputs.cache
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\net5.0\DAL.AssemblyInfo.cs
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\net5.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\net5.0\DAL.dll
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\net5.0\ref\DAL.dll
+C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\net5.0\DAL.pdb

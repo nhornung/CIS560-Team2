@@ -1,0 +1,466 @@
+
+				
+				1930 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1934 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1938 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1950 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1954 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1958 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1962 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1966 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1970 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1974 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1978 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1982 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+GROUP  B:
+GROUP  C:
+GROUP  D:
+GROUP  E:
+GROUP  F:
+GROUP  G:
+GROUP  H:
+
+				
+				1986 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+ar Argentina
+it Italy
+bg Bulgaria
+kr Korea Republic
+GROUP  B:
+mx Mexico
+py Paraguay
+be Belgium
+iq Iraq
+GROUP  C:
+su Soviet Union
+fr France
+hu Hungary
+ca Canada
+GROUP  D:
+br Brazil
+es Spain
+nir Northern Ireland
+dz Algeria
+GROUP  E:
+dk Denmark
+de West Germany
+uy Uruguay
+sco Scotland
+GROUP  F:
+ma Morocco
+eng England
+pl Poland
+pt Portugal
+GROUP  G:
+GROUP  H:
+
+				
+				1990 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+it Italy
+cs Czechoslovakia
+at Austria
+us United States
+GROUP  B:
+cm Cameroon
+ro Romania
+ar Argentina
+su Soviet Union
+GROUP  C:
+br Brazil
+cr Costa Rica
+sco Scotland
+se Sweden
+GROUP  D:
+de West Germany
+yu Yugoslavia
+co Colombia
+ae United Arab Emirates
+GROUP  E:
+es Spain
+be Belgium
+uy Uruguay
+kr Korea Republic
+GROUP  F:
+eng England
+ie Republic of Ireland
+nl Netherlands
+eg Egypt
+GROUP  G:
+GROUP  H:
+
+				
+				1994 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+ro Romania
+ch Switzerland
+us United States
+co Colombia
+GROUP  B:
+br Brazil
+se Sweden
+ru Russia
+cm Cameroon
+GROUP  C:
+de Germany
+es Spain
+kr Korea Republic
+bo Bolivia
+GROUP  D:
+ng Nigeria
+bg Bulgaria
+ar Argentina
+gr Greece
+GROUP  E:
+mx Mexico
+ie Republic of Ireland
+it Italy
+no Norway
+GROUP  F:
+nl Netherlands
+sa Saudi Arabia
+be Belgium
+ma Morocco
+GROUP  G:
+GROUP  H:
+
+				
+				1998 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+br Brazil
+no Norway
+ma Morocco
+sco Scotland
+GROUP  B:
+it Italy
+cl Chile
+at Austria
+cm Cameroon
+GROUP  C:
+fr France
+dk Denmark
+za South Africa
+sa Saudi Arabia
+GROUP  D:
+ng Nigeria
+py Paraguay
+es Spain
+bg Bulgaria
+GROUP  E:
+nl Netherlands
+mx Mexico
+be Belgium
+kr Korea Republic
+GROUP  F:
+de Germany
+rs Serbia
+ir Iran
+us United States
+GROUP  G:
+ro Romania
+eng England
+co Colombia
+tn Tunisia
+GROUP  H:
+ar Argentina
+hr Croatia
+jm Jamaica
+jp Japan
+
+				
+				2002 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+dk Denmark
+sn Senegal
+uy Uruguay
+fr France
+GROUP  B:
+es Spain
+py Paraguay
+za South Africa
+si Slovenia
+GROUP  C:
+br Brazil
+tr Turkey
+cr Costa Rica
+cn China PR
+GROUP  D:
+kr Korea Republic
+us United States
+pt Portugal
+pl Poland
+GROUP  E:
+de Germany
+ie Republic of Ireland
+cm Cameroon
+sa Saudi Arabia
+GROUP  F:
+se Sweden
+eng England
+ar Argentina
+ng Nigeria
+GROUP  G:
+mx Mexico
+it Italy
+hr Croatia
+ec Ecuador
+GROUP  H:
+jp Japan
+be Belgium
+ru Russia
+tn Tunisia
+
+				
+				2006 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+de Germany
+ec Ecuador
+pl Poland
+cr Costa Rica
+GROUP  B:
+eng England
+se Sweden
+py Paraguay
+tt Trinidad and Tobago
+GROUP  C:
+ar Argentina
+nl Netherlands
+ci Côte d'Ivoire
+rs Serbia & Montenegro
+GROUP  D:
+pt Portugal
+mx Mexico
+ao Angola
+ir Iran
+GROUP  E:
+it Italy
+gh Ghana
+cz Czech Republic
+us United States
+GROUP  F:
+br Brazil
+au Australia
+hr Croatia
+jp Japan
+GROUP  G:
+ch Switzerland
+fr France
+kr Korea Republic
+tg Togo
+GROUP  H:
+es Spain
+ua Ukraine
+tn Tunisia
+sa Saudi Arabia
+
+				
+				2010 FIFA World Cup Stats
+				
+			
+
+GROUP  A:
+uy Uruguay
+mx Mexico
+za South Africa
+fr France
+GROUP  B:
+ar Argentina
+kr Korea Republic
+gr Greece
+ng Nigeria
+GROUP  C:
+us United States
+eng England
+si Slovenia
+dz Algeria
+GROUP  D:
+de Germany
+gh Ghana
+au Australia
+rs Serbia
+GROUP  E:
+nl Netherlands
+jp Japan
+dk Denmark
+cm Cameroon
+GROUP  F:
+py Paraguay
+sk Slovakia
+nz New Zealand
+it Italy
+GROUP  G:
+br Brazil
+pt Portugal
+ci Côte d'Ivoire
+kp Korea DPR
+GROUP  H:
+es Spain
+cl Chile
+ch Switzerland
+hn Honduras

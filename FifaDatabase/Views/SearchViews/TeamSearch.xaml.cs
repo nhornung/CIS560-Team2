@@ -30,16 +30,16 @@ namespace FifaDatabase.Views
 
         private void Fill()
         {
-            DataAccess db = new DataAccess();
-            teams = db.GetAllTeams();
+            //DataAccess db = new DataAccess();
+            //teams = db.GetAllTeams();
             TeamDataGrid.ItemsSource = teams;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DataAccess db = new DataAccess();
+            //DataAccess db = new DataAccess();
 
-            teams = db.GetTeams(this.TeamSearchTextBox.Text);
+            //teams = db.GetTeams(this.TeamSearchTextBox.Text);
             TeamDataGrid.ItemsSource = teams;
 
         }

@@ -21,7 +21,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>.bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -45,7 +45,10 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
-    <Reference Include="System.Data" />
+    <Reference Include="System.Data">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -71,9 +74,9 @@
     <Compile Include="Helper_Code\DALNetworks.cs" />
     <Compile Include="Helper_Code\DALPlayers.cs" />
     <Compile Include="Helper_Code\DALTeams.cs" />
-    <Compile Include="Helper_Code\DataDelegates\Players\CreatePlayerDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\CreatePlayerDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\RetrievePlayersDataDelegate.cs" />
     <Compile Include="Models\ActionsEnums.cs" />
-    <Compile Include="Helper_Code\DataAccess.cs" />
     <Compile Include="Models\GameModel.cs" />
     <Compile Include="Models\LocationModel.cs" />
     <Compile Include="Models\ManagerModel.cs" />
@@ -83,6 +86,8 @@
     <Compile Include="Models\StadiumModel.cs" />
     <Compile Include="Models\TableEnums.cs" />
     <Compile Include="Models\TeamModel.cs" />
+    <Compile Include="SqlRepos\IPlayerRepository.cs" />
+    <Compile Include="SqlRepos\SqlPlayerRepository.cs" />
     <Compile Include="Views\CreateViews\GameCreate.xaml.cs">
       <DependentUpon>GameCreate.xaml</DependentUpon>
     </Compile>
@@ -256,9 +261,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{74ccda5a-c13d-43da-8f30-9c7c382effaa}</Project>
+      <Project>{74CCDA5A-C13D-43DA-8F30-9C7C382EFFAA}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Procedures\WorldCupSchema.UpdateManager.sql" />
+    <Content Include="Procedures\WorldCupSchema.CreatePlayer.sql" />
+    <Content Include="Procedures\WorldCupSchema.RetrievePlayers.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

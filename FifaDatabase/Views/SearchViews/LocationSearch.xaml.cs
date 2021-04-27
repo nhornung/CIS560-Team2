@@ -35,7 +35,7 @@ namespace FifaDatabase.Views.SearchViews
         {
             DALLocations db = new DALLocations();
             locations = db.GetAllLocations();
-            PlayerDataGrid.ItemsSource = locations;
+            dataGRid.ItemsSource = locations;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -43,7 +43,7 @@ namespace FifaDatabase.Views.SearchViews
             DALLocations db = new DALLocations();
 
             locations = db.GetLocations(this.NameSearchTextBox.Text);
-            PlayerDataGrid.ItemsSource = locations;
+            dataGRid.ItemsSource = locations;
 
         }
     }
