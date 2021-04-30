@@ -1,5 +1,5 @@
 ﻿create or alter procedure WorldCupSchema.UpdateManager
-	@OldName NVARCHAR(48),
+   @OldName NVARCHAR(48),
    @OldNationality NVARCHAR(32),
    @Name NVARCHAR(48),
    @Nationality NVARCHAR(32)

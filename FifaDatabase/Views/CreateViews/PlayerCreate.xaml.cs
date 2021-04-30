@@ -15,79 +15,50 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FifaDatabase.Models;
 using FifaDatabase.SqlRepos;
 
 namespace FifaDatabase.Views
 {
+    //CreatePlayer
     /// <summary>
     /// Interaction logic for PlayerCreate.xaml
     /// </summary>
     public partial class PlayerCreate : UserControl
     {
-       
+
+        const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
+        private SqlPlayerRepository repo;
+        //private TransactionScope transaction;
+
         public PlayerCreate()
         {
             InitializeComponent();
+            repo = new SqlPlayerRepository(connectionString);
+            Fill();
+
         }
 
+        private async void Fill()
+        {
+            try
+            {
+               // repo.CreatePlayer();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            // PlayerModel actual = repo.CreatePlayer("Johnny Bummers", new DateTime(2015, 12, 25), "FM", 177, 81);
+            // MessageBox.Show(actual.Name.ToString() + actual.Height.ToString() + actual.PlayerId.ToString());
+
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (AgeDatePicker.SelectedDate is null)
-            {
-                MessageBox.Show("Pick a date!");
-                return;
-            }
-            if (PositionBox.SelectedItem is null)
-            {
-                MessageBox.Show("Pick a position");
-                return;
-            }
-            if (NameTextBox.Text is null)
-            {
-                MessageBox.Show("The name cannot be empty");
-                return;
-            }
-            if (NameTextBox.Text.Any(char.IsDigit))
-            {
-                MessageBox.Show("The name contain numbers");
-                return;
-            }
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True");
-                SqlCommand cmd = new SqlCommand("WorldCupSchema.CreatePlayer", conn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                
-                SqlParameter param;
-
-                param = cmd.Parameters.Add("@Name", SqlDbType.NVarChar, 48);
-                param.Value = NameTextBox.Text;
-                param = cmd.Parameters.Add("@Age", SqlDbType.Date);
-                param.Value = AgeDatePicker.SelectedDate;
-                param = cmd.Parameters.Add("@Position", SqlDbType.NVarChar, 12);
-                param.Value = PositionBox.SelectedItem.ToString();
-                param = cmd.Parameters.Add("@Height", SqlDbType.Int);
-                param.Value = HeightSlider.Value;
-                param = cmd.Parameters.Add("@Weight", SqlDbType.Int);
-                param.Value = WeightSlider.Value;
-
-
-
-                // Execute the command.
-
-                conn.Open();
-
-                int rowsAffected = cmd.ExecuteNonQuery();
-
-                conn.Close();
-
-                MessageBox.Show($"{ NameTextBox.Text} added!");
+                PlayerModel player = repo.CreatePlayer(NameTextBox.Text, AgeDatePicker.SelectedDate.ToString(), PositionBox.SelectedItem.ToString(), Convert.ToInt32(HeightSlider.Value), Convert.ToInt32(WeightSlider.Value));
+                MessageBox.Show(player.Name);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
         }
     }
 }

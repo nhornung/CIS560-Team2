@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace DataAccess
 {
@@ -41,24 +42,27 @@ namespace DataAccess
             return GetValue(name, reader.GetString);
         }
 
-        public DateTimeOffset GetDateTimeOffset(string name)
+        public DateTime GetDateTime(string name)
         {
-            return GetValue(name, reader.GetDateTimeOffset);
+            return GetValue(name, reader.GetDateTime);
         }
 
         public T GetValue<T>(string name)
         {
-            return (T)reader.GetValue(reader.GetOrdinal(name));
+                return (T)reader.GetValue(reader.GetOrdinal(name));
         }
 
         public T GetValue<T>(string name, Func<int, T> getter)
         {
             try
             {
-                return getter(reader.GetOrdinal(name));
+                return reader.IsDBNull(reader.GetOrdinal(name)) ? default(T) : getter(reader.GetOrdinal(name));
+                //Debug.WriteLine(name);
+                //Debug.WriteLine(name);
             }
             catch (IndexOutOfRangeException ex)
             {
+                Debug.WriteLine(name);
                 throw new ColumnNotFoundException(name, ex);
             }
         }

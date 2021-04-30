@@ -8,7 +8,13 @@ namespace FifaDatabase.Models
 {
     public class TeamModel
     {
-        public int TeamId { get; set; }
+        public int TeamID { get; set; }
         public string Nation { get; set; }
+
+        public TeamModel(int teamid, string nation)
+        {
+            TeamID = teamid;
+            Nation = nation;
+        }
     }
 }

@@ -1,9 +1,0 @@
-C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\bin\Debug\netstandard2.1\DAL.deps.json
-C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\bin\Debug\netstandard2.1\DAL.dll
-C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\bin\Debug\netstandard2.1\DAL.pdb
-C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netstandard2.1\DAL.csprojAssemblyReference.cache
-C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netstandard2.1\DAL.AssemblyInfoInputs.cache
-C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netstandard2.1\DAL.AssemblyInfo.cs
-C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netstandard2.1\DAL.csproj.CoreCompileInputs.cache
-C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netstandard2.1\DAL.dll
-C:\Users\robbo\Source\Repos\CIS560-Team2\DAL\obj\Debug\netstandard2.1\DAL.pdb

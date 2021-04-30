@@ -1,13 +1,13 @@
-﻿create or alter procedure WorldCupSchema.UpdateManager
-   @OldName NVARCHAR(48),
-   @OldNationality NVARCHAR(32),
+﻿CREATE PROCEDURE [WorldCupSchema].[CreatePlayer]
    @Name NVARCHAR(48),
-   @Nationality NVARCHAR(32)
-as 
-
-update WorldCupSchema.Managers
-set 
-	Name = @Name,
-	Nationality = @Nationality
-from WorldCupSchema.Managers where Name = @OldName AND Nationality = @OldNationality
-GO
+   @Age DATE,
+   @Position NVARCHAR(12),
+   @Height INT,
+   @Weight INT,
+   @PlayerID INT = 0 OUTPUT
+AS
+BEGIN
+INSERT WorldCupSchema.Players([Name], Age, Position, Height, Weight)
+VALUES(@Name, @Age, @Position, @Height, @Weight);
+SET @PlayerID = SCOPE_IDENTITY();
+END;

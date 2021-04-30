@@ -17,7 +17,6 @@ using System.Windows.Navigation;
 using System.Diagnostics;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
-using PersonData;
 
 namespace FifaDatabase.Views.SearchViews
 {
@@ -27,37 +26,47 @@ namespace FifaDatabase.Views.SearchViews
     /// </summary>
     public partial class PlayerSearch : UserControl
     {
-        const string connectionString = "Server=(localdb)\\MSSQLLocalDb;Database=FifaWorldCup;Trusted_Connection=True;";
-        private IPlayerRepository repo;
-        private TransactionScope transaction;
+        const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
+        private SqlPlayerRepository repo;
+        //private TransactionScope transaction;
 
         public PlayerSearch()
         {
             InitializeComponent();
             repo = new SqlPlayerRepository(connectionString);
             Fill();
+            
         }
 
-        private void Fill()
+        private async void Fill()
         {
-            
-
-                var actual = repo.CreatePlayer("Johnny Bummers", new DateTime(2015, 12, 25), "FM", 177, 81);
-                MessageBox.Show(actual.Name.ToString() + actual.Height.ToString() + actual.PlayerId.ToString());
+            try
+            {
+                PlayerDataGrid.ItemsSource = repo.RetrievePlayers();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            // PlayerModel actual = repo.CreatePlayer("Johnny Bummers", new DateTime(2015, 12, 25), "FM", 177, 81);
+           // MessageBox.Show(actual.Name.ToString() + actual.Height.ToString() + actual.PlayerId.ToString());
                
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            DynamicSearch();
+        }
+
+        private void DynamicSearch()
+        {
             string command = "";
             if (NameSearchTextBox.Text != "Search Player Name" && NameSearchTextBox.Text != "" && NameSearchTextBox.Text != null)
             {
                 string[] words = NameSearchTextBox.Text.Split(' ');
-                foreach( string word in words){
+                foreach (string word in words)
+                {
                     command += $" AND Name LIKE '%{word}%' ";
                 }
             }
-            if(PositionBox.SelectedItem != null)
+            if (PositionBox.SelectedItem != null)
             {
                 command += $" AND Position = '{PositionBox.SelectedItem.ToString()}' ";
             }
@@ -68,7 +77,7 @@ namespace FifaDatabase.Views.SearchViews
             }
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True");
+                SqlConnection conn = new SqlConnection("Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;");
                 SqlCommand cmd = new SqlCommand($"SELECT * FROM WorldCupSchema.Players WHERE Height <= {HeightSlider.Value.ToString()} AND Weight <= {WeightSlider.Value.ToString()}" + command, conn);
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
@@ -78,6 +87,33 @@ namespace FifaDatabase.Views.SearchViews
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void PlayerDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+            PlayerModel player = (PlayerModel)PlayerDataGrid.SelectedItem;
+            Border display = FindDisplayBorder();
+            display.DataContext = player;
+            display.Child = new PlayerView();
+            //string id = rowview.Row[1].ToString();
+            //Debug.WriteLine(id);
+        }
+
+        private Border FindDisplayBorder()
+        {
+            // Start climbing the tree from this node
+            DependencyObject parent = this;
+            do
+            {
+                // Get this node's parent
+                parent = LogicalTreeHelper.GetParent(parent);
+            }
+            // Invariant: there is a parent element, and it is not a ListSwitcher 
+            while (!(parent is null || parent is MainWindow));
+            MainWindow main = (MainWindow)parent;
+            Border displayBorder = (Border)main.DisplayBorder;
+            return displayBorder;
         }
     }
 }

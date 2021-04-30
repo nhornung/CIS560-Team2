@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\rob\source\repos\FifaDatabase\FifaDatabase\obj\Debug\
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\
 FifaDatabase
 none
 false
 DEBUG;TRACE
-C:\Users\rob\source\repos\FifaDatabase\FifaDatabase\App.xaml
-20477623703
-3-2078476038
-39-118679622
-18-2117922941
-MainWindow.xaml;Simple Styles.xaml;Views\CreateViews\GameCreate.xaml;Views\CreateViews\ManagerCreate.xaml;Views\CreateViews\StadiumCreate.xaml;Views\Header.xaml;Views\NavBar.xaml;Views\CreateViews\PlayerCreate.xaml;Views\SearchViews\GameSearch.xaml;Views\SearchViews\LocationSearch.xaml;Views\SearchViews\ManagerSearch.xaml;Views\SearchViews\NetworkSearch.xaml;Views\SearchViews\PlayerSearch.xaml;Views\SearchViews\StadiumSearch.xaml;Views\SearchViews\StatsView.xaml;Views\UpdateViews\GameUpdate.xaml;Views\UpdateViews\ManagerUpdate.xaml;Views\UpdateViews\PlayerUpdate.xaml;Views\SearchViews\TeamSearch.xaml;Views\UpdateViews\Stadium.xaml;
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\App.xaml
+22-213099193
+6-1226658466
+46920726412
+122-295945783
+MainWindow.xaml;Simple Styles.xaml;Views\CreateViews\GameCreate.xaml;Views\CreateViews\ManagerCreate.xaml;Views\CreateViews\StadiumCreate.xaml;Views\Header.xaml;Views\NavBar.xaml;Views\CreateViews\PlayerCreate.xaml;Views\PlayerView.xaml;Views\SearchViews\GameSearch.xaml;Views\SearchViews\LocationSearch.xaml;Views\SearchViews\ManagerSearch.xaml;Views\SearchViews\NetworkSearch.xaml;Views\SearchViews\PlayerSearch.xaml;Views\SearchViews\StadiumSearch.xaml;Views\SearchViews\StatsView.xaml;Views\UpdateViews\GameUpdate.xaml;Views\UpdateViews\ManagerUpdate.xaml;Views\UpdateViews\PlayerUpdate.xaml;Views\SearchViews\TeamSearch.xaml;Views\UpdateViews\PlayerUpdateAction.xaml;Views\UpdateViews\Stadium.xaml;
 
-True
+False
 

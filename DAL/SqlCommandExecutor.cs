@@ -9,7 +9,7 @@ namespace DataAccess
         private readonly string connectionString;
 
         public SqlCommandExecutor(string server, string database)
-           : this($"Server={server};Database={database};Integrated Security=SSPI;")
+           : this($"Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;")
         {
         }
 
@@ -25,7 +25,7 @@ namespace DataAccess
         {
             using (var transaction = new TransactionScope())
             {
-                using (var connection = new SqlConnection(connectionString))
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     using (var command = new SqlCommand(dataDelegate.ProcedureName, connection))
                     {
@@ -65,17 +65,22 @@ namespace DataAccess
 
         public T ExecuteReader<T>(IDataReaderDelegate<T> dataDelegate)
         {
-            using (var connection = new SqlConnection(connectionString))
+            using (var transaction = new TransactionScope())
             {
-                using (var command = new SqlCommand(dataDelegate.ProcedureName, connection))
+                using (var connection = new SqlConnection(connectionString))
                 {
-                    dataDelegate.PrepareCommand(command);
+                    using (var command = new SqlCommand(dataDelegate.ProcedureName, connection))
+                    {
+                        dataDelegate.PrepareCommand(command);
 
-                    connection.Open();
+                        connection.Open();
 
-                    var reader = command.ExecuteReader();
+                        var reader = command.ExecuteReader();
 
-                    return dataDelegate.Translate(command, new DataRowReader(reader));
+                        transaction.Complete();
+
+                        return dataDelegate.Translate(command, new DataRowReader(reader));
+                    }
                 }
             }
         }

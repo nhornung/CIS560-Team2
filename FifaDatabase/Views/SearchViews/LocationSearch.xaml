@@ -13,7 +13,7 @@
         <TextBox x:Name="NameSearchTextBox" HorizontalAlignment="Left" Height="37.261" Margin="3,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="405" FontFamily="Century Gothic" FontSize="18" Panel.ZIndex="3" Background="{x:Null}" VerticalContentAlignment="Center"/>
         <Border x:Name="TextBoxBorder" BorderThickness="1" HorizontalAlignment="Left" Height="36.464" Margin="3,117,0,0" VerticalAlignment="Top" Width="405" CornerRadius="10" Background="White"/>
         <TextBlock x:Name="AgeText_Copy4" HorizontalAlignment="Left" Height="25.567" Margin="93,86.433,0,0" TextWrapping="Wrap" Text="Seach Locations" VerticalAlignment="Top" Width="218" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
-        <Button Content="Submit" HorizontalAlignment="Left" Height="61.234" Margin="679.116,112,0,0" VerticalAlignment="Top" Width="110.884" Click="Button_Click"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Height="61.234" Margin="679.116,112,0,0" VerticalAlignment="Top" Width="110.884"/>
         <DataGrid Name="dataGRid" HorizontalAlignment="Left" Height="175" Margin="30,220,0,0" VerticalAlignment="Top" Width="745"/>
 
 

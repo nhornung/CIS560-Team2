@@ -9,6 +9,7 @@ namespace DataAccess
         {
         }
 
+
         public abstract T Translate(SqlCommand command, IDataRowReader reader);
     }
 }

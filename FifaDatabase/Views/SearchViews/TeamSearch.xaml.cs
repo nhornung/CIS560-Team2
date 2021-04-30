@@ -1,4 +1,5 @@
 ﻿using FifaDatabase.Models;
+using FifaDatabase.SqlRepos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,26 +22,32 @@ namespace FifaDatabase.Views
     /// </summary>
     public partial class TeamSearch : UserControl
     {
-        List<FifaDatabase.Models.TeamModel> teams = new List<FifaDatabase.Models.TeamModel>();
+        const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
+        private SqlTeamRepository repo;
+        //private TransactionScope transaction;
+
         public TeamSearch()
         {
             InitializeComponent();
+            repo = new SqlTeamRepository(connectionString);
             Fill();
+
         }
 
-        private void Fill()
+        private async void Fill()
         {
-            //DataAccess db = new DataAccess();
-            //teams = db.GetAllTeams();
-            TeamDataGrid.ItemsSource = teams;
+            try
+            {
+                TeamDataGrid.ItemsSource = repo.RetrieveTeams();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            // PlayerModel actual = repo.CreatePlayer("Johnny Bummers", new DateTime(2015, 12, 25), "FM", 177, 81);
+            // MessageBox.Show(actual.Name.ToString() + actual.Height.ToString() + actual.PlayerId.ToString());
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //DataAccess db = new DataAccess();
-
-            //teams = db.GetTeams(this.TeamSearchTextBox.Text);
-            TeamDataGrid.ItemsSource = teams;
 
         }
     }
