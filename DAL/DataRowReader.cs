@@ -42,9 +42,9 @@ namespace DataAccess
             return GetValue(name, reader.GetString);
         }
 
-        public DateTime GetDateTime(string name)
+        public string GetDateTimeString(string name)
         {
-            return GetValue(name, reader.GetDateTime);
+            return GetDateTimemValue(name, reader.GetDateTime);
         }
 
         public T GetValue<T>(string name)
@@ -56,6 +56,7 @@ namespace DataAccess
         {
             try
             {
+
                 return reader.IsDBNull(reader.GetOrdinal(name)) ? default(T) : getter(reader.GetOrdinal(name));
                 //Debug.WriteLine(name);
                 //Debug.WriteLine(name);
@@ -65,6 +66,29 @@ namespace DataAccess
                 Debug.WriteLine(name);
                 throw new ColumnNotFoundException(name, ex);
             }
+        }
+
+        public string GetDateTimemValue<T>(string name, Func<int, T> getter)
+        {
+            try
+            {
+                string date1 = reader[name].ToString();
+
+                return date1;
+
+                //Debug.WriteLine(name);
+                //Debug.WriteLine(name);
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                Debug.WriteLine(name);
+                throw new ColumnNotFoundException(name, ex);
+            }
+        }
+
+        DateTime IDataRowReader.GetDateTime(string name)
+        {
+            throw new NotImplementedException();
         }
     }
 }

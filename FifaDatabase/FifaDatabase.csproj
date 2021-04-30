@@ -74,6 +74,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Helper_Code\Common\Helper.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGamesDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\CreatePlayerDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\EditPlayerDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\GetPlayerByNameDataDelegate.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Helper_Code\DataDelegates\Teams\RetrieveTeamsDataDelegate.cs" />
     <Compile Include="Models\ActionsEnums.cs" />
     <Compile Include="Models\GameModel.cs" />
+    <Compile Include="Models\GameSearchModel.cs" />
     <Compile Include="Models\LocationModel.cs" />
     <Compile Include="Models\ManagerModel.cs" />
     <Compile Include="Models\NationsEnumcs.cs" />
@@ -90,8 +92,11 @@
     <Compile Include="Models\StadiumModel.cs" />
     <Compile Include="Models\TableEnums.cs" />
     <Compile Include="Models\TeamModel.cs" />
+    <Content Include="Procedures\Games\WorldCupSchema.RetrieveGames.sql" />
+    <Compile Include="SqlRepos\IGameRepository.cs" />
     <Compile Include="SqlRepos\IPlayerRepository.cs" />
     <Compile Include="SqlRepos\ITeamRepository.cs" />
+    <Compile Include="SqlRepos\SqlGameRepository.cs" />
     <Compile Include="SqlRepos\SqlPlayerRepository.cs" />
     <Compile Include="SqlRepos\SqlTeamRepository.cs" />
     <Compile Include="Views\CreateViews\GameCreate.xaml.cs">
@@ -102,6 +107,9 @@
     </Compile>
     <Compile Include="Views\CreateViews\StadiumCreate.xaml.cs">
       <DependentUpon>StadiumCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GameView.xaml.cs">
+      <DependentUpon>GameView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
@@ -182,6 +190,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\CreateViews\StadiumCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GameView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -293,17 +305,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Helper_Code\DataDelegates\Games\" />
     <Folder Include="Helper_Code\DataDelegates\Managers\" />
     <Folder Include="Helper_Code\DataDelegates\Networks\" />
     <Folder Include="Helper_Code\DataDelegates\Tournaments\" />
-    <Folder Include="Procedures\Games\" />
     <Folder Include="Procedures\Networks\" />
     <Folder Include="Procedures\Stadiums\" />
     <Folder Include="Procedures\Stats\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Sql\CreatePlayer.sql" />
     <Content Include="Procedures\Managres\WorldCupSchema.UpdateManager.sql" />
     <Content Include="Procedures\Players\WorldCupSchema.CreatePlayer.sql" />
     <Content Include="Procedures\Players\WorldCupSchema.GetPlayerByName.sql">

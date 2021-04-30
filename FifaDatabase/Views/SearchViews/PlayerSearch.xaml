@@ -31,7 +31,7 @@
         <TextBlock x:Name="AgeText_Copy" HorizontalAlignment="Left" Height="26" Margin="16,260,0,0" TextWrapping="Wrap" Text="Position" VerticalAlignment="Top" Width="84" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
         <TextBlock x:Name="AgeText_Copy4" HorizontalAlignment="Left" Height="26" Margin="7,89,0,0" TextWrapping="Wrap" Text="Search Player Name" VerticalAlignment="Top" Width="218" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
         <Button Content="Submit" HorizontalAlignment="Left" Height="61" Margin="289,240,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click"/>
-        <DataGrid Name="PlayerDataGrid" HorizontalAlignment="Left" Height="260" Margin="535,130,0,0" VerticalAlignment="Top" Width="445"/>
+        <DataGrid Name="PlayerDataGrid" HorizontalAlignment="Left" Height="260" Margin="535,130,0,0" VerticalAlignment="Top" Width="445" SelectionChanged="PlayerDataGrid_SelectionChanged"/>
         <DatePicker Name="AgeDatePicker" Margin="15,210,885,165"  Width="100"></DatePicker>
         <TextBlock x:Name="AgeText_Copy1" HorizontalAlignment="Left" Height="26" Margin="5,174,0,0" TextWrapping="Wrap" Text="Birth Date" VerticalAlignment="Top" Width="115" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
         <TextBlock x:Name="AgeText_Copy5" HorizontalAlignment="Left" Height="26" Margin="730,95,0,0" TextWrapping="Wrap" Text="Players" VerticalAlignment="Top" Width="80" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>

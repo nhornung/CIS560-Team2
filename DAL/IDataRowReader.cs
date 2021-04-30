@@ -10,5 +10,6 @@ namespace DataAccess
         int GetInt32(string name);
         string GetString(string name);
         T GetValue<T>(string name);
+        string GetDateTimeString(string name);
     }
 }
