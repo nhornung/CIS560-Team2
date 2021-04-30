@@ -46,9 +46,31 @@ namespace FifaDatabase.Views
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void PlayerDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+            PlayerModel player = (PlayerModel)TeamDataGrid.SelectedItem;
+            Border display = FindDisplayBorder();
+            display.DataContext = player;
+            display.Child = new PlayerView();
+            //string id = rowview.Row[1].ToString();
+            //Debug.WriteLine(id);
+        }
+
+        private Border FindDisplayBorder()
+        {
+            // Start climbing the tree from this node
+            DependencyObject parent = this;
+            do
+            {
+                // Get this node's parent
+                parent = LogicalTreeHelper.GetParent(parent);
+            }
+            // Invariant: there is a parent element, and it is not a ListSwitcher 
+            while (!(parent is null || parent is MainWindow));
+            MainWindow main = (MainWindow)parent;
+            Border displayBorder = (Border)main.DisplayBorder;
+            return displayBorder;
         }
     }
 }
