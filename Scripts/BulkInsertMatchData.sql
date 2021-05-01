@@ -6,8 +6,9 @@ FROM 'D:\pythonRepos\GetSoccerStats\match_data.csv'
 WITH
 (
     FIRSTROW = 2,
+	KEEPIDENTITY,
     FIELDTERMINATOR = ',',  --CSV field delimiter
-    ROWTERMINATOR = '0x0a' ,   --Use to shift the control to next row
+    ROWTERMINATOR = '\n' ,   --Use to shift the control to next row
     TABLOCK
 )
 GO

@@ -46,14 +46,23 @@
     <Reference Include="PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Linq" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime" />
     <Reference Include="System.Runtime.InteropServices" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Threading.Thread" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -74,6 +83,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Helper_Code\Common\Helper.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Games\GetPlayerStatsByIDDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGameStatsAwayTeamDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGameStatsHomeTeamDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGamesDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\CreatePlayerDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\EditPlayerDataDelegate.cs" />
@@ -83,6 +95,7 @@
     <Compile Include="Models\ActionsEnums.cs" />
     <Compile Include="Models\GameModel.cs" />
     <Compile Include="Models\GameSearchModel.cs" />
+    <Compile Include="Models\GameStatsModel.cs" />
     <Compile Include="Models\LocationModel.cs" />
     <Compile Include="Models\ManagerModel.cs" />
     <Compile Include="Models\NationsEnumcs.cs" />
@@ -92,11 +105,16 @@
     <Compile Include="Models\StadiumModel.cs" />
     <Compile Include="Models\TableEnums.cs" />
     <Compile Include="Models\TeamModel.cs" />
+    <Content Include="Procedures\Games\WorldCupSchema.GetPlayerStatsByID.sql" />
+    <Content Include="Procedures\Games\WorldCupSchema.RetrieveGameStatsAwayTeam.sql" />
     <Content Include="Procedures\Games\WorldCupSchema.RetrieveGames.sql" />
+    <Content Include="Procedures\Games\WorldCupSchema.RetrieveGameStatsHomeTeam.sql" />
     <Compile Include="SqlRepos\IGameRepository.cs" />
+    <Compile Include="SqlRepos\IGameStatsRepository.cs" />
     <Compile Include="SqlRepos\IPlayerRepository.cs" />
     <Compile Include="SqlRepos\ITeamRepository.cs" />
     <Compile Include="SqlRepos\SqlGameRepository.cs" />
+    <Compile Include="SqlRepos\SqlGameStatsRepository.cs" />
     <Compile Include="SqlRepos\SqlPlayerRepository.cs" />
     <Compile Include="SqlRepos\SqlTeamRepository.cs" />
     <Compile Include="Views\CreateViews\GameCreate.xaml.cs">
@@ -310,7 +328,6 @@
     <Folder Include="Helper_Code\DataDelegates\Tournaments\" />
     <Folder Include="Procedures\Networks\" />
     <Folder Include="Procedures\Stadiums\" />
-    <Folder Include="Procedures\Stats\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Procedures\Managres\WorldCupSchema.UpdateManager.sql" />

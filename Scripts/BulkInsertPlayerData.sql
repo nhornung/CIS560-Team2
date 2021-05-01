@@ -1,12 +1,17 @@
+
+--USE WideWorldImporters;
+
 --BULK INSERT WorldCupSchema.Players
---FROM 'C:\Users\rob\source\repos\FifaDatabase\scraped_webdata\GetSoccerStats\players.csv'
+--FROM 'D:\pythonRepos\GetSoccerStats\players.csv'
 --WITH
 --(
 --    FIRSTROW = 1,
+--	KEEPIDENTITY,
 --    FIELDTERMINATOR = ',',  --CSV field delimiter
 --    ROWTERMINATOR = '\n',   --Use to shift the control to next row
 --    TABLOCK
 --)
 --GO
---DELETE FROM WorldCupSchema.Players WHERE 1 != 2;
+--TRUNCATE TABLE WorldCupSchema.Players;
+--GO
 SELECT * FROM WorldCupSchema.Players;

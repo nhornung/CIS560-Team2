@@ -6,29 +6,29 @@
 
 
 CREATE TABLE WorldCupSchema.[Locations] (
-	LOCATIONID INT NOT NULL PRIMARY KEY,
-	COUNTRY NVARCHAR(32) NOT NULL
+	LocationID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	Country NVARCHAR(32) NOT NULL
 )
 
 CREATE TABLE WorldCupSchema.Teams (
-	TeamID INT NOT NULL PRIMARY KEY,
+	TeamID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	Nation NVARCHAR(32) NOT NULL UNIQUE
 )
 
 
 CREATE TABLE WorldCupSchema.Managers (
-	ManagerID INT NOT NULL PRIMARY KEY,
+	ManagerID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	Nationality NVARCHAR(32),
 	[Name] NVARCHAR(48)
 )
 
 CREATE TABLE WorldCupSchema.Stadiums (
-	StadiumID INT NOT NULL PRIMARY KEY,
+	StadiumID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[Name] NVARCHAR(64) NOT NULL,
-	Capacity SMALLINT NOT NULL
+	Capacity INT NOT NULL
 )
 CREATE TABLE WorldCupSchema.Tournaments (
-	TournamentID INT NOT NULL PRIMARY KEY,
+	TournamentID INT NOT NULL IDENTITY(0,4) PRIMARY KEY,
 	LocationID INT NOT NULL,
 	StartDate DATE NOT NULL UNIQUE,
 	EndDate DATE NOT NULL UNIQUE,
@@ -36,7 +36,7 @@ CREATE TABLE WorldCupSchema.Tournaments (
 	FOREIGN KEY(LocationID) REFERENCES WorldCupSchema.[Locations](LocationID),
 )
 CREATE TABLE WorldCupSchema.Games (
-	GameID INT NOT NULL PRIMARY KEY,
+	GameID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	StadiumID INT NOT NULL,
 	TournamentID INT NOT NULL,
 	TeamA INT NOT NULL,
@@ -52,11 +52,11 @@ CREATE TABLE WorldCupSchema.Games (
 )
 
 CREATE TABLE WorldCupSchema.[Stats] (
-	StatID INT NOT NULL PRIMARY KEY,
+	StatID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	Stat NVARCHAR(24) NOT NULL
 )
 CREATE TABLE WorldCupSchema.Networks (
-	NetworkID INT NOT NULL PRIMARY KEY,
+	NetworkID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	GameID INT NOT NULL,
 	Viewers INT NOT NULL
 
@@ -64,7 +64,7 @@ CREATE TABLE WorldCupSchema.Networks (
 )
 GO
 CREATE TABLE WorldCupSchema.Players (
-	PlayerID INT NOT NULL PRIMARY KEY,
+	PlayerID INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 	[Name] NVARCHAR(48) NOT NULL,
 	Age DATE NOT NULL,
 	Position NVARCHAR(12) NOT NULL,
@@ -72,16 +72,16 @@ CREATE TABLE WorldCupSchema.Players (
 	[Weight] INT
 );
 CREATE TABLE WorldCupSchema.PlayerGameStat (
-	GameId INT NOT NULL,
-	PlayerId INT NOT NULL,
-	StatId Int NOT NULL,
+	GameID INT NOT NULL,
+	PlayerID INT NOT NULL,
+	StatID Int NOT NULL,
+	GameTime INT NOT NULL
 
-	PRIMARY KEY(GameId, PlayerId, StatId),
+	PRIMARY KEY(GameId, PlayerId, StatId, GameTime),
 	FOREIGN KEY(GameID) REFERENCES WorldCupSchema.Games(GameID),
 	FOREIGN KEY(PlayerID) REFERENCES WorldCupSchema.Players(PlayerID),
 	FOREIGN KEY(StatId) REFERENCES WorldCupSchema.[Stats](StatId)
 )
-GO
 CREATE TABLE WorldCupSchema.TeamPlayer (
 	TeamID INT NOT NULL,
 	PlayerID INT NOT NULL,

@@ -19,7 +19,7 @@
 --INSERT INTO WorldCupSchema.[Locations](Country)
 --VALUES('Mexico')
 
---SELECT * FROM WorldCupSchema.[Locations]
+SELECT * FROM WorldCupSchema.[Locations]
 
 --SET IDENTITY_INSERT WorldCupSchema.Tournaments ON
 --INSERT INTO WorldCupSchema.Tournaments(TournamentID,LocationID, StartDate, EndDate)

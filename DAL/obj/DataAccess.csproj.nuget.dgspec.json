@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\robbo\\source\\repos\\CIS560-Team2\\DAL\\DataAccess.csproj": {}
+    "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\robbo\\source\\repos\\CIS560-Team2\\DAL\\DataAccess.csproj": {
+    "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\robbo\\source\\repos\\CIS560-Team2\\DAL\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\robbo\\source\\repos\\CIS560-Team2\\DAL\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\robbo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\robbo\\source\\repos\\CIS560-Team2\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\robbo\\Source\\Repos\\CIS560-Team2\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\robbo\\AppData\\Roaming\\NuGet\\NuGet.Config",

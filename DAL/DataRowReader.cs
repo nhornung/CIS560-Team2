@@ -88,7 +88,7 @@ namespace DataAccess
 
         DateTime IDataRowReader.GetDateTime(string name)
         {
-            throw new NotImplementedException();
+            return GetValue(name, reader.GetDateTime);
         }
     }
 }

@@ -17,6 +17,7 @@ using System.Windows.Navigation;
 using System.Diagnostics;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace FifaDatabase.Views.SearchViews
 {
@@ -91,13 +92,18 @@ namespace FifaDatabase.Views.SearchViews
 
         private void PlayerDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
-            PlayerModel player = (PlayerModel)PlayerDataGrid.SelectedItem;
-            Border display = FindDisplayBorder();
-            display.DataContext = player;
-            display.Child = new PlayerView();
-            //string id = rowview.Row[1].ToString();
-            //Debug.WriteLine(id);
+            try
+            {
+                var item = PlayerDataGrid.SelectedItem;
+                PlayerModel player = (PlayerModel)PlayerDataGrid.SelectedItem;
+                Border display = FindDisplayBorder();
+                display.DataContext = player;
+                display.Child = new PlayerView();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("You encountered a bug, good job");
+            }
         }
 
         private Border FindDisplayBorder()

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FifaDatabase.Models;
+using FifaDatabase.SqlRepos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,25 @@ namespace FifaDatabase.Views
     /// </summary>
     public partial class GameView : UserControl
     {
+        const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
+        private SqlGameStatsRepository repo;
+        //private TransactionScope transaction;
+
         public GameView()
         {
             InitializeComponent();
+            repo = new SqlGameStatsRepository(connectionString);
+            DataContextChanged += OnDataContextChanged;
+        }
+
+        private void OnDataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (this.DataContext != null)
+            {
+                var gamemodel = (GameSearchModel)this.DataContext;
+                PlayerDataGrid_Copy1.ItemsSource = repo.RetrieveAwayTeamStats(gamemodel.GameID);
+                PlayerDataGrid_Copy2.ItemsSource = repo.RetrieveHomeTeamStats(gamemodel.GameID);
+            }
         }
     }
 }

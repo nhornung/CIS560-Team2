@@ -8,7 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/games/worldcupschema.getplayerstatsbyid.sql")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/games/worldcupschema.retrievegamestatsawayteam.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/games/worldcupschema.retrievegames.sql")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/games/worldcupschema.retrievegamestatshometeam.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/managres/worldcupschema.updatemanager.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/players/worldcupschema.createplayer.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/players/worldcupschema.getplayerbyname.sql")]

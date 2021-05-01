@@ -1,7 +1,6 @@
 C:\Users\robbo\source\repos\CIS560-Team2\DAL\bin\Debug\net472\DataAccess.dll
 C:\Users\robbo\source\repos\CIS560-Team2\DAL\bin\Debug\net472\DataAccess.pdb
 C:\Users\robbo\source\repos\CIS560-Team2\DAL\bin\Debug\net472\System.Data.SqlClient.dll
-C:\Users\robbo\source\repos\CIS560-Team2\DAL\obj\Debug\net472\DataAccess.csprojAssemblyReference.cache
 C:\Users\robbo\source\repos\CIS560-Team2\DAL\obj\Debug\net472\DataAccess.AssemblyInfoInputs.cache
 C:\Users\robbo\source\repos\CIS560-Team2\DAL\obj\Debug\net472\DataAccess.AssemblyInfo.cs
 C:\Users\robbo\source\repos\CIS560-Team2\DAL\obj\Debug\net472\DataAccess.csproj.CoreCompileInputs.cache

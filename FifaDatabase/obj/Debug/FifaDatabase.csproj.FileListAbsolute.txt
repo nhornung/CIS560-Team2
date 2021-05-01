@@ -1,9 +1,18 @@
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\FifaDatabase.exe.config
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\FifaDatabase.exe
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\FifaDatabase.pdb
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\Dapper.dll
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\DataAccess.dll
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\Xceed.Wpf.Samples.SampleData.dll
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\DataAccess.pdb
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\Dapper.xml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase.csprojAssemblyReference.cache
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Simple Styles.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\MainWindow.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\GameCreate.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\ManagerCreate.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\StadiumCreate.g.cs
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\GameView.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\Header.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\NavBar.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\PlayerCreate.g.cs
@@ -15,6 +24,7 @@ C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchView
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchViews\PlayerSearch.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchViews\StadiumSearch.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchViews\StatsView.g.cs
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\TeamView.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\UpdateViews\GameUpdate.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\UpdateViews\ManagerUpdate.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\UpdateViews\PlayerUpdate.g.cs
@@ -26,19 +36,12 @@ C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase_Con
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase_MarkupCompile.cache
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase_MarkupCompile.lref
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\FifaDatabase.exe.config
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\FifaDatabase.exe
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\FifaDatabase.pdb
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\Dapper.dll
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\DataAccess.dll
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\Xceed.Wpf.Samples.SampleData.dll
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\DataAccess.pdb
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\bin\Debug\Dapper.xml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\App.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\MainWindow.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\GameCreate.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\ManagerCreate.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\StadiumCreate.baml
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\GameView.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\Header.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\NavBar.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\PlayerCreate.baml
@@ -50,6 +53,7 @@ C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchView
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchViews\PlayerSearch.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchViews\StadiumSearch.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchViews\StatsView.baml
+C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\TeamView.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\UpdateViews\GameUpdate.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\UpdateViews\ManagerUpdate.baml
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\UpdateViews\PlayerUpdate.baml
@@ -63,7 +67,3 @@ C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase.csp
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase.csproj.CopyComplete
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase.exe
 C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase.pdb
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\TeamView.g.cs
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\TeamView.baml
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\GameView.g.cs
-C:\Users\robbo\source\repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\GameView.baml

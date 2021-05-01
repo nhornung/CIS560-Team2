@@ -16,5 +16,6 @@
         <views:Header Grid.Row="0" x:Name="HeaderView" HorizontalAlignment="Center"/>
         <views:NavBar Grid.Row="1" x:Name="NavBarView" HorizontalAlignment="Center"/>
         <Border x:Name="DisplayBorder" Grid.Row="2"></Border>
+        
     </Grid>
 </Window>
