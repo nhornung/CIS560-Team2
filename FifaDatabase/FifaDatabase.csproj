@@ -198,6 +198,8 @@
     <Compile Include="Views\UpdateViews\Stadium.xaml.cs">
       <DependentUpon>Stadium.xaml</DependentUpon>
     </Compile>
+    <Content Include="Procedures\Reports\WorldCupSchema.DoTraitsMatterLosers.sql" />
+    <Content Include="Procedures\Reports\WorldCupSchema.DoTraitsMatterWinners.sql" />
     <Content Include="Procedures\Reports\WorldCupSchema.HotHand.sql" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
