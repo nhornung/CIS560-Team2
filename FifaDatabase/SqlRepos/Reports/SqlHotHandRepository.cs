@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using FifaDatabase.Helper_Code.DataDelegates.Reports;
+using FifaDatabase.Models;
 using DataAccess;
 using System;
-using FifaDatabase.Models;
-using FifaDatabase.SqlRepos;
-using FifaDatabase.Helper_Code.DataDelegates;
-using FifaDatabase.SqlRepos.Reports;
-using FifaDatabase.Helper_Code.DataDelegates.Reports;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace FifaDatabase.SqlRepos.Reports
 {
@@ -17,12 +17,10 @@ namespace FifaDatabase.SqlRepos.Reports
         {
             executor = new SqlCommandExecutor(connectionString);
         }
-
         public IReadOnlyList<HotHandModel> RetrieveHotHands()
         {
             var myDelegate = new HotHandDataDelegate();
             return executor.ExecuteReader(myDelegate);
         }
-
     }
 }

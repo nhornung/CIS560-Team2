@@ -35,6 +35,8 @@ namespace FifaDatabase.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Traits.IsChecked = false;
+            Hot.IsChecked = false;
             string Category = CategoryCombo.SelectionBoxItem.ToString();
             string Action = QueryTypeCombo.SelectionBoxItem.ToString();
             Debug.Write(Category);
@@ -164,6 +166,14 @@ namespace FifaDatabase.Views
         {
             Border displayBorder = FindDisplayBorder();
             displayBorder.Child = new HotHandView();
+            
+        }
+
+        private void Traits_Checked(object sender, RoutedEventArgs e)
+        {
+            Border displayBorder = FindDisplayBorder();
+            displayBorder.Child = new DoTraitsMatterView();
+            
         }
     }
 }

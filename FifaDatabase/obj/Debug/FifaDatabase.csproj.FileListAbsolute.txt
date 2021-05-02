@@ -69,3 +69,5 @@ C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase.exe
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase.pdb
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\HotHandView.g.cs
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\HotHandView.baml
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\DoTraitsMatterView.g.cs
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\DoTraitsMatterView.baml

@@ -92,8 +92,11 @@
     <Compile Include="Helper_Code\DataDelegates\Players\GetPlayerByNameDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\RetrievePlayersDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Reports\HotHandDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Reports\LoserAVGDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Reports\WinnerAVGDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Teams\RetrieveTeamsDataDelegate.cs" />
     <Compile Include="Models\ActionsEnums.cs" />
+    <Compile Include="Models\DoTraitsMatterModel.cs" />
     <Compile Include="Models\GameModel.cs" />
     <Compile Include="Models\GameSearchModel.cs" />
     <Compile Include="Models\GameStatsModel.cs" />
@@ -115,6 +118,8 @@
     <Compile Include="SqlRepos\IGameStatsRepository.cs" />
     <Compile Include="SqlRepos\IPlayerRepository.cs" />
     <Compile Include="SqlRepos\ITeamRepository.cs" />
+    <Compile Include="SqlRepos\Reports\IDoTraitsMatterRepopository.cs" />
+    <Compile Include="SqlRepos\Reports\SqlDoTraitsMatterRepository.cs" />
     <Compile Include="SqlRepos\Reports\IHotHandRepository.cs" />
     <Compile Include="SqlRepos\Reports\SqlHotHandRepository.cs" />
     <Compile Include="SqlRepos\SqlGameRepository.cs" />
@@ -144,6 +149,9 @@
     </Compile>
     <Compile Include="Views\PlayerView.xaml.cs">
       <DependentUpon>PlayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportViews\DoTraitsMatterView.xaml.cs">
+      <DependentUpon>DoTraitsMatterView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ReportViews\HotHandView.xaml.cs">
       <DependentUpon>HotHandView.xaml</DependentUpon>
@@ -236,6 +244,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PlayerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportViews\DoTraitsMatterView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

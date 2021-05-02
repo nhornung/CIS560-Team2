@@ -37,7 +37,7 @@ namespace FifaDatabase.Helper_Code.DataDelegates
             while (reader.Read())
             {
                 gameStats.Add(new GameStatsModel(
-                   reader.GetInt32("Goals"),
+                reader.GetInt32("Goals"),
                 reader.GetInt32("Saves"),
                 reader.GetInt32("Tackles"),
                 reader.GetInt32("Assists"),
