@@ -26,13 +26,13 @@ namespace FifaDatabase.Views
     public partial class PlayerUpdate : UserControl
     {
         const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
-        private SqlPlayerRepository repo;
+        private SqlHotHandRepository repo;
         //private TransactionScope transaction;
 
         public PlayerUpdate()
         {
             InitializeComponent();
-            repo = new SqlPlayerRepository(connectionString);
+            repo = new SqlHotHandRepository(connectionString);
             Fill();
 
         }

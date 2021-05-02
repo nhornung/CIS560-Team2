@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using FifaDatabase.Views.SearchViews;
 using FifaDatabase.Views.CreateViews;
 using FifaDatabase.Views.UpdateViews;
+using FifaDatabase.Views.ReportViews;
 
 namespace FifaDatabase.Views
 {
@@ -157,6 +158,12 @@ namespace FifaDatabase.Views
                     QueryTypeCombo.IsEnabled = false;
                 }
             }
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            Border displayBorder = FindDisplayBorder();
+            displayBorder.Child = new HotHandView();
         }
     }
 }

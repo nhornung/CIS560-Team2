@@ -91,11 +91,13 @@
     <Compile Include="Helper_Code\DataDelegates\Players\EditPlayerDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\GetPlayerByNameDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\RetrievePlayersDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Reports\HotHandDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Teams\RetrieveTeamsDataDelegate.cs" />
     <Compile Include="Models\ActionsEnums.cs" />
     <Compile Include="Models\GameModel.cs" />
     <Compile Include="Models\GameSearchModel.cs" />
     <Compile Include="Models\GameStatsModel.cs" />
+    <Compile Include="Models\HotHandModel.cs" />
     <Compile Include="Models\LocationModel.cs" />
     <Compile Include="Models\ManagerModel.cs" />
     <Compile Include="Models\NationsEnumcs.cs" />
@@ -113,6 +115,8 @@
     <Compile Include="SqlRepos\IGameStatsRepository.cs" />
     <Compile Include="SqlRepos\IPlayerRepository.cs" />
     <Compile Include="SqlRepos\ITeamRepository.cs" />
+    <Compile Include="SqlRepos\Reports\IHotHandRepository.cs" />
+    <Compile Include="SqlRepos\Reports\SqlHotHandRepository.cs" />
     <Compile Include="SqlRepos\SqlGameRepository.cs" />
     <Compile Include="SqlRepos\SqlGameStatsRepository.cs" />
     <Compile Include="SqlRepos\SqlPlayerRepository.cs" />
@@ -140,6 +144,9 @@
     </Compile>
     <Compile Include="Views\PlayerView.xaml.cs">
       <DependentUpon>PlayerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportViews\HotHandView.xaml.cs">
+      <DependentUpon>HotHandView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SearchViews\GameSearch.xaml.cs">
       <DependentUpon>GameSearch.xaml</DependentUpon>
@@ -183,6 +190,7 @@
     <Compile Include="Views\UpdateViews\Stadium.xaml.cs">
       <DependentUpon>Stadium.xaml</DependentUpon>
     </Compile>
+    <Content Include="Procedures\Reports\WorldCupSchema.HotHand.sql" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -228,6 +236,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PlayerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportViews\HotHandView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

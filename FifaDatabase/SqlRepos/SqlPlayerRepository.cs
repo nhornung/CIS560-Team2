@@ -7,11 +7,11 @@ using FifaDatabase.Helper_Code.DataDelegates;
 
 namespace FifaDatabase.SqlRepos
 {
-    public class SqlPlayerRepository : IPlayerRepository
+    public class SqlHotHandRepository : IPlayerRepository
     {
         private readonly SqlCommandExecutor executor;
 
-        public SqlPlayerRepository(string connectionString)
+        public SqlHotHandRepository(string connectionString)
         {
             executor = new SqlCommandExecutor(connectionString);
         }

@@ -1,4 +1,4 @@
-﻿C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\GeneratedInternalTypeHelper.g.cs
+﻿
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\App.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\MainWindow.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\CreateViews\GameCreate.xaml;;
@@ -23,4 +23,5 @@ FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\UpdateViews\PlayerU
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\SearchViews\TeamSearch.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\UpdateViews\PlayerUpdateAction.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\UpdateViews\Stadium.xaml;;
+FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\ReportViews\HotHandView.xaml;;
 

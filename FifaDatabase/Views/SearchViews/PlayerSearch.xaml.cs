@@ -28,13 +28,13 @@ namespace FifaDatabase.Views.SearchViews
     public partial class PlayerSearch : UserControl
     {
         const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
-        private SqlPlayerRepository repo;
+        private SqlHotHandRepository repo;
         //private TransactionScope transaction;
 
         public PlayerSearch()
         {
             InitializeComponent();
-            repo = new SqlPlayerRepository(connectionString);
+            repo = new SqlHotHandRepository(connectionString);
             Fill();
             
         }
