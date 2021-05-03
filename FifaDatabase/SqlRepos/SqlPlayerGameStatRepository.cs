@@ -18,10 +18,10 @@ namespace FifaDatabase.SqlRepos
             executor = new SqlCommandExecutor(connectionString);
         }
 
-        public IReadOnlyList<GameStatsModel> CreatePlayerGameStat(int gameID, int playerID, string stat, int gametime)
+        public PlayerGameStatModel CreatePlayerGameStat(int gameID, int playerID, string stat, int gametime)
         {
             var myDelegate = new CreatePlayerGameStatDataDelegate(gameID, playerID, stat, gametime);
-            return executor.ExecuteReader(myDelegate);
+            return executor.ExecuteNonQuery(myDelegate);
         }
     }
 }

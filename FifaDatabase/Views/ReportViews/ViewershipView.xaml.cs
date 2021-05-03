@@ -35,7 +35,6 @@ namespace FifaDatabase.Views.ReportViews
         {
             InitializeComponent();
             repo = new SqlTvViewershipRepository(connectionString);
-            teamRepo = new SqlTeamRepository(connectionString);
             var myEnum = StageEnums.Any;
             Combo.ItemsSource = myEnum.GetFriendlyNames();
             Combo.SelectedItem = myEnum.GetFriendlyName();
@@ -54,7 +53,10 @@ namespace FifaDatabase.Views.ReportViews
             dataGrid.ItemsSource = repo.GetViewershipByStageOrTeam(stage, start, end);
             Debug.WriteLine(dataGrid.ItemsSource);
             dataGrid.Visibility = Visibility.Visible;
+        }
 
+        private void Combo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
         }
     }

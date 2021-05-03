@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace FifaDatabase.SqlRepos
 {
-     public interface IPlayerGameStatRepository
+     public interface IPlayerGameStatsRepository
     {
-        IReadOnlyList<GameStatsModel> CreatePlayerGameStat(int gameID, int playerID, string stat, int gametime)
+        PlayerGameStatModel CreatePlayerGameStat(int gameID, int playerID, string stat, int gametime);
     }
 }

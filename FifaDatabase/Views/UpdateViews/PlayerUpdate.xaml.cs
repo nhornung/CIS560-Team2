@@ -94,7 +94,6 @@ namespace FifaDatabase.Views
             try
             {
                 this.DataContext = repo.EditPlayer(name, position, date, height, weight, playerID);
-                MessageBox.Show("Player Updated!");
             }
             catch (Exception ex)
             {

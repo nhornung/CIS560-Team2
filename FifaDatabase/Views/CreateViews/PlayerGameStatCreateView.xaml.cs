@@ -1,5 +1,6 @@
 ﻿using FifaDatabase.Models;
 using FifaDatabase.Models.Enums;
+using FifaDatabase.SqlRepos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,9 +23,14 @@ namespace FifaDatabase.Views.CreateViews
     /// </summary>
     public partial class PlayerGameStatCreateView : UserControl
     {
+        const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
+        private SqlPlayerGameStatRepository repo;
+        //private TransactionScope transaction;
+
         public PlayerGameStatCreateView()
         {
             InitializeComponent();
+            repo = new SqlPlayerGameStatRepository(connectionString);
             DataContextChanged += OnDataContextChanged;
         }
 
@@ -41,9 +47,14 @@ namespace FifaDatabase.Views.CreateViews
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            var playerModel = (PlayerModel)this.DataContext;
+            string stat = PositionBox.SelectedItem.ToString();
+            int playerID = (int)playerModel.PlayerId;
+            int gameID = Convert.ToInt32(NameTextBox.Text);
+            int gametime = (int)WeightSlider.Value;
             try
             {
-
+                var gamestat = repo.CreatePlayerGameStat(playerID, gameID, stat, gametime);
             }
             catch(Exception ex)
             {
