@@ -71,3 +71,5 @@ C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportView
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\HotHandView.baml
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\DoTraitsMatterView.g.cs
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\DoTraitsMatterView.baml
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\ViewershipView.g.cs
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\ViewershipView.baml

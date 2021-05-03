@@ -175,5 +175,11 @@ namespace FifaDatabase.Views
             displayBorder.Child = new DoTraitsMatterView();
             
         }
+
+        private void Views_Checked(object sender, RoutedEventArgs e)
+        {
+            Border displayBorder = FindDisplayBorder();
+            displayBorder.Child = new ViewershipView();
+        }
     }
 }

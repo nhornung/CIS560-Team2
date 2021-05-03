@@ -9,8 +9,8 @@
         Title="MainWindow" Height="700" Width="1000">
     <Grid Margin="0,0,0,-21">
         <Grid.RowDefinitions>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4.5*"/>
+            <RowDefinition Height="2.5*"/>
             <RowDefinition Height="10*"/>
         </Grid.RowDefinitions>
         <views:Header Grid.Row="0" x:Name="HeaderView" HorizontalAlignment="Center"/>

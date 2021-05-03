@@ -91,12 +91,14 @@
     <Compile Include="Helper_Code\DataDelegates\Players\EditPlayerDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\GetPlayerByNameDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\RetrievePlayersDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Reports\GetViewershipByStageOrTeamDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Reports\HotHandDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Reports\LoserAVGDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Reports\WinnerAVGDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Teams\RetrieveTeamsDataDelegate.cs" />
     <Compile Include="Models\ActionsEnums.cs" />
     <Compile Include="Models\DoTraitsMatterModel.cs" />
+    <Compile Include="Models\Enums\StageEnums.cs" />
     <Compile Include="Models\GameModel.cs" />
     <Compile Include="Models\GameSearchModel.cs" />
     <Compile Include="Models\GameStatsModel.cs" />
@@ -114,14 +116,17 @@
     <Content Include="Procedures\Games\WorldCupSchema.RetrieveGameStatsAwayTeam.sql" />
     <Content Include="Procedures\Games\WorldCupSchema.RetrieveGames.sql" />
     <Content Include="Procedures\Games\WorldCupSchema.RetrieveGameStatsHomeTeam.sql" />
+    <Compile Include="Models\ViewershipModel.cs" />
     <Compile Include="SqlRepos\IGameRepository.cs" />
     <Compile Include="SqlRepos\IGameStatsRepository.cs" />
     <Compile Include="SqlRepos\IPlayerRepository.cs" />
     <Compile Include="SqlRepos\ITeamRepository.cs" />
     <Compile Include="SqlRepos\Reports\IDoTraitsMatterRepopository.cs" />
+    <Compile Include="SqlRepos\Reports\ITvViewershipRepository.cs" />
     <Compile Include="SqlRepos\Reports\SqlDoTraitsMatterRepository.cs" />
     <Compile Include="SqlRepos\Reports\IHotHandRepository.cs" />
     <Compile Include="SqlRepos\Reports\SqlHotHandRepository.cs" />
+    <Compile Include="SqlRepos\Reports\SqlTvViewershipRepository.cs" />
     <Compile Include="SqlRepos\SqlGameRepository.cs" />
     <Compile Include="SqlRepos\SqlGameStatsRepository.cs" />
     <Compile Include="SqlRepos\SqlPlayerRepository.cs" />
@@ -155,6 +160,9 @@
     </Compile>
     <Compile Include="Views\ReportViews\HotHandView.xaml.cs">
       <DependentUpon>HotHandView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportViews\ViewershipView.xaml.cs">
+      <DependentUpon>ViewershipView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SearchViews\GameSearch.xaml.cs">
       <DependentUpon>GameSearch.xaml</DependentUpon>
@@ -200,7 +208,9 @@
     </Compile>
     <Content Include="Procedures\Reports\WorldCupSchema.DoTraitsMatterLosers.sql" />
     <Content Include="Procedures\Reports\WorldCupSchema.DoTraitsMatterWinners.sql" />
+    <Content Include="Procedures\Reports\WorldCupSchema.GetViewershipByStageOrTeam.sql" />
     <Content Include="Procedures\Reports\WorldCupSchema.HotHand.sql" />
+    <Content Include="Procedures\Teams\WorldCupSchema.RetrieveTeams.sql" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -254,6 +264,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ReportViews\HotHandView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ReportViews\ViewershipView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

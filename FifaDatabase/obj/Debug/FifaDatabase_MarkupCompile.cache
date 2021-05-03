@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\App.xaml
-26404669082
-12-823378726
-69-1711966188
+27-601514946
+14-42409932
+75-1146966863
 131-1461659266
-MainWindow.xaml;Simple Styles.xaml;Views\CreateViews\GameCreate.xaml;Views\CreateViews\ManagerCreate.xaml;Views\CreateViews\StadiumCreate.xaml;Views\GameView.xaml;Views\Header.xaml;Views\NavBar.xaml;Views\CreateViews\PlayerCreate.xaml;Views\PlayerView.xaml;Views\ReportViews\DoTraitsMatterView.xaml;Views\ReportViews\HotHandView.xaml;Views\SearchViews\GameSearch.xaml;Views\SearchViews\LocationSearch.xaml;Views\SearchViews\ManagerSearch.xaml;Views\SearchViews\NetworkSearch.xaml;Views\SearchViews\PlayerSearch.xaml;Views\SearchViews\StadiumSearch.xaml;Views\SearchViews\StatsView.xaml;Views\TeamView.xaml;Views\UpdateViews\GameUpdate.xaml;Views\UpdateViews\ManagerUpdate.xaml;Views\UpdateViews\PlayerUpdate.xaml;Views\SearchViews\TeamSearch.xaml;Views\UpdateViews\PlayerUpdateAction.xaml;Views\UpdateViews\Stadium.xaml;
+MainWindow.xaml;Simple Styles.xaml;Views\CreateViews\GameCreate.xaml;Views\CreateViews\ManagerCreate.xaml;Views\CreateViews\StadiumCreate.xaml;Views\GameView.xaml;Views\Header.xaml;Views\NavBar.xaml;Views\CreateViews\PlayerCreate.xaml;Views\PlayerView.xaml;Views\ReportViews\DoTraitsMatterView.xaml;Views\ReportViews\HotHandView.xaml;Views\ReportViews\ViewershipView.xaml;Views\SearchViews\GameSearch.xaml;Views\SearchViews\LocationSearch.xaml;Views\SearchViews\ManagerSearch.xaml;Views\SearchViews\NetworkSearch.xaml;Views\SearchViews\PlayerSearch.xaml;Views\SearchViews\StadiumSearch.xaml;Views\SearchViews\StatsView.xaml;Views\TeamView.xaml;Views\UpdateViews\GameUpdate.xaml;Views\UpdateViews\ManagerUpdate.xaml;Views\UpdateViews\PlayerUpdate.xaml;Views\SearchViews\TeamSearch.xaml;Views\UpdateViews\PlayerUpdateAction.xaml;Views\UpdateViews\Stadium.xaml;
 
 False
 

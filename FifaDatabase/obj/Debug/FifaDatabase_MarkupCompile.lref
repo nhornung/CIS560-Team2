@@ -9,6 +9,9 @@ FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\Header.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\NavBar.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\CreateViews\PlayerCreate.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\PlayerView.xaml;;
+FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\ReportViews\DoTraitsMatterView.xaml;;
+FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\ReportViews\HotHandView.xaml;;
+FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\ReportViews\ViewershipView.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\SearchViews\GameSearch.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\SearchViews\LocationSearch.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\SearchViews\ManagerSearch.xaml;;
@@ -23,6 +26,4 @@ FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\UpdateViews\PlayerU
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\SearchViews\TeamSearch.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\UpdateViews\PlayerUpdateAction.xaml;;
 FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\UpdateViews\Stadium.xaml;;
-FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\ReportViews\HotHandView.xaml;;
-FC:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\Views\ReportViews\DoTraitsMatterView.xaml;;
 

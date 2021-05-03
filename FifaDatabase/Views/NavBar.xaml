@@ -52,7 +52,7 @@
             <RadioButton x:Name="Traits" GroupName="report" Checked="Traits_Checked">Do Traits Matter 2010?</RadioButton>
         </StackPanel>
         <StackPanel Orientation="Vertical" Panel.ZIndex="10" Grid.ColumnSpan="3" Margin="195,12,185,4.6" Grid.Column="2" Grid.RowSpan="2">
-            <RadioButton GroupName="report">Most Popular Games 2010</RadioButton>
+            <RadioButton x:Name="Views" GroupName="report" Checked="Views_Checked">Game Ratings</RadioButton>
             <RadioButton GroupName="report">Shortest Players To Score Since 2000</RadioButton>
         </StackPanel>
 

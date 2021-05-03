@@ -56,8 +56,11 @@ namespace DataAccess
         {
             try
             {
-
-                return reader.IsDBNull(reader.GetOrdinal(name)) ? default(T) : getter(reader.GetOrdinal(name));
+                if (reader.IsDBNull(reader.GetOrdinal(name)))
+                {
+                    return default(T);
+                }
+                return getter(reader.GetOrdinal(name));
                 //Debug.WriteLine(name);
                 //Debug.WriteLine(name);
             }

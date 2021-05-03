@@ -38,7 +38,7 @@ namespace FifaDatabase.Views
             if (this.DataContext != null)
             {
                 var gamemodel = (GameSearchModel)this.DataContext;
-                PlayerDataGrid_Copy1.ItemsSource = repo.RetrieveAwayTeamStats(gamemodel.GameID);
+                PlayerDataGrid_Copy.ItemsSource = repo.RetrieveAwayTeamStats(gamemodel.GameID);
                 PlayerDataGrid_Copy2.ItemsSource = repo.RetrieveHomeTeamStats(gamemodel.GameID);
             }
         }
