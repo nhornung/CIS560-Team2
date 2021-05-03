@@ -7,11 +7,11 @@ using FifaDatabase.Helper_Code.DataDelegates;
 
 namespace FifaDatabase.SqlRepos
 {
-    public class SqlHotHandRepository : IPlayerRepository
+    public class SqlPlayerRepository : IPlayerRepository
     {
         private readonly SqlCommandExecutor executor;
 
-        public SqlHotHandRepository(string connectionString)
+        public SqlPlayerRepository(string connectionString)
         {
             executor = new SqlCommandExecutor(connectionString);
         }
@@ -45,7 +45,7 @@ namespace FifaDatabase.SqlRepos
             return executor.ExecuteReader(myDelegate);
         }
 
-        public PlayerModel EditPlayer(string name, string age, string position, int height, int weight)
+        public PlayerModel EditPlayer(string name, string age, string position, int height, int weight, int playerID)
         {
             if (string.IsNullOrEmpty(name))
                 throw new ArgumentException("The parameter cannot be null or empty.", nameof(name));
@@ -64,13 +64,19 @@ namespace FifaDatabase.SqlRepos
             if (weight > 100)
                 throw new ArgumentException("Input is too large", nameof(height));
 
-            var myDelegate = new CreatePlayerDataDelegate(name, age, position, height, weight);
+            var myDelegate = new EditPlayerDataDelegate(name, age, position, height, weight, playerID);
             return executor.ExecuteNonQuery(myDelegate);
         }
 
         public IReadOnlyList<PlayerModel> GetPlayerByName(string name)
         {
             var myDelegate = new GetPlayerByNameDataDelegate(name);
+            return executor.ExecuteReader(myDelegate);
+        }
+
+        public IReadOnlyList<PlayerModel> GetPlayerByEveryTrait(string name, string position, string date, int height, int weight)
+        {
+            var myDelegate = new GetPlayerByEveryTraitDataDelegate(name, position, date, height, weight);
             return executor.ExecuteReader(myDelegate);
         }
 

@@ -8,7 +8,10 @@ SELECT G.GameID AS GameID,
 		TeamB.Nation AS [AwayTeam],
 		G.GameDate AS [GameDate],
 		G.TournamentStage AS [TournamentStage],
-		G.Attendance
+		G.Attendance,
+		G.TeamA,
+		G.TeamB,
+		G.Winner
 FROM WorldCupSchema.Games G
 Join WorldCupSchema.Stadiums S ON S.StadiumID = G.StadiumID
 Join WorldCupSchema.Tournaments T ON T.TournamentID = G.TournamentID

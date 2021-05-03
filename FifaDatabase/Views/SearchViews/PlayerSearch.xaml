@@ -21,7 +21,7 @@
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="1000" CornerRadius="18" Background="#FFCF8484">
             <TextBlock Margin="180,18,179,19.433" TextWrapping="Wrap" Text="Players" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"/>
         </Border>
-        <TextBox x:Name="NameSearchTextBox" HorizontalAlignment="Left" Height="37.261" Margin="3,117,0,0" TextWrapping="Wrap" Text="Search Player Name" VerticalAlignment="Top" Width="405" FontFamily="Century Gothic" FontSize="18" Panel.ZIndex="3" Background="{x:Null}" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="NameSearchTextBox" HorizontalAlignment="Left" Height="37.261" Margin="3,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="405" FontFamily="Century Gothic" FontSize="18" Panel.ZIndex="3" Background="{x:Null}" VerticalContentAlignment="Center" TextChanged="NameSearchTextBox_TextChanged"/>
         <Border x:Name="TextBoxBorder" BorderThickness="1" HorizontalAlignment="Left" Height="36.464" Margin="3,117,0,0" VerticalAlignment="Top" Width="405" CornerRadius="10" Background="White"/>
         <Slider x:Name="WeightSlider" AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="0" HorizontalAlignment="Left" Height="23" Margin="137,212,0,0" VerticalAlignment="Top" Width="113" Foreground="#FF515151" BorderBrush="#FF8AD4FF" SmallChange="1" Maximum="100" Minimum="55" LargeChange="5" Cursor="Hand" FontSize="23" Value="150" IsEnabled="True"/>
         <TextBlock x:Name="AgeText_Copy2" HorizontalAlignment="Left" Height="26" Margin="160,175,0,0" TextWrapping="Wrap" Text="Weight" VerticalAlignment="Top" Width="78" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
@@ -35,6 +35,7 @@
         <DatePicker Name="AgeDatePicker" Margin="15,210,885,165"  Width="100"></DatePicker>
         <TextBlock x:Name="AgeText_Copy1" HorizontalAlignment="Left" Height="26" Margin="5,174,0,0" TextWrapping="Wrap" Text="Birth Date" VerticalAlignment="Top" Width="115" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
         <TextBlock x:Name="AgeText_Copy5" HorizontalAlignment="Left" Height="26" Margin="730,95,0,0" TextWrapping="Wrap" Text="Players" VerticalAlignment="Top" Width="80" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
+        <TextBlock x:Name="FaintLetteringText" HorizontalAlignment="Left" Height="26" Margin="10,124,0,0" TextWrapping="Wrap" Text="Enter Name..." VerticalAlignment="Top" Width="218" FontFamily="Century Gothic" Foreground="LightGray" TextAlignment="Left" FontSize="20"/>
 
 
 

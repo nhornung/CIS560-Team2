@@ -11,9 +11,9 @@
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="1000" CornerRadius="18" Background="#FFCF8484">
             <TextBlock Margin="135.2,17.2,119.2,20.6" TextWrapping="Wrap" Text="TV Viewership" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"/>
         </Border>
-        <Border Margin="55,115,580,20" Background="DarkGray" Panel.ZIndex="-2"/>
+        <Border Margin="55,115,580,45" Background="DarkGray" Panel.ZIndex="-2"/>
 
-        <TextBlock Panel.ZIndex="12" Margin="60,120,760,255" TextWrapping="Wrap" Text="Tournament Stage" Foreground="White" FontFamily="Century Gothic" FontSize="20" TextAlignment="Center"/>
+        <TextBlock Panel.ZIndex="12" Margin="60,120,760,255" TextWrapping="Wrap" Text="Stage" Foreground="White" FontFamily="Century Gothic" FontSize="20" TextAlignment="Center"/>
         <Border Margin="245,230,605,65" Background="#FFCF8484" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
@@ -24,7 +24,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border Margin="600,115,105,20" Background="DarkGray" Panel.ZIndex="-5"/>
+        <Border Margin="600,115,105,45" Background="DarkGray" Panel.ZIndex="-5"/>
         <DataGrid Name="dataGrid" HorizontalAlignment="Center" Height="250" Margin="630,120,130,0" VerticalAlignment="Top" Width="240" Panel.ZIndex="10" Visibility="Hidden"/>
         <ComboBox  x:Name="Combo" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="110" FontFamily="Century Gothic" Text="Action" VerticalContentAlignment="Center" Margin="90,155,0,0"/>
         <Button Content="Submit" HorizontalAlignment="Left" Height="33" Margin="266,152,0,0" VerticalAlignment="Top" Width="109" Click='Button_Click'/>

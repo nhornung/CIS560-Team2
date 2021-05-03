@@ -40,6 +40,16 @@ namespace FifaDatabase.Views
                 var gamemodel = (GameSearchModel)this.DataContext;
                 PlayerDataGrid_Copy.ItemsSource = repo.RetrieveAwayTeamStats(gamemodel.GameID);
                 PlayerDataGrid_Copy2.ItemsSource = repo.RetrieveHomeTeamStats(gamemodel.GameID);
+                if(gamemodel.Winner == gamemodel.TeamA)
+                {
+                    HomeTeamWinner.Visibility = Visibility.Visible;
+                    HomeTeamWinnerBorder.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    AwayTeamWinner.Visibility = Visibility.Visible;
+                    AwayTeamWinnerBorder.Visibility = Visibility.Visible;
+                }
             }
         }
     }

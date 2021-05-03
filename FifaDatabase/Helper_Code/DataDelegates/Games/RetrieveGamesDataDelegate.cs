@@ -34,9 +34,13 @@ namespace FifaDatabase.Helper_Code.DataDelegates
                     reader.GetInt32("TournamentYear"),
                     reader.GetString("HomeTeam"),
                     reader.GetString("AwayTeam"),
-                    reader.GetDateTimeString("GameDate"),
+                    reader.GetDateTime("GameDate"),
                     reader.GetString("TournamentStage"),
-                    reader.GetInt32("Attendance"))) ;
+                    reader.GetInt32("Attendance"),
+                    reader.GetInt32("TeamA"),
+                    reader.GetInt32("TeamB"),
+                    reader.GetInt32("Winner")
+                    )) ;
              }
             return games;
         }

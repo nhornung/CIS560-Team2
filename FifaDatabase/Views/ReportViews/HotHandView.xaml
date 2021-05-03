@@ -12,7 +12,7 @@
             <TextBlock Margin="180,18,179,19.433" TextWrapping="Wrap" Text="Hot Hand 2010" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"/>
         </Border>
         <DataGrid Name="PlayerDataGrid" HorizontalAlignment="Center" Height="250" Margin="0,120,0,0" VerticalAlignment="Top" Width="Auto"/>
-        <Border Background="DarkGray" Panel.ZIndex="-1" Margin="380,100,380,15"/>
+        <Border Background="DarkGray" Panel.ZIndex="-1" Margin="380,100,380,40"/>
     </Grid>
 
 </UserControl>

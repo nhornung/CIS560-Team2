@@ -28,13 +28,14 @@ namespace FifaDatabase.Views.SearchViews
     public partial class PlayerSearch : UserControl
     {
         const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
-        private SqlHotHandRepository repo;
+        private SqlPlayerRepository repo;
         //private TransactionScope transaction;
 
         public PlayerSearch()
         {
             InitializeComponent();
-            repo = new SqlHotHandRepository(connectionString);
+            repo = new SqlPlayerRepository(connectionString);
+            PositionBox.SelectedItem = PositionEnum.Any;
             Fill();
             
         }
@@ -58,31 +59,22 @@ namespace FifaDatabase.Views.SearchViews
 
         private void DynamicSearch()
         {
-            string command = "";
-            if (NameSearchTextBox.Text != "Search Player Name" && NameSearchTextBox.Text != "" && NameSearchTextBox.Text != null)
+            string name = NameSearchTextBox.Text;
+            string position = "";
+            if (PositionBox.SelectedItem != null && PositionBox.SelectedItem.ToString() != "Any")
             {
-                string[] words = NameSearchTextBox.Text.Split(' ');
-                foreach (string word in words)
-                {
-                    command += $" AND Name LIKE '%{word}%' ";
-                }
+                position = PositionBox.SelectedItem.ToString();
             }
-            if (PositionBox.SelectedItem != null)
-            {
-                command += $" AND Position = '{PositionBox.SelectedItem.ToString()}' ";
-            }
-
+            string date = "1/1/2050";
             if (AgeDatePicker.SelectedDate != null)
             {
-                command += $"AND Age > '{AgeDatePicker.SelectedDate.ToString()}' ";
+                date = AgeDatePicker.SelectedDate.ToString();
             }
+            int height = (int)HeightSlider.Value;
+            int weight = (int)WeightSlider.Value;
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;");
-                SqlCommand cmd = new SqlCommand($"SELECT * FROM WorldCupSchema.Players WHERE Height <= {HeightSlider.Value.ToString()} AND Weight <= {WeightSlider.Value.ToString()}" + command, conn);
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                PlayerDataGrid.ItemsSource = reader;
+                PlayerDataGrid.ItemsSource = repo.GetPlayerByEveryTrait(name, position, date, height, weight);
             }
             catch (Exception ex)
             {
@@ -120,6 +112,11 @@ namespace FifaDatabase.Views.SearchViews
             MainWindow main = (MainWindow)parent;
             Border displayBorder = (Border)main.DisplayBorder;
             return displayBorder;
+        }
+
+        private void NameSearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            FaintLetteringText.Visibility = Visibility.Hidden;
         }
     }
 }

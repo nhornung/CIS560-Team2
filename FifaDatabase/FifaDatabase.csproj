@@ -87,9 +87,11 @@
     <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGameStatsAwayTeamDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGameStatsHomeTeamDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGamesDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\PlayerGameStat\CreatePlayerGameStatDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\CreatePlayerDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\EditPlayerDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\GetPlayerByNameDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Players\RetrievePlayerByEveryTraitDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\RetrievePlayersDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Reports\GetViewershipByStageOrTeamDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Reports\HotHandDataDelegate.cs" />
@@ -99,6 +101,7 @@
     <Compile Include="Models\ActionsEnums.cs" />
     <Compile Include="Models\DoTraitsMatterModel.cs" />
     <Compile Include="Models\Enums\StageEnums.cs" />
+    <Compile Include="Models\Enums\StatsEnum.cs" />
     <Compile Include="Models\GameModel.cs" />
     <Compile Include="Models\GameSearchModel.cs" />
     <Compile Include="Models\GameStatsModel.cs" />
@@ -107,6 +110,7 @@
     <Compile Include="Models\ManagerModel.cs" />
     <Compile Include="Models\NationsEnumcs.cs" />
     <Compile Include="Models\NetworkModel.cs" />
+    <Compile Include="Models\PlayerGameStatModel.cs" />
     <Compile Include="Models\PlayerModel.cs" />
     <Compile Include="Models\PositionEnum.cs" />
     <Compile Include="Models\StadiumModel.cs" />
@@ -119,9 +123,11 @@
     <Compile Include="Models\ViewershipModel.cs" />
     <Compile Include="SqlRepos\IGameRepository.cs" />
     <Compile Include="SqlRepos\IGameStatsRepository.cs" />
+    <Compile Include="SqlRepos\IPlayerGameStatRepository.cs" />
     <Compile Include="SqlRepos\IPlayerRepository.cs" />
     <Compile Include="SqlRepos\ITeamRepository.cs" />
     <Compile Include="SqlRepos\Reports\IDoTraitsMatterRepopository.cs" />
+    <Compile Include="SqlRepos\Reports\IGameStatRepository.cs" />
     <Compile Include="SqlRepos\Reports\ITvViewershipRepository.cs" />
     <Compile Include="SqlRepos\Reports\SqlDoTraitsMatterRepository.cs" />
     <Compile Include="SqlRepos\Reports\IHotHandRepository.cs" />
@@ -129,6 +135,7 @@
     <Compile Include="SqlRepos\Reports\SqlTvViewershipRepository.cs" />
     <Compile Include="SqlRepos\SqlGameRepository.cs" />
     <Compile Include="SqlRepos\SqlGameStatsRepository.cs" />
+    <Compile Include="SqlRepos\SqlPlayerGameStatRepository.cs" />
     <Compile Include="SqlRepos\SqlPlayerRepository.cs" />
     <Compile Include="SqlRepos\SqlTeamRepository.cs" />
     <Compile Include="Views\CreateViews\GameCreate.xaml.cs">
@@ -136,6 +143,9 @@
     </Compile>
     <Compile Include="Views\CreateViews\ManagerCreate.xaml.cs">
       <DependentUpon>ManagerCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateViews\PlayerGameStatCreateView.xaml.cs">
+      <DependentUpon>PlayerGameStatCreateView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CreateViews\StadiumCreate.xaml.cs">
       <DependentUpon>StadiumCreate.xaml</DependentUpon>
@@ -206,10 +216,14 @@
     <Compile Include="Views\UpdateViews\Stadium.xaml.cs">
       <DependentUpon>Stadium.xaml</DependentUpon>
     </Compile>
+    <Content Include="Procedures\Players\WorldCupSchema.GetPlayerByEveryTrait.sql">
+      <Generator>MSBuild:Compile</Generator>
+    </Content>
     <Content Include="Procedures\Reports\WorldCupSchema.DoTraitsMatterLosers.sql" />
     <Content Include="Procedures\Reports\WorldCupSchema.DoTraitsMatterWinners.sql" />
     <Content Include="Procedures\Reports\WorldCupSchema.GetViewershipByStageOrTeam.sql" />
     <Content Include="Procedures\Reports\WorldCupSchema.HotHand.sql" />
+    <Content Include="Procedures\Stats\WorldCupChema.CreatePlayerGameStat.sql" />
     <Content Include="Procedures\Teams\WorldCupSchema.RetrieveTeams.sql" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -232,6 +246,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\CreateViews\ManagerCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CreateViews\PlayerGameStatCreateView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

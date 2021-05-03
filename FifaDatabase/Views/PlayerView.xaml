@@ -7,7 +7,7 @@
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              xmlns:local="clr-namespace:FifaDatabase.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="1000">
+             d:DesignHeight="400" d:DesignWidth="1000">
     <UserControl.Resources>
         <ObjectDataProvider x:Key="positionEnums" MethodName="GetValues" ObjectType="{x:Type system:Enum}">
             <ObjectDataProvider.MethodParameters>
@@ -16,26 +16,29 @@
         </ObjectDataProvider>
     </UserControl.Resources>
 
-    <Grid Background="#FFB4B4B4" RenderTransformOrigin="0.512,0.434">
+    <Grid Background="LightGray" RenderTransformOrigin="0.512,0.434">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
+        <Border Margin="10,95,13.6,10" Background="DarkGray"/>
         <Border Grid.ColumnSpan="2" BorderThickness="1" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="995" CornerRadius="18" Background="#FFCF8484">
             <TextBlock Margin="180,18,179,19.433" TextWrapping="Wrap" Text="Players" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"/>
         </Border>
-        <TextBlock x:Name="AgeText_Copy2" HorizontalAlignment="Left" Height="26" Margin="20,240,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Width="85" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
-        <TextBlock x:Name="AgeText_Copy3" HorizontalAlignment="Left" Height="27" Margin="25,300,0,0" TextWrapping="Wrap" Text="Height:" VerticalAlignment="Top" Width="75" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
-        <TextBlock x:Name="AgeText_Copy" HorizontalAlignment="Left" Height="26" Margin="27,180,0,0" TextWrapping="Wrap" Text="Position:" VerticalAlignment="Top" Width="88" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
-        <TextBlock x:Name="AgeText_Copy4" HorizontalAlignment="Left" Height="26" Margin="27,109,0,0" TextWrapping="Wrap" Text="Player Name" VerticalAlignment="Top" Width="133" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
-        <TextBlock x:Name="AgeText_Copy1" HorizontalAlignment="Left" Height="27" Margin="25,353,0,0" TextWrapping="Wrap" Text="Age:" VerticalAlignment="Top" Width="75" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
-        <DataGrid x:Name="PlayerDataGrid_Copy" HorizontalAlignment="Left" Height="310" Margin="58.6,120,0,0" VerticalAlignment="Top" Width="410" Grid.Column="1"/>
-        <TextBlock x:Name="AgeText_Copy6" HorizontalAlignment="Left" Height="26" Margin="190.6,90,0,0" TextWrapping="Wrap" Text="Game History" VerticalAlignment="Top" Width="133" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" Grid.Column="1"/>
-        <TextBlock x:Name="AgeText_Copy5" HorizontalAlignment="Left" Height="26" Margin="35,144,0,0" TextWrapping="Wrap" Text="{Binding Path=Name}" VerticalAlignment="Top" Width="133" FontFamily="Century Gothic" Foreground="White" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
-        <TextBlock x:Name="AgeText_Copy7" HorizontalAlignment="Left" Height="26" Margin="25,210,0,0" TextWrapping="Wrap" Text="{Binding Path=Position}" VerticalAlignment="Top" Width="133" FontFamily="Century Gothic" Foreground="White" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
-        <TextBlock x:Name="AgeText_Copy8" HorizontalAlignment="Left" Height="26" Margin="25,269,0,0" TextWrapping="Wrap" Text="{Binding Path=Weight}" VerticalAlignment="Top" Width="133" FontFamily="Century Gothic" Foreground="White" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
-        <TextBlock x:Name="AgeText_Copy9" HorizontalAlignment="Left" Height="26" Margin="25,325,0,0" TextWrapping="Wrap" Text="{Binding Path=Height}" VerticalAlignment="Top" Width="133" FontFamily="Century Gothic" Foreground="White" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
-        <TextBlock x:Name="AgeText_Copy10" HorizontalAlignment="Left" Height="26" Margin="32,380,0,0" TextWrapping="Wrap" Text="{Binding Path=Age}" VerticalAlignment="Top" Width="133" FontFamily="Century Gothic" Foreground="White" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
+        <TextBlock x:Name="AgeText_Copy2" HorizontalAlignment="Left" Height="26" Margin="20,225,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Width="85" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Left" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
+        <TextBlock x:Name="AgeText_Copy3" HorizontalAlignment="Left" Height="27" Margin="20,285,0,0" TextWrapping="Wrap" Text="Height:" VerticalAlignment="Top" Width="75" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Left" FontSize="20"/>
+        <TextBlock x:Name="AgeText_Copy" HorizontalAlignment="Left" Height="26" Margin="20,165,0,0" TextWrapping="Wrap" Text="Position:" VerticalAlignment="Top" Width="88" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Left" FontSize="20"/>
+        <TextBlock x:Name="AgeText_Copy4" HorizontalAlignment="Left" Height="26" Margin="20,105,0,0" TextWrapping="Wrap" Text="Player Name" VerticalAlignment="Top" Width="208" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Left" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
+        <TextBlock x:Name="AgeText_Copy1" HorizontalAlignment="Left" Height="27" Margin="20,345,0,0" TextWrapping="Wrap" Text="Age:" VerticalAlignment="Top" Width="75" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Left" FontSize="20"/>
+        <DataGrid x:Name="PlayerDataGrid_Copy" HorizontalAlignment="Left" Height="250" Margin="81.4,120,0,0" VerticalAlignment="Top" Width="410" Grid.Column="1"/>
+        <TextBlock x:Name="AgeText_Copy6" HorizontalAlignment="Left" Height="26" Margin="203.4,89,0,0" TextWrapping="Wrap" Text="Game History" VerticalAlignment="Top" Width="133" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Left" FontSize="20" Grid.Column="1"/>
+        <TextBlock x:Name="AgeText_Copy5" HorizontalAlignment="Left" Height="26" Margin="20,135,0,0" TextWrapping="Wrap" Text="{Binding Path=Name}" VerticalAlignment="Top" Width="250" FontFamily="Century Gothic" Foreground="White" TextAlignment="Left" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
+        <TextBlock x:Name="AgeText_Copy7" HorizontalAlignment="Left" Height="26" Margin="20,195,0,0" TextWrapping="Wrap" Text="{Binding Path=Position}" VerticalAlignment="Top" Width="250" FontFamily="Century Gothic" Foreground="White" TextAlignment="Left" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
+        <TextBlock x:Name="AgeText_Copy8" HorizontalAlignment="Left" Height="26" Margin="20,255,0,0" TextWrapping="Wrap" Text="{Binding Path=Weight}" VerticalAlignment="Top" Width="240" FontFamily="Century Gothic" Foreground="White" TextAlignment="Left" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
+        <TextBlock x:Name="AgeText_Copy9" HorizontalAlignment="Left" Height="26" Margin="20,315,0,0" TextWrapping="Wrap" Text="{Binding Path=Height}" VerticalAlignment="Top" Width="230" FontFamily="Century Gothic" Foreground="White" TextAlignment="Left" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
+        <TextBlock x:Name="AgeText_Copy10" HorizontalAlignment="Left" Height="26" Margin="20,375,0,0" TextWrapping="Wrap" Text="{Binding Path=Age}" VerticalAlignment="Top" Width="235" FontFamily="Century Gothic" Foreground="White" TextAlignment="Left" FontSize="20" RenderTransformOrigin="0.206,0.615"/>
+        <Button x:Name="Stat" Margin="520,125,20,250" Grid.Column="1" Content="Add Stat" Click="Stat_Click"/>
+        <Button x:Name="Modify" Margin="521.4,230,20,145" Grid.Column="1" Content="Modify" Click="Modify_Click"/>
     </Grid>
 
 </UserControl>

@@ -26,6 +26,8 @@ namespace FifaDatabase.SqlRepos
         PlayerModel CreatePlayer(string name, string age, string position, int height, int weight);
 
         IReadOnlyList<PlayerModel> GetPlayerByName(string name);
+
+        IReadOnlyList<PlayerModel> GetPlayerByEveryTrait(string name, string age, string position, int height, int weight);
     }
 }
 

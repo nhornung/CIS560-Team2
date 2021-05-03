@@ -26,39 +26,36 @@ namespace FifaDatabase.Views
     public partial class PlayerUpdate : UserControl
     {
         const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
-        private SqlHotHandRepository repo;
+        private SqlPlayerRepository repo;
         //private TransactionScope transaction;
 
         public PlayerUpdate()
         {
             InitializeComponent();
-            repo = new SqlHotHandRepository(connectionString);
-            Fill();
-
+            repo = new SqlPlayerRepository(connectionString);
+            DataContextChanged += OnDataContextChanged;
         }
 
-        private async void Fill()
-        {
-            try
-            {
-                PlayerDataGrid.ItemsSource = repo.RetrievePlayers();
-            }
-            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
-            // PlayerModel actual = repo.CreatePlayer("Johnny Bummers", new DateTime(2015, 12, 25), "FM", 177, 81);
-            // MessageBox.Show(actual.Name.ToString() + actual.Height.ToString() + actual.PlayerId.ToString());
-
-        }
-
-        private void PlayerDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void OnDataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             
-            PlayerModel player = (PlayerModel)PlayerDataGrid.SelectedItem;
-            //Debug.WriteLine(player.Name);
-            Border display = FindDisplayBorder();
-            display.DataContext = player;
-            display.Child = new PlayerView();
-            //string id = rowview.Row[1].ToString();
-            //Debug.WriteLine(id);
+            if (this.DataContext != null)
+            {
+                var player = (PlayerModel)this.DataContext;
+                HeightSlider.Value = (double)player.Height;
+                WeightSlider.Value = (double)player.Weight;
+                try
+                {
+                    PositionEnum enm = (PositionEnum)Enum.Parse(typeof(PositionEnum), player.Position);
+                    PositionBox.SelectedItem = enm;
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Player has an invalid position");
+                }
+                
+                
+            }
         }
 
         private Border FindDisplayBorder()
@@ -79,12 +76,35 @@ namespace FifaDatabase.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string name = NameSearchTextBox.Text;
+            string position = "";
+            if (PositionBox.SelectedItem != null || PositionBox.SelectedItem.ToString() != "Any")
+            {
+                position = PositionBox.SelectedItem.ToString();
+            }
+            string date = "1/1/2050";
+            if (AgeDatePicker.SelectedDate != null)
+            {
+                date = AgeDatePicker.SelectedDate.ToString();
+            }
+            int height = (int)HeightSlider.Value;
+            int weight = (int)WeightSlider.Value;
+            PlayerModel player = (PlayerModel)this.DataContext;
+            int playerID = (int)player.PlayerId;
             try
             {
-                string name = NameSearchTextBox.Text;
-                PlayerDataGrid.ItemsSource = repo.GetPlayerByName(name);
+                this.DataContext = repo.EditPlayer(name, position, date, height, weight, playerID);
+                MessageBox.Show("Player Updated!");
             }
-            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void NameSearchTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            FaintLetteringText.Visibility = Visibility.Hidden;
         }
     }
 }

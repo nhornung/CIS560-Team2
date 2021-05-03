@@ -7,7 +7,7 @@ using FifaDatabase.Helper_Code.DataDelegates;
 
 namespace FifaDatabase.SqlRepos
 {
-    public class SqlGameStatsRepository : IGameStatsRepository
+    public class SqlGameStatsRepository : IPlayerGameStatsRepository
     {
         private readonly SqlCommandExecutor executor;
 

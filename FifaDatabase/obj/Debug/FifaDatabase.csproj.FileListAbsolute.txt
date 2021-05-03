@@ -73,3 +73,5 @@ C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportView
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\DoTraitsMatterView.baml
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\ViewershipView.g.cs
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\ViewershipView.baml
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\PlayerGameStatCreateView.g.cs
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\CreateViews\PlayerGameStatCreateView.baml

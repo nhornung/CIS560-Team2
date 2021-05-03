@@ -5,13 +5,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FifaDatabase.Views.SearchViews"
              mc:Ignorable="d" 
-              d:DesignHeight="400" d:DesignWidth="800">
-    <Grid Background="#FFB4B4B4">
+              d:DesignHeight="400" d:DesignWidth="1000">
+    <Grid Background="#e9e9e8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
+        <Border Margin="20,95,375,70" Background="DarkGray"/>
 
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="86.433" VerticalAlignment="Top" Width="800" CornerRadius="18" Background="#FFCF8484">
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="1000" CornerRadius="18" Background="#FFCF8484" Grid.ColumnSpan="2">
             <TextBlock Margin="180,18,179,19.433" TextWrapping="Wrap" Text="Games" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"/>
         </Border>
-        <Grid>
+        <Grid Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
@@ -24,7 +29,7 @@
             <DatePicker Grid.Row="1" Grid.Column="0" Width="200" Margin="35,27.6,165,188" Grid.RowSpan="2"></DatePicker>
             <DatePicker Grid.Row="1" Grid.Column="0" Width="200" Margin="35,90.6,165,185" Grid.RowSpan="2"></DatePicker>
             <Button Content="Submit" HorizontalAlignment="Left" Height="62" Margin="50,30.4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="142"/>
-            <DataGrid x:Name="dataGrid" Grid.Row="1" Margin="330,12.6,20,25" Grid.RowSpan="2" Grid.ColumnSpan="2" SelectionChanged="dataGrid_SelectionChanged"/>
+            <DataGrid x:Name="dataGrid" Grid.Row="1" Grid.Column="2" Margin="30,30,30,30" Grid.RowSpan="2" Grid.ColumnSpan="1" SelectionChanged="dataGrid_SelectionChanged"/>
         </Grid>
 
 

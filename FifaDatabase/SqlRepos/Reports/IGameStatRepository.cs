@@ -4,14 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FifaDatabase.Models
+namespace FifaDatabase.SqlRepos.Reports
 {
-    public enum PositionEnum
+    public class IGameStatRepository
     {
-        Any,
-        FW,
-        DF,
-        MF,
-        GK
     }
 }

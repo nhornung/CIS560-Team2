@@ -7,13 +7,19 @@
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="1000">
 
-    <Grid Background="#FFB4B4B4">
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="1000" CornerRadius="18" Background="#FFCF8484">
+    <Grid Background="#e9e9e8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderThickness="1" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="1000" CornerRadius="18" Background="#FFCF8484">
             <TextBlock Margin="135.2,17.2,119.2,20.6" TextWrapping="Wrap" Text="Winning and Losing Teams Traits 2010" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"/>
         </Border>
-        <TextBlock x:Name="AgeText_Copy2" HorizontalAlignment="Left" Height="26" Margin="405,114,0,0" TextWrapping="Wrap" Text="Winners" VerticalAlignment="Top" Width="135" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
-        <DataGrid Name="PlayerDataGrid" HorizontalAlignment="Left" Height="55" Margin="355,160,0,0" VerticalAlignment="Top" Width="250"/>
-        <DataGrid x:Name="PlayerDataGrid_Copy" HorizontalAlignment="Left" Height="55" Margin="360,270,0,0" VerticalAlignment="Top" Width="245"/>
-        <TextBlock x:Name="AgeText_Copy" HorizontalAlignment="Left" Height="26" Margin="405,234,0,0" TextWrapping="Wrap" Text="Losers" VerticalAlignment="Top" Width="135" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
+        <Border Margin="0,95,0,20" Grid.Column="1" Background="DarkGray"/>
+        <TextBlock x:Name="AgeText_Copy2" Grid.Column="1" HorizontalAlignment="Center" Height="26" Margin="0,100,0,0" TextWrapping="Wrap" Text="Winners" VerticalAlignment="Top" Width="135" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
+        <DataGrid Name="PlayerDataGrid" Grid.Column="1" HorizontalAlignment="Center" Height="55" Margin="0,150,0,0" VerticalAlignment="Top" Width="250"/>
+        <DataGrid x:Name="PlayerDataGrid_Copy" Grid.Column="1" HorizontalAlignment="Center" Height="55" Margin="0,270,0,0" VerticalAlignment="Top" Width="245"/>
+        <TextBlock x:Name="AgeText_Copy" Grid.Column="1" HorizontalAlignment="Center" Height="26" Margin="0,220,0,0" TextWrapping="Wrap" Text="Losers" VerticalAlignment="Top" Width="135" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
     </Grid>
 </UserControl>

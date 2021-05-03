@@ -16,18 +16,24 @@ namespace FifaDatabase.Models
         public string GameDate { get; set; }
         public string TournamentStage { get; set; }
         public int Attendance { get; set; }
+        public int TeamA { get; set; }
+        public int TeamB { get; set; }
+        public int Winner { get; set; }
 
 
-        public GameSearchModel(int gameid, string venue, int tournamentyear, string home, string away, string date, string tournamentstage, int attendance)
+        public GameSearchModel(int gameid, string venue, int tournamentyear, string home, string away, DateTime date, string tournamentstage, int attendance, int teama, int teamb, int winner)
         {
             GameID = gameid;
             Venue = venue;
             TournamentYear = tournamentyear;
             Home = home;
             Away = away;
-            GameDate = date;
+            GameDate = date.ToShortDateString();
             TournamentStage = tournamentstage;
             Attendance = attendance;
+            Winner = winner;
+            TeamA = teama;
+            TeamB = teamb;
         }
     }
 }

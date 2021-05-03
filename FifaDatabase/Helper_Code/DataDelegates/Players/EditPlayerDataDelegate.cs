@@ -13,16 +13,18 @@ namespace FifaDatabase.Helper_Code.DataDelegates
         public readonly string position;
         public readonly int height;
         public readonly int weight;
+        public readonly int playerID;
 
 
-        public EditPlayerDataDelegate(string name, string age, string position, int height, int weight)
-           : base("WorldCupSchema.EditPlayer")
+        public EditPlayerDataDelegate(string name, string position, string age, int height, int weight, int playerID)
+           : base("WorldCupSchema.UpdatePlayer")
         {
             this.name = name;
             this.age = age;
             this.position = position;
             this.height = height;
             this.weight = weight;
+            this.playerID = playerID;
         }
 
         public override void PrepareCommand(SqlCommand command)
@@ -46,12 +48,12 @@ namespace FifaDatabase.Helper_Code.DataDelegates
             p.Value = weight;
 
             p = command.Parameters.Add("PlayerID", SqlDbType.Int);
-            p.Direction = ParameterDirection.Output;
+            p.Value = playerID;
         }
 
         public override PlayerModel Translate(SqlCommand command)
         {
-            return new PlayerModel((int)command.Parameters["PlayerID"].Value, name, Convert.ToDateTime(age), position, height, weight);
+            return new PlayerModel(playerID, name, Convert.ToDateTime(age), position, height, weight);
         }
     }
 }

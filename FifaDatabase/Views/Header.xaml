@@ -4,10 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FifaDatabase.Views"
-             mc:Ignorable="d" d:DesignWidth="1000" Height="150">
-    <Grid Margin="0,0,0,62.857">
-        <TextBlock HorizontalAlignment="Left" Height="67.665" Margin="131.066,10,0,0" TextWrapping="Wrap" Text="World Cup Database" VerticalAlignment="Top" Width="744.67" TextAlignment="Center" FontFamily="Century Gothic" FontSize="50"/>
-        <TextBlock HorizontalAlignment="Left" Height="65.117" Margin="28.274,82.665,0,-60.639" TextWrapping="Wrap" Text="By Robert Clancy, Nick Hornung, and Kevin Sutcliffe" VerticalAlignment="Top" Width="971.726" FontSize="25" FontFamily="Century Gothic" TextAlignment="Center"/>
+             mc:Ignorable="d" d:DesignWidth="1000" Height="90">
+    <Grid Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1*"/>
+
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" HorizontalAlignment="Center" Height="53" Margin="0,2,0,0" TextWrapping="Wrap" Text="World Cup Database" VerticalAlignment="Top" Width="745" TextAlignment="Center" FontFamily="Century Gothic" FontSize="40"/>
+        <TextBlock HorizontalAlignment="Center" Height="30" Margin="0,0,0,0" TextWrapping="Wrap" Text="By Robert Clancy, Nick Hornung, and Kevin Sutcliffe" VerticalAlignment="Top" Width="972" FontSize="20" FontFamily="Century Gothic" TextAlignment="Center" Grid.Row="1"/>
 
     </Grid>
 </UserControl>
