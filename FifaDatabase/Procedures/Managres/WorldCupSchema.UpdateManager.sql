@@ -1,4 +1,4 @@
-﻿create or alter procedure WorldCupSchema.UpdateManager
+﻿sscreate or alter procedure WorldCupSchema.UpdateManager
    @OldName NVARCHAR(48),
    @OldNationality NVARCHAR(32),
    @Name NVARCHAR(48),

@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:FifaDatabase.Views"
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="1000">
-    <Grid Background="#FFB4B4B4">
+    <Grid Background="#e9e9e8">
 
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="995" CornerRadius="18" Background="#FFCF8484">
             <TextBlock Margin="180,18,179,19.433" TextWrapping="Wrap" Text="Teams" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"/>
@@ -15,7 +15,7 @@
         <Border x:Name="TextBoxBorder" BorderThickness="1" HorizontalAlignment="Left" Height="36.464" Margin="150,142.567,0,0" VerticalAlignment="Top" Width="405" CornerRadius="10" Background="White"/>
         <TextBlock x:Name="SearchText" HorizontalAlignment="Left" Height="26" Margin="240,112,0,0" TextWrapping="Wrap" Text="Search National Teams Teams" VerticalAlignment="Top" Width="230" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
         <Button Content="Submit" HorizontalAlignment="Left" Height="61" Margin="244,214,0,0" VerticalAlignment="Top" Width="111"/>
-        <DataGrid Name="TeamDataGrid" HorizontalAlignment="Left" Height="270" Margin="685,115,0,0" VerticalAlignment="Top" Width="185"/>
+        <DataGrid Name="TeamDataGrid" AlternatingRowBackground="LightGray" HorizontalAlignment="Left" Height="270" Margin="685,115,0,0" VerticalAlignment="Top" Width="185"/>
 
 
 

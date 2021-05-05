@@ -5,6 +5,8 @@ CREATE OR ALTER PROCEDURE [WorldCupSchema].[RetrieveGameStatsHomeTeam]
 AS
 BEGIN
 SELECT
+	ALLG.GameID,
+	(ALLG.TournamentID + 1986) as TournamentYear,
 	(SELECT COUNT(PGS.StatID)
 	FROM WorldCupSchema.PlayerGameStat PGS
 	JOIN WorldCupSchema.Players P ON P.PlayerID = PGS.PlayerID

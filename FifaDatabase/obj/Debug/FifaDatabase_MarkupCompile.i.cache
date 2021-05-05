@@ -11,8 +11,8 @@ false
 DEBUG;TRACE
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\App.xaml
 252064762640
-23-252157302
-82-483709063
+242065522168
+852138316548
 131-1461659266
 MainWindow.xaml;Resources\ResourceDictionary1.xaml;Simple Styles.xaml;Views\CreateViews\GameCreate.xaml;Views\CreateViews\ManagerCreate.xaml;Views\CreateViews\PlayerGameStatCreateView.xaml;Views\GameView.xaml;Views\Header.xaml;Views\NavBar.xaml;Views\CreateViews\PlayerCreate.xaml;Views\PlayerView.xaml;Views\ReportViews\DoTraitsMatterView.xaml;Views\ReportViews\HotHandView.xaml;Views\ReportViews\ViewershipView.xaml;Views\SearchViews\GameSearch.xaml;Views\SearchViews\ManagerSearch.xaml;Views\SearchViews\PlayerSearch.xaml;Views\SearchViews\StatsView.xaml;Views\SearchViews\TournamentSearch.xaml;Views\TeamView.xaml;Views\UpdateViews\GameUpdate.xaml;Views\UpdateViews\ManagerUpdate.xaml;Views\UpdateViews\PlayerUpdate.xaml;Views\SearchViews\TeamSearch.xaml;Views\UpdateViews\PlayerUpdateAction.xaml;
 

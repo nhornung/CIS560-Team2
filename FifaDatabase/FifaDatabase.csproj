@@ -88,6 +88,8 @@
     <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGameStatsAwayTeamDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGameStatsHomeTeamDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Games\RetrieveGamesDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Managers\GetManagersByNameDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Managers\RetrieveManagersDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\PlayerGameStat\CreatePlayerGameStatDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\CreatePlayerDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Players\EditPlayerDataDelegate.cs" />
@@ -126,6 +128,7 @@
     <Content Include="Procedures\Games\WorldCupSchema.CreateGame.sql" />
     <Content Include="Procedures\Managres\WorldCupSchema.AddManager.sql" />
     <Content Include="Procedures\Networks\WorldCupSchema.CreateNetwork.sql" />
+    <Content Include="Procedures\Reports\WorldCupSchema.GetWinningPercentageOfGoalestTeams.sql" />
     <Content Include="Procedures\Stadiums\WorldCupSchema.RetrieveStadiums.sql" />
     <Content Include="Procedures\Teams\WorldCupSchema.GetTeamByNation.sql" />
     <Compile Include="SqlRepos\IGameRepository.cs" />
@@ -142,6 +145,7 @@
     <Compile Include="SqlRepos\Reports\SqlTvViewershipRepository.cs" />
     <Compile Include="SqlRepos\SqlGameRepository.cs" />
     <Compile Include="SqlRepos\SqlGameStatsRepository.cs" />
+    <Compile Include="SqlRepos\SqlManagerRepository.cs" />
     <Compile Include="SqlRepos\SqlPlayerGameStatRepository.cs" />
     <Compile Include="SqlRepos\SqlPlayerRepository.cs" />
     <Compile Include="SqlRepos\SqlTeamRepository.cs" />
@@ -366,7 +370,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Helper_Code\DataDelegates\Managers\" />
     <Folder Include="Helper_Code\DataDelegates\Networks\" />
     <Folder Include="Helper_Code\DataDelegates\Tournaments\" />
   </ItemGroup>

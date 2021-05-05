@@ -5,16 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:FifaDatabase.Views.SearchViews"
              mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="800">
+             d:DesignHeight="400" d:DesignWidth="1000">
     <Grid Background="#FFB4B4B4">
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="86.433" VerticalAlignment="Top" Width="800" CornerRadius="18" Background="#FFCF8484">
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="86.433" VerticalAlignment="Top" Width="990" CornerRadius="18" Background="#FFCF8484">
             <TextBlock Margin="180,0,179,19.433" TextWrapping="Wrap" Text="Managers" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center" Height="47" VerticalAlignment="Bottom"/>
         </Border>
-        <TextBox x:Name="NameSearchTextBox" HorizontalAlignment="Left" Height="37.261" Margin="3,117,0,0" TextWrapping="Wrap" Text="Search Manager Name" VerticalAlignment="Top" Width="405" FontFamily="Century Gothic" FontSize="18" Panel.ZIndex="3" Background="{x:Null}" VerticalContentAlignment="Center"/>
-        <Border x:Name="TextBoxBorder" BorderThickness="1" HorizontalAlignment="Left" Height="36.464" Margin="3,117,0,0" VerticalAlignment="Top" Width="405" CornerRadius="10" Background="White"/>
-        <TextBlock x:Name="AgeText_Copy4" HorizontalAlignment="Left" Height="25.567" Margin="93,86.433,0,0" TextWrapping="Wrap" Text="Search Managers" VerticalAlignment="Top" Width="218" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
-        <Button Content="Submit" HorizontalAlignment="Left" Height="61.234" Margin="679.116,112,0,0" VerticalAlignment="Top" Width="110.884" Click="Button_Click"/>
-        <DataGrid Name="PlayerDataGrid" HorizontalAlignment="Left" Height="175" Margin="30,220,0,0" VerticalAlignment="Top" Width="745"/>
+        <TextBox x:Name="NameSearchTextBox" HorizontalAlignment="Left" Height="37.261" Margin="176.991,153.464,0,0" TextWrapping="Wrap" Text="Search Manager Name" VerticalAlignment="Top" Width="405" FontFamily="Century Gothic" FontSize="18" Panel.ZIndex="3" Background="{x:Null}" VerticalContentAlignment="Center"/>
+        <Border x:Name="TextBoxBorder" BorderThickness="1" HorizontalAlignment="Left" Height="36.464" Margin="176.991,153.464,0,0" VerticalAlignment="Top" Width="405" CornerRadius="10" Background="White"/>
+        <TextBlock x:Name="AgeText_Copy4" HorizontalAlignment="Left" Height="25.567" Margin="176.991,109.721,0,0" TextWrapping="Wrap" Text="Search Managers" VerticalAlignment="Top" Width="218" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Height="61.234" Margin="664.116,129.491,0,0" VerticalAlignment="Top" Width="110.884" Click="Button_Click"/>
+        <DataGrid Name="PlayerDataGrid" HorizontalAlignment="Left" Height="175" Margin="176.991,215,0,0" VerticalAlignment="Top" Width="Auto" AlternatingRowBackground="LightGray"/>
 
 
 

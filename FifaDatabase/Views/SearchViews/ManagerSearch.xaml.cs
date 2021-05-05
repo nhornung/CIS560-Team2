@@ -21,58 +21,35 @@ namespace FifaDatabase.Views.SearchViews
     /// </summary>
     public partial class ManagerSearch : UserControl
     {
+        const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
+        private SqlPlayerRepository repo;
+        //private TransactionScope transaction;
+
         public ManagerSearch()
         {
             InitializeComponent();
+            repo = new SqlPlayerRepository(connectionString);
+            PositionBox.SelectedItem = PositionEnum.Any;
             Fill();
+
         }
 
-        private void Fill()
+        private async void Fill()
         {
-
             try
             {
-                SqlConnection conn = new SqlConnection("Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True");
-                SqlCommand cmd = new SqlCommand("SELECT * FROM WorldCupSchema.Managers", conn);
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                PlayerDataGrid.ItemsSource = reader;
+                PlayerDataGrid.ItemsSource = repo.RetrievePlayers();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            // PlayerModel actual = repo.CreatePlayer("Johnny Bummers", new DateTime(2015, 12, 25), "FM", 177, 81);
+            // MessageBox.Show(actual.Name.ToString() + actual.Height.ToString() + actual.PlayerId.ToString());
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string command = "";
-            if (NameSearchTextBox.Text != "Search Manager Name" && NameSearchTextBox.Text != "" && NameSearchTextBox.Text != null)
-            {
-                int count = 0;
-                string[] words = NameSearchTextBox.Text.Split(' ');
-                foreach (string word in words)
-                {
-                    count++;
-                    if(count <= 1) command += $" Name LIKE '%{word}%' ";
-                    else command += $" AND Name LIKE '%{word}%' ";
-                }
-
-                try
-                {
-                    SqlConnection conn = new SqlConnection("Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True");
-                    SqlCommand cmd = new SqlCommand($"SELECT * FROM WorldCupSchema.Managers WHERE " + command, conn);
-                    conn.Open();
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    PlayerDataGrid.ItemsSource = reader;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-            }
-         }
+            ;
+        }
     }
 }
 

@@ -17,7 +17,7 @@
         </ObjectDataProvider>
     </UserControl.Resources>
 
-    <Grid Background="#FFB4B4B4">
+    <Grid Background="#e9e9e8">
         <Border BorderThickness="1" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="1000" CornerRadius="18" Background="#FFCF8484">
             <TextBlock Margin="180,18,179,19.433" TextWrapping="Wrap" Text="Players" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"/>
         </Border>

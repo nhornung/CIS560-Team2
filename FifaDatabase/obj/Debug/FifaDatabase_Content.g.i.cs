@@ -15,6 +15,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/games/worldcupschema.creategame.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/managres/worldcupschema.addmanager.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/networks/worldcupschema.createnetwork.sql")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/reports/worldcupschema.getwinningpercentageofgoalestteams.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/stadiums/worldcupschema.retrievestadiums.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/teams/worldcupschema.getteambynation.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/players/worldcupschema.getplayerbyeverytrait.sql")]
