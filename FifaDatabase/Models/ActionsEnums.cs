@@ -9,7 +9,6 @@ namespace FifaDatabase.Models
     public enum ActionsEnums
     {
         Search,
-        Modify,
         Create,
     }
 }

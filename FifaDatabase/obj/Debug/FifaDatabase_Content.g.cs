@@ -12,6 +12,8 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/games/worldcupschema.retrievegamestatsawayteam.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/games/worldcupschema.retrievegames.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/games/worldcupschema.retrievegamestatshometeam.sql")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/games/worldcupschema.creategame.sql")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/teams/worldcupschema.getteambynation.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/players/worldcupschema.getplayerbyeverytrait.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/reports/worldcupschema.dotraitsmatterlosers.sql")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("procedures/reports/worldcupschema.dotraitsmatterwinners.sql")]

@@ -45,7 +45,7 @@ namespace FifaDatabase.Helper_Code.DataDelegates.PlayerGameStat
 
         public override PlayerGameStatModel Translate(SqlCommand command)
         {
-            return new PlayerGameStatModel((int)command.Parameters["PlayerID"].Value, playerID, stat, gametime);
+            return new PlayerGameStatModel(playerID, gameID, stat, gametime);
         }
     }
 }

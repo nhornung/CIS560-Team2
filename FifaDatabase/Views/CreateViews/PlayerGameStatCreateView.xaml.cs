@@ -54,7 +54,8 @@ namespace FifaDatabase.Views.CreateViews
             int gametime = (int)WeightSlider.Value;
             try
             {
-                var gamestat = repo.CreatePlayerGameStat(playerID, gameID, stat, gametime);
+                var gamestat = repo.CreatePlayerGameStat(gameID, playerID, stat, gametime);
+                MessageBox.Show($"{stat} successfully attributed to this player\n at minute {gametime} in the game {gameID}");
             }
             catch(Exception ex)
             {

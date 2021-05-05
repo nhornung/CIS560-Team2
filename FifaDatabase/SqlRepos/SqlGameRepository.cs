@@ -22,5 +22,12 @@ namespace FifaDatabase.SqlRepos
             return executor.ExecuteReader(myDelegate);
         }
 
+        public GameModel CreateRealGame(int stadiumid, int tournamentid, int teama, int teamb, DateTime date,
+            string tournamentstage, int attendance, int winner)
+        {
+            var myDelegate = new CreateGameDataDelegate(stadiumid, tournamentid, teama, teamb, date, tournamentstage, attendance, winner);
+            return executor.ExecuteNonQuery(myDelegate);
+        }
+
     }
 }

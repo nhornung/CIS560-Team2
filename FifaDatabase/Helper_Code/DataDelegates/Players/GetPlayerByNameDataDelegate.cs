@@ -34,11 +34,8 @@ namespace FifaDatabase.Helper_Code.DataDelegates
         public override IReadOnlyList<PlayerModel> Translate(SqlCommand command, IDataRowReader reader)
         {
             var players = new List<PlayerModel>();
-            int count = 0;
             while (reader.Read())
             {
-                count++;
-                Debug.WriteLine(count);
                 players.Add(new PlayerModel(
 
                     reader.GetInt32("PlayerID"),

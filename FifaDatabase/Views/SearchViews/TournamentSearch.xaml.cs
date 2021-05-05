@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace FifaDatabase.Views.SearchViews
 {
     /// <summary>
-    /// Interaction logic for NetworkSearch.xaml
+    /// Interaction logic for TournamentSearch.xaml
     /// </summary>
-    public partial class NetworkSearch : UserControl
+    public partial class TournamentSearch : UserControl
     {
-        public NetworkSearch()
+        public TournamentSearch()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

@@ -13,5 +13,6 @@ namespace FifaDatabase.SqlRepos
         /// <see cref="IReadOnlyList{Person}"/> containing all persons.
         /// </returns>
         IReadOnlyList<TeamModel> RetrieveTeams();
+        TeamModel GetTeamByNation(string nation);
     }
 }

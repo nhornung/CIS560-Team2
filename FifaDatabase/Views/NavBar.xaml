@@ -41,7 +41,7 @@
             <RowDefinition Height=".5*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <ComboBox x:Name="CategoryCombo" ItemsSource="{Binding Source={StaticResource table_enums}}" HorizontalAlignment="Left" Width="119" FontFamily="Century Gothic" Text="Data Categories" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SelectionChanged="CategoryCombo_SelectionChanged" Margin="76,15,0,0" Grid.RowSpan="2"/>
+        <ComboBox x:Name="CategoryCombo" ItemsSource="{Binding Source={StaticResource table_enums}}" HorizontalAlignment="Left" Width="119" FontFamily="Century Gothic" Text="Data Categories" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Margin="76,15,0,0" Grid.RowSpan="2"/>
         <ComboBox  x:Name="QueryTypeCombo" ItemsSource="{Binding Source={StaticResource eactions_enums}}" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="110" FontFamily="Century Gothic" Text="Action" Grid.Column="1" VerticalContentAlignment="Center" Margin="65,15,0,0" Grid.RowSpan="2"/>
 
         <Rectangle Grid.ColumnSpan="5" HorizontalAlignment="Left" Height="1.5" Margin="38,33,0,-1.167" Grid.Row="1" VerticalAlignment="Top" Width="907.333" Fill="#FFDC7E7E"/>

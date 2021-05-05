@@ -9,12 +9,9 @@ namespace FifaDatabase.Models
     public enum TableEnums
     {
         Games,
-        Locations,
         Managers,
         Networks,
         Players,
-        Stadiums,
-        Stats,
         Teams,
         Tournaments
     }

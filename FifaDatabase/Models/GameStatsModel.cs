@@ -8,6 +8,8 @@ namespace FifaDatabase.Models
 {
     public class GameStatsModel
     {
+        public int GameID { get; set; }
+        public int TournamentYear { get; set; }
         public int Goals { get; set; }
         public int Saves { get; set; }
         public int Assists { get; set; }
@@ -17,8 +19,10 @@ namespace FifaDatabase.Models
 
 
 
-        public GameStatsModel(int goals, int saves, int assists, int tackles, int yellowcard, int redcard)
+        public GameStatsModel(int gameid, int tournamenyear, int goals, int saves, int assists, int tackles, int yellowcard, int redcard)
         {
+            GameID = gameid;
+            TournamentYear = tournamenyear;
             Goals = goals;
             Saves = saves;
             Assists = assists;

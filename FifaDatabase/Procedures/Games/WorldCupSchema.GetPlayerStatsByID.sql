@@ -3,7 +3,12 @@
 AS
 BEGIN
 	
-SELECT ALLG.GameID,
+SELECT 
+	ALLG.GameID,
+	ALLG.GameDate,
+	(ALLG.TournamentID + 1986)
+	AS 'TournamentYear',
+
 	(SELECT COUNT(PGS.StatID)
 	FROM WorldCupSchema.PlayerGameStat PGS
 	WHERE PGS.StatID = 1 AND PGS.GameID = ALLG.GameID AND PGS.PlayerID = @PlayerID

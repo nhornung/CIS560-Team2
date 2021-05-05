@@ -36,6 +36,7 @@ namespace FifaDatabase.Views
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Traits.IsChecked = false;
+            Views.IsChecked = false;
             Hot.IsChecked = false;
             string Category = CategoryCombo.SelectionBoxItem.ToString();
             string Action = QueryTypeCombo.SelectionBoxItem.ToString();
@@ -49,20 +50,11 @@ namespace FifaDatabase.Views
                     {
                         displayBorder.Child = new GameSearch();
                     }
-                    else if (Action == "Modify")
-                    {
-                        displayBorder.Child = new GameUpdate();
-                    }
                     else if (Action == "Create")
                     {
                         displayBorder.Child = new GameCreate();
                     }
                     break;
-                case "Locations":
-                    if (Action == "Search")
-                    {
-                        displayBorder.Child = new LocationSearch();
-                    }
 
                     break;
                 case "Managers":
@@ -79,11 +71,6 @@ namespace FifaDatabase.Views
                         displayBorder.Child = new ManagerCreate();
                     }
                     break;
-                case "Networks":
-                    if (Action == "Search")
-                    {
-                        displayBorder.Child = new NetworkSearch();
-                    }
 
                     break;
                 case "Players":
@@ -99,20 +86,6 @@ namespace FifaDatabase.Views
                     {
                         displayBorder.Child = new PlayerCreate();
                     }
-                    break;
-                case "Stadiums":
-                    if (Action == "Search")
-                    {
-                        displayBorder.Child = new StadiumSearch();
-                    }
-
-                    break;
-                case "Stats":
-                    if (Action == "Search")
-                    {
-                        displayBorder.Child = new StatsView();
-                    }
-
                     break;
                 case "Teams":
                     if (Action == "Search")
@@ -145,21 +118,6 @@ namespace FifaDatabase.Views
             MainWindow main = (MainWindow)parent;
             Border displayBorder = (Border)main.DisplayBorder;
             return displayBorder;
-        }
-
-        private void CategoryCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if(sender is ComboBox categoryCombo)
-            {
-                if (categoryCombo.SelectedIndex == 0 | categoryCombo.SelectedIndex == 2 | categoryCombo.SelectedIndex == 4)
-                {
-                    QueryTypeCombo.IsEnabled = true;
-                }
-                else
-                {
-                    QueryTypeCombo.IsEnabled = false;
-                }
-            }
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)

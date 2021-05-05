@@ -54,16 +54,5 @@ namespace FifaDatabase.Views.ReportViews
             Debug.WriteLine(dataGrid.ItemsSource);
             dataGrid.Visibility = Visibility.Visible;
         }
-
-        private void Combo_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
     }
 }
-
-
-
-//MyEnum val = MyEnum.My_Value_1;
-//comboBox1.DataSource = val.GetFriendlyNames();
-//comboBox1.SelectedItem = val.GetFriendlyName();

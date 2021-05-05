@@ -22,5 +22,11 @@ namespace FifaDatabase.SqlRepos
             return executor.ExecuteReader(myDelegate);
         }
 
+        public TeamModel GetTeamByNation(string nation)
+        {
+            var myDelegate = new GetTeamByNationDataDelegate(nation);
+            return executor.ExecuteReader(myDelegate);
+        }
+
     }
 }
