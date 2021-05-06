@@ -35,6 +35,7 @@ namespace FifaDatabase.Views
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Winning.IsChecked = false;
             Traits.IsChecked = false;
             Views.IsChecked = false;
             Hot.IsChecked = false;
@@ -138,6 +139,12 @@ namespace FifaDatabase.Views
         {
             Border displayBorder = FindDisplayBorder();
             displayBorder.Child = new ViewershipView();
+        }
+
+        private void Winning_Checked(object sender, RoutedEventArgs e)
+        {
+            Border displayBorder = FindDisplayBorder();
+            displayBorder.Child = new WinningPercentageWithGoalsView();
         }
     }
 }

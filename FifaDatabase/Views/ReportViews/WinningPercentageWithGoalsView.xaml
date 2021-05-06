@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="FifaDatabase.Views.ReportViews.WinningPercentageWithGoalsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FifaDatabase.Views.ReportViews"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="1000">
+
+    <Grid Background="#e9e9e8">
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="1000" CornerRadius="18" Background="#FFCF8484">
+            <TextBlock Margin="33.6,18,9,19.433" TextWrapping="Wrap" Text="Winning Percentage By Average Goals Scored" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"/>
+        </Border>
+        <DataGrid Name="PlayerDataGrid" HorizontalAlignment="Center" Height="260" Margin="0,120,0,0" VerticalAlignment="Top" Width="Auto"/>
+        <Border Background="DarkGray" Panel.ZIndex="-1" Margin="252.8,100,260,40"/>
+    </Grid>
+</UserControl>

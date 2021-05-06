@@ -27,6 +27,11 @@ namespace DataAccess
             return GetValue(name, reader.GetInt32);
         }
 
+        public double GetDouble(string name)
+        {
+            return GetValue(name, reader.GetDouble);
+        }
+
         public byte GetByte(string name)
         {
             return GetValue(name, reader.GetByte);

@@ -11,5 +11,6 @@ namespace DataAccess
         string GetString(string name);
         T GetValue<T>(string name);
         string GetDateTimeString(string name);
+        double GetDouble(string name);
     }
 }

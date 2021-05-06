@@ -7,7 +7,7 @@
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              xmlns:local="clr-namespace:FifaDatabase.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="1000">
 
     <UserControl.Resources>
         <ObjectDataProvider x:Key="positionEnums" MethodName="GetValues" ObjectType="{x:Type system:Enum}">
@@ -18,11 +18,11 @@
     </UserControl.Resources>
 
     <Grid Background="#FFB4B4B4">
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="86.433" VerticalAlignment="Top" Width="800" CornerRadius="18" Background="#FFCF8484">
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="86.433" VerticalAlignment="Top" Width="990" CornerRadius="18" Background="#FFCF8484">
             <TextBlock Margin="180,18,179,19.433" TextWrapping="Wrap" Foreground="White" FontFamily="Century Gothic" FontSize="40" TextAlignment="Center"><Run Text="Player"/><LineBreak/><Run/></TextBlock>
         </Border>
-        <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Height="37" Margin="3,116,0,0" TextWrapping="Wrap" Text="Search Player Name" VerticalAlignment="Top" Width="405" FontFamily="Century Gothic" FontSize="18" Panel.ZIndex="3" Background="{x:Null}" VerticalContentAlignment="Center"/>
-        <Border x:Name="TextBoxBorder" BorderThickness="1" HorizontalAlignment="Left" Height="36.464" Margin="3,117,0,0" VerticalAlignment="Top" Width="405" CornerRadius="10" Background="White"/>
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Height="37" Margin="50.4,116,0,0" TextWrapping="Wrap" Text="Search Player Name" VerticalAlignment="Top" Width="357.6" FontFamily="Century Gothic" FontSize="18" Panel.ZIndex="3" Background="{x:Null}" VerticalContentAlignment="Center"/>
+        <Border x:Name="TextBoxBorder" BorderThickness="1" HorizontalAlignment="Left" Height="36.464" Margin="50.4,117,0,0" VerticalAlignment="Top" Width="357.6" CornerRadius="10" Background="White"/>
         <Slider x:Name="WeightSlider" AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="0" HorizontalAlignment="Left" Height="23" Margin="250,179.031,0,-2.031" VerticalAlignment="Top" Width="153" Foreground="#FF515151" BorderBrush="#FF8AD4FF" SmallChange="1" Maximum="95" Minimum="56" LargeChange="5" Cursor="Hand" FontSize="23" Value="15" IsEnabled="True"/>
         <TextBlock x:Name="WeightText" HorizontalAlignment="Left" Height="25.567" Margin="250,153.464,0,0" TextWrapping="Wrap" Text="Weight" VerticalAlignment="Top" Width="153" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
         <Slider x:Name="HeightSlider" AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="0" HorizontalAlignment="Left" Height="23" Margin="494.667,173.234,0,0" VerticalAlignment="Top" Width="153" Foreground="#FF515151" BorderBrush="#FF8AD4FF" SmallChange="1" Maximum="220" Minimum="160" LargeChange="5" Cursor="Hand" FontSize="23" Value="15" IsEnabled="True"/>
@@ -31,8 +31,9 @@
         <TextBlock x:Name="PositionText" HorizontalAlignment="Left" Height="25.567" Margin="460.667,91.433,0,0" TextWrapping="Wrap" Text="Position" VerticalAlignment="Top" Width="153" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
         <TextBlock x:Name="PlayerNameText" HorizontalAlignment="Left" Height="25.567" Margin="93,86.433,0,0" TextWrapping="Wrap" Text="Enter Player Name" VerticalAlignment="Top" Width="218" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
         <Button Content="Submit" HorizontalAlignment="Left" Height="61.234" Margin="679.116,112,0,0" VerticalAlignment="Top" Width="110.884" Click="Button_Click"/>
-        <DatePicker Name="AgeDatePicker" Margin="40,175,660,200"  Width="100"></DatePicker>
-        
+        <DatePicker Name="AgeDatePicker" Margin="93,207.831,807,167.169"  Width="100"></DatePicker>
+        <TextBlock x:Name="WeightText_Copy" HorizontalAlignment="Left" Height="25.567" Margin="50.4,159.261,0,0" TextWrapping="Wrap" Text="Birth Date" VerticalAlignment="Top" Width="153" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
+
 
 
     </Grid>

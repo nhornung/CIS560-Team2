@@ -16,15 +16,15 @@ namespace FifaDatabase.SqlRepos
             executor = new SqlCommandExecutor(connectionString);
         }
 
-        public IReadOnlyList<TeamModel> RetrieveTeams()
+        public IReadOnlyList<ManagerModel> RetrieveManagers()
         {
-            var myDelegate = new RetrieveTeamsDataDelegate();
+            var myDelegate = new RetrieveManagersDataDelegate();
             return executor.ExecuteReader(myDelegate);
         }
 
-        public TeamModel GetTeamByNation(string nation)
+        public IReadOnlyList<ManagerModel> GetManagerByName(string name)
         {
-            var myDelegate = new GetTeamByNationDataDelegate(nation);
+            var myDelegate = new GetManagerByNameDataDelegate(name);
             return executor.ExecuteReader(myDelegate);
         }
 

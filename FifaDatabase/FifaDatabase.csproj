@@ -100,6 +100,7 @@
     <Compile Include="Helper_Code\DataDelegates\Reports\HotHandDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Reports\LoserAVGDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Reports\WinnerAVGDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Reports\WinningPercentageByGoalsPerGameDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Teams\GetTeamByNationDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Teams\RetrieveTeamsDataDelegate.cs" />
     <Compile Include="Models\ActionsEnums.cs" />
@@ -127,10 +128,12 @@
     <Compile Include="Models\ViewershipModel.cs" />
     <Content Include="Procedures\Games\WorldCupSchema.CreateGame.sql" />
     <Content Include="Procedures\Managres\WorldCupSchema.AddManager.sql" />
+    <Content Include="Procedures\Managres\WorldCupSchema.GetManagerByName.sql" />
     <Content Include="Procedures\Networks\WorldCupSchema.CreateNetwork.sql" />
     <Content Include="Procedures\Reports\WorldCupSchema.GetWinningPercentageOfGoalestTeams.sql" />
     <Content Include="Procedures\Stadiums\WorldCupSchema.RetrieveStadiums.sql" />
     <Content Include="Procedures\Teams\WorldCupSchema.GetTeamByNation.sql" />
+    <Compile Include="Models\WinningPercentageModel.cs" />
     <Compile Include="SqlRepos\IGameRepository.cs" />
     <Compile Include="SqlRepos\IGameStatsRepository.cs" />
     <Compile Include="SqlRepos\IPlayerGameStatRepository.cs" />
@@ -143,6 +146,7 @@
     <Compile Include="SqlRepos\Reports\IHotHandRepository.cs" />
     <Compile Include="SqlRepos\Reports\SqlHotHandRepository.cs" />
     <Compile Include="SqlRepos\Reports\SqlTvViewershipRepository.cs" />
+    <Compile Include="SqlRepos\Reports\SqlWinningPercentageRepository.cs" />
     <Compile Include="SqlRepos\SqlGameRepository.cs" />
     <Compile Include="SqlRepos\SqlGameStatsRepository.cs" />
     <Compile Include="SqlRepos\SqlManagerRepository.cs" />
@@ -181,6 +185,9 @@
     </Compile>
     <Compile Include="Views\ReportViews\ViewershipView.xaml.cs">
       <DependentUpon>ViewershipView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ReportViews\WinningPercentageWithGoalsView.xaml.cs">
+      <DependentUpon>WinningPercentageWithGoalsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\SearchViews\GameSearch.xaml.cs">
       <DependentUpon>GameSearch.xaml</DependentUpon>
@@ -289,6 +296,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\ReportViews\WinningPercentageWithGoalsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\SearchViews\GameSearch.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -355,6 +366,7 @@
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <Content Include="Procedures\Players\WorldCupSchema.GetPlayersByTeamID.sql" />
+    <Content Include="Procedures\Managres\WorldCupSchema.RetrieveManagers.sql" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

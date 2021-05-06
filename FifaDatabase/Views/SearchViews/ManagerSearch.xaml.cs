@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FifaDatabase.SqlRepos;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -22,14 +23,13 @@ namespace FifaDatabase.Views.SearchViews
     public partial class ManagerSearch : UserControl
     {
         const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
-        private SqlPlayerRepository repo;
+        private SqlManagerRepository repo;
         //private TransactionScope transaction;
 
         public ManagerSearch()
         {
             InitializeComponent();
-            repo = new SqlPlayerRepository(connectionString);
-            PositionBox.SelectedItem = PositionEnum.Any;
+            repo = new SqlManagerRepository(connectionString);
             Fill();
 
         }
@@ -38,7 +38,7 @@ namespace FifaDatabase.Views.SearchViews
         {
             try
             {
-                PlayerDataGrid.ItemsSource = repo.RetrievePlayers();
+                PlayerDataGrid.ItemsSource = repo.RetrieveManagers();
             }
             catch (Exception ex) { MessageBox.Show(ex.ToString()); }
             // PlayerModel actual = repo.CreatePlayer("Johnny Bummers", new DateTime(2015, 12, 25), "FM", 177, 81);
@@ -48,7 +48,8 @@ namespace FifaDatabase.Views.SearchViews
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ;
+            string name = NameSearchTextBox.Text;
+            PlayerDataGrid.ItemsSource = repo.GetManagerByName(name);
         }
     }
 }

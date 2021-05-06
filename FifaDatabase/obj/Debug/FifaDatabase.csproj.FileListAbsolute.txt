@@ -68,3 +68,5 @@ C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase.exe
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\FifaDatabase.pdb
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchViews\TournamentSearch.g.cs
 C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\SearchViews\TournamentSearch.baml
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\WinningPercentageWithGoalsView.g.cs
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Debug\Views\ReportViews\WinningPercentageWithGoalsView.baml

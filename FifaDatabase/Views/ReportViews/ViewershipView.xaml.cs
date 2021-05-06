@@ -28,7 +28,6 @@ namespace FifaDatabase.Views.ReportViews
     {
         const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
         private SqlTvViewershipRepository repo;
-        private SqlTeamRepository teamRepo;
         //private TransactionScope transaction;
 
         public ViewershipView()

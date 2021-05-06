@@ -17,6 +17,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FifaDatabase.Models;
 using FifaDatabase.SqlRepos;
+using FifaDatabase.Views.SearchViews;
 
 namespace FifaDatabase.Views
 {
@@ -35,30 +36,53 @@ namespace FifaDatabase.Views
         {
             InitializeComponent();
             repo = new SqlPlayerRepository(connectionString);
-            Fill();
-
-        }
-
-        private async void Fill()
-        {
-            try
-            {
-               // repo.CreatePlayer();
-            }
-            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
-            // PlayerModel actual = repo.CreatePlayer("Johnny Bummers", new DateTime(2015, 12, 25), "FM", 177, 81);
-            // MessageBox.Show(actual.Name.ToString() + actual.Height.ToString() + actual.PlayerId.ToString());
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            try
+            int errorCount = 0;
+            if(NameTextBox.Text == "" || NameTextBox.Text == null)
             {
-                PlayerModel player = repo.CreatePlayer(NameTextBox.Text, AgeDatePicker.SelectedDate.ToString(), PositionBox.SelectedItem.ToString(), Convert.ToInt32(HeightSlider.Value), Convert.ToInt32(WeightSlider.Value));
-                MessageBox.Show(player.Name);
+                errorCount++;
+                MessageBox.Show("You must give the player a name!");
             }
-            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            if (AgeDatePicker.SelectedDate.ToString() == "" || AgeDatePicker.SelectedDate.ToString() == null)
+            {
+                errorCount++;
+                MessageBox.Show("You must give the player birthdate!");
+            }
+            if(PositionBox.SelectedItem == "" || PositionBox.SelectedItem == null)
+            {
+                errorCount++;
+                MessageBox.Show("You must give the player a position!");
+            }
+            if(errorCount == 0)
+            {
+                try
+                {
+                    PlayerModel player = repo.CreatePlayer(NameTextBox.Text, AgeDatePicker.SelectedDate.ToString(), PositionBox.SelectedItem.ToString(), Convert.ToInt32(HeightSlider.Value), Convert.ToInt32(WeightSlider.Value));
+                    MessageBox.Show($"{player.Name} succesfully created");
+                    Border Display = FindDisplayBorder();
+                    Display.Child = new PlayerSearch();
+                }
+                catch (Exception ex) { MessageBox.Show(ex.ToString()); }
+            }
+        }
+
+        private Border FindDisplayBorder()
+        {
+            // Start climbing the tree from this node
+            DependencyObject parent = this;
+            do
+            {
+                // Get this node's parent
+                parent = LogicalTreeHelper.GetParent(parent);
+            }
+            // Invariant: there is a parent element, and it is not a ListSwitcher 
+            while (!(parent is null || parent is MainWindow));
+            MainWindow main = (MainWindow)parent;
+            Border displayBorder = (Border)main.DisplayBorder;
+            return displayBorder;
         }
     }
 }
