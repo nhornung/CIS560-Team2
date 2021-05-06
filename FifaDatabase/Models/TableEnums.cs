@@ -10,7 +10,6 @@ namespace FifaDatabase.Models
     {
         Games,
         Managers,
-        Networks,
         Players,
         Teams,
         Tournaments

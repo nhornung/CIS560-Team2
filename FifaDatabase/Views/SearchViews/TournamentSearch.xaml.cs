@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FifaDatabase.SqlRepos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,25 @@ namespace FifaDatabase.Views.SearchViews
     /// </summary>
     public partial class TournamentSearch : UserControl
     {
+        const string connectionString = "Data Source=ROBS-LAPTOP\\SQLEXPRESS;Database=master; Trusted_Connection=True;";
+        private SqlTournamentRepository repo;
+        //private TransactionScope transaction;
+
         public TournamentSearch()
         {
             InitializeComponent();
+            repo = new SqlTournamentRepository(connectionString);
+            Fill();
+
+        }
+
+        private async void Fill()
+        {
+            try
+            {
+                TournamentDataGrid.ItemsSource = repo.RetrieveTournaments();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.ToString()); }
         }
     }
 }

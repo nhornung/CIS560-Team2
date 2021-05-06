@@ -7,7 +7,7 @@
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              xmlns:local="clr-namespace:FifaDatabase.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="400" d:DesignWidth="1000">
+             d:DesignHeight="450" d:DesignWidth="1000">
 
     <UserControl.Resources>
         <ObjectDataProvider x:Key="positionEnums" MethodName="GetValues" ObjectType="{x:Type system:Enum}">
@@ -25,14 +25,14 @@
         <Border x:Name="TextBoxBorder" BorderThickness="1" HorizontalAlignment="Left" Height="36.464" Margin="3,117,0,0" VerticalAlignment="Top" Width="405" CornerRadius="10" Background="White"/>
         <Slider x:Name="WeightSlider" AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="0" HorizontalAlignment="Left" Height="23" Margin="137,212,0,0" VerticalAlignment="Top" Width="113" Foreground="#FF515151" BorderBrush="#FF8AD4FF" SmallChange="1" Maximum="100" Minimum="55" LargeChange="5" Cursor="Hand" FontSize="23" Value="150" IsEnabled="True"/>
         <TextBlock x:Name="AgeText_Copy2" HorizontalAlignment="Left" Height="26" Margin="160,175,0,0" TextWrapping="Wrap" Text="Weight" VerticalAlignment="Top" Width="78" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
-        <Slider x:Name="HeightSlider" AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="0" HorizontalAlignment="Left" Height="23" Margin="140,315,0,0" VerticalAlignment="Top" Width="110" Foreground="#FF515151" BorderBrush="#FF8AD4FF" SmallChange="1" Maximum="220" Minimum="155" LargeChange="5" Cursor="Hand" FontSize="23" Value="220" IsEnabled="True"/>
-        <TextBlock x:Name="AgeText_Copy3" HorizontalAlignment="Left" Height="25" Margin="165,250,0,0" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top" Width="73" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
-        <ComboBox x:Name="PositionBox" ItemsSource="{Binding Source={StaticResource positionEnums}}" HorizontalAlignment="Left" Height="31" Margin="10,315,0,0" VerticalAlignment="Top" Width="105"/>
-        <TextBlock x:Name="AgeText_Copy" HorizontalAlignment="Left" Height="26" Margin="16,260,0,0" TextWrapping="Wrap" Text="Position" VerticalAlignment="Top" Width="84" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
+        <Slider x:Name="HeightSlider" AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="0" HorizontalAlignment="Left" Height="23" Margin="140,339,0,0" VerticalAlignment="Top" Width="110" Foreground="#FF515151" BorderBrush="#FF8AD4FF" SmallChange="1" Maximum="220" Minimum="155" LargeChange="5" Cursor="Hand" FontSize="23" Value="220" IsEnabled="True"/>
+        <TextBlock x:Name="AgeText_Copy3" HorizontalAlignment="Left" Height="25" Margin="165,299,0,0" TextWrapping="Wrap" Text="Height" VerticalAlignment="Top" Width="73" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
+        <ComboBox x:Name="PositionBox" ItemsSource="{Binding Source={StaticResource positionEnums}}" HorizontalAlignment="Left" Height="31" Margin="10,339,0,0" VerticalAlignment="Top" Width="105"/>
+        <TextBlock x:Name="AgeText_Copy" HorizontalAlignment="Left" Height="26" Margin="10,299,0,0" TextWrapping="Wrap" Text="Position" VerticalAlignment="Top" Width="84" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
         <TextBlock x:Name="AgeText_Copy4" HorizontalAlignment="Left" Height="26" Margin="7,89,0,0" TextWrapping="Wrap" Text="Search Player Name" VerticalAlignment="Top" Width="218" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
         <Button Content="Submit" HorizontalAlignment="Left" Height="61" Margin="289,240,0,0" VerticalAlignment="Top" Width="111" Click="Button_Click"/>
         <DataGrid Name="PlayerDataGrid" HorizontalAlignment="Left" AlternatingRowBackground="LightGray" Height="260" Margin="535,130,0,0" VerticalAlignment="Top" Width="445" SelectionChanged="PlayerDataGrid_SelectionChanged"/>
-        <DatePicker Name="AgeDatePicker" Margin="15,210,885,165"  Width="100"></DatePicker>
+        <DatePicker Name="AgeDatePicker" Margin="10,205,863,180"/>
         <TextBlock x:Name="AgeText_Copy1" HorizontalAlignment="Left" Height="26" Margin="5,174,0,0" TextWrapping="Wrap" Text="Birth Date" VerticalAlignment="Top" Width="115" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20" RenderTransformOrigin="0.791,2.194"/>
         <TextBlock x:Name="AgeText_Copy5" HorizontalAlignment="Left" Height="26" Margin="730,95,0,0" TextWrapping="Wrap" Text="Players" VerticalAlignment="Top" Width="80" FontFamily="Century Gothic" Foreground="#FFCF5555" TextAlignment="Center" FontSize="20"/>
         <TextBlock x:Name="FaintLetteringText" HorizontalAlignment="Left" Height="26" Margin="10,124,0,0" TextWrapping="Wrap" Text="Enter Name..." VerticalAlignment="Top" Width="218" FontFamily="Century Gothic" Foreground="LightGray" TextAlignment="Left" FontSize="20"/>

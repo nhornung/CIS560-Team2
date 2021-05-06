@@ -103,6 +103,7 @@
     <Compile Include="Helper_Code\DataDelegates\Reports\WinningPercentageByGoalsPerGameDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Teams\GetTeamByNationDataDelegate.cs" />
     <Compile Include="Helper_Code\DataDelegates\Teams\RetrieveTeamsDataDelegate.cs" />
+    <Compile Include="Helper_Code\DataDelegates\Tournaments\RetrieveTournamentsDataDelegate.cs" />
     <Compile Include="Models\ActionsEnums.cs" />
     <Compile Include="Models\DoTraitsMatterModel.cs" />
     <Compile Include="Models\Enums\StageEnums.cs" />
@@ -125,6 +126,7 @@
     <Content Include="Procedures\Games\WorldCupSchema.RetrieveGameStatsAwayTeam.sql" />
     <Content Include="Procedures\Games\WorldCupSchema.RetrieveGames.sql" />
     <Content Include="Procedures\Games\WorldCupSchema.RetrieveGameStatsHomeTeam.sql" />
+    <Compile Include="Models\TournamentModel.cs" />
     <Compile Include="Models\ViewershipModel.cs" />
     <Content Include="Procedures\Games\WorldCupSchema.CreateGame.sql" />
     <Content Include="Procedures\Managres\WorldCupSchema.AddManager.sql" />
@@ -153,6 +155,7 @@
     <Compile Include="SqlRepos\SqlPlayerGameStatRepository.cs" />
     <Compile Include="SqlRepos\SqlPlayerRepository.cs" />
     <Compile Include="SqlRepos\SqlTeamRepository.cs" />
+    <Compile Include="SqlRepos\SqlTournamentRepository.cs" />
     <Compile Include="Views\CreateViews\GameCreate.xaml.cs">
       <DependentUpon>GameCreate.xaml</DependentUpon>
     </Compile>
@@ -381,10 +384,7 @@
       <Name>DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Helper_Code\DataDelegates\Networks\" />
-    <Folder Include="Helper_Code\DataDelegates\Tournaments\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Procedures\Managres\WorldCupSchema.UpdateManager.sql" />
     <Content Include="Procedures\Players\WorldCupSchema.CreatePlayer.sql" />

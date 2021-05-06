@@ -63,10 +63,6 @@ namespace FifaDatabase.Views
                     {
                         displayBorder.Child = new ManagerSearch();
                     }
-                    else if (Action == "Modify")
-                    {
-                        displayBorder.Child = new ManagerUpdate();
-                    }
                     else if (Action == "Create")
                     {
                         displayBorder.Child = new ManagerCreate();
@@ -78,10 +74,6 @@ namespace FifaDatabase.Views
                     if (Action == "Search")
                     {
                         displayBorder.Child = new PlayerSearch();
-                    }
-                    else if (Action == "Modify")
-                    {
-                        displayBorder.Child = new PlayerUpdate();
                     }
                     else if (Action == "Create")
                     {
@@ -98,7 +90,7 @@ namespace FifaDatabase.Views
                 case "Tournaments":
                     if (Action == "Search")
                     {
-                        break;//displayBorder.Child = new Tournam();
+                        displayBorder.Child = new TournamentSearch();
                     }
 
                     break;

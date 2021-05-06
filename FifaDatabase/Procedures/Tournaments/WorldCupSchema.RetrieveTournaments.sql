@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿CREATE OR ALTER PROCEDURE [WorldCupSchema].RetrieveTournaments
+AS
+BEGIN
+SELECT T.TournamentID + 1986 AS Tournament, L.Country, T.StartDate, T.EndDate
+FROM WorldCupSchema.Tournaments T
+JOIN WorldCupSchema.Locations L ON L.LocationID = T.LocationID
+END;
+GO
 
-namespace FifaDatabase.Procedures.Tournaments
-{
-    class WorldCupSchema
-    {
-    }
-}
+EXEC [WorldCupSchema].RetrieveTournaments

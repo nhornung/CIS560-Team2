@@ -1,0 +1,20 @@
+﻿FifaDatabase
+
+
+winexe
+C#
+.cs
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\obj\Release\
+FifaDatabase
+none
+false
+TRACE
+C:\Users\robbo\Source\Repos\CIS560-Team2\FifaDatabase\App.xaml
+26424985657
+26539124189
+91-709988304
+1311311017936
+MainWindow.xaml;Resources\ResourceDictionary1.xaml;Simple Styles.xaml;Views\CreateViews\GameCreate.xaml;Views\CreateViews\ManagerCreate.xaml;Views\CreateViews\PlayerGameStatCreateView.xaml;Views\GameView.xaml;Views\Header.xaml;Views\NavBar.xaml;Views\CreateViews\PlayerCreate.xaml;Views\PlayerView.xaml;Views\ReportViews\DoTraitsMatterView.xaml;Views\ReportViews\HotHandView.xaml;Views\ReportViews\ViewershipView.xaml;Views\ReportViews\WinningPercentageWithGoalsView.xaml;Views\SearchViews\GameSearch.xaml;Views\SearchViews\ManagerSearch.xaml;Views\SearchViews\PlayerSearch.xaml;Views\SearchViews\StatsView.xaml;Views\SearchViews\TournamentSearch.xaml;Views\TeamView.xaml;Views\UpdateViews\GameUpdate.xaml;Views\UpdateViews\ManagerUpdate.xaml;Views\UpdateViews\PlayerUpdate.xaml;Views\SearchViews\TeamSearch.xaml;Views\UpdateViews\PlayerUpdateAction.xaml;
+
+True
+

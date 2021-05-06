@@ -1,0 +1,434 @@
+GameID,StadiumID,TournamentID,TeamA,TeamB,GameDate,Attendance,TournamentStage
+1,1,0,1,4,2-Jun-86,60000,Group stage
+2,2,0,2,1,2-Jun-86,32000,Group stage
+3,1,0,1,3,5-Jun-86,65000,Group stage
+4,2,0,1,19,10-Jun-86,26000,Round of 16
+5,3,0,1,22,16-Jun-86,114580,Quarter-finals
+6,3,0,1,7,22-Jun-86,114500,Semi-finals
+7,3,0,1,18,25-Jun-86,114600,Final
+8,3,0,3,2,29-Jun-86,96000,Group stage
+9,2,0,4,2,31-May-86,20000,Group stage
+10,1,0,2,10,10-Jun-86,70000,Round of 16
+11,1,0,4,3,17-Jun-86,45000,Group stage
+12,3,0,5,3,5-Jun-86,114580,Round of 16
+13,3,0,7,5,15-Jun-86,110000,Group stage
+14,3,0,5,6,3-Jun-86,114600,Group stage
+15,3,0,8,5,7-Jun-86,103763,Group stage
+16,4,0,18,5,11-Jun-86,41700,Quarter-finals
+17,5,0,6,8,21-Jun-86,24000,Group stage
+18,5,0,6,7,4-Jun-86,16000,Group stage
+19,3,0,22,6,11-Jun-86,98728,Round of 16
+20,5,0,8,7,18-Jun-86,20000,Group stage
+21,6,0,9,7,6/8/1986,32277,Round of 16
+22,2,0,14,7,6/15/1986,45000,Quarter-finals
+23,2,0,10,7,22-Jun-86,21000,Third-place match
+24,7,0,9,11,28-Jun-86,16500,Group stage
+25,6,0,10,9,2-Jun-86,36540,Group stage
+26,7,0,9,12,5-Jun-86,14200,Group stage
+27,6,0,12,10,9-Jun-86,65500,Group stage
+28,6,0,11,10,1-Jun-86,31420,Group stage
+29,8,0,13,10,9-Jun-86,65000,Quarter-finals
+30,8,0,10,18,21-Jun-86,45000,Semi-finals
+31,7,0,11,12,25-Jun-86,13800,Group stage
+32,8,0,14,13,6-Jun-86,35748,Group stage
+33,8,0,13,16,1-Jun-86,48000,Group stage
+34,8,0,15,13,6-Jun-86,51000,Group stage
+35,8,0,13,23,12-Jun-86,45000,Round of 16
+36,9,0,15,14,16-Jun-86,28000,Group stage
+37,10,0,16,14,7-Jun-86,23980,Group stage
+38,11,0,17,14,12-Jun-86,38500,Round of 16
+39,9,0,16,15,18-Jun-86,22000,Group stage
+40,12,0,20,17,3-Jun-86,18000,Group stage
+41,12,0,17,19,4-Jun-86,26500,Group stage
+42,11,0,17,18,8-Jun-86,36000,Group stage
+43,11,0,19,18,13-Jun-86,30500,Group stage
+44,11,0,18,20,4-Jun-86,30000,Group stage
+45,4,0,21,18,8-Jun-86,19800,Round of 16
+46,12,0,20,19,17-Jun-86,20000,Group stage
+47,4,0,21,23,13-Jun-86,19900,Group stage
+48,10,0,22,21,2-Jun-86,20200,Group stage
+49,9,0,24,21,6-Jun-86,28000,Group stage
+50,10,0,24,22,11-Jun-86,23000,Group stage
+51,10,0,22,23,3-Jun-86,22700,Group stage
+52,4,0,23,24,11-Jun-86,19915,Group stage
+53,13,4,2,26,7-Jun-86,73303,Group stage
+54,13,4,2,27,9-Jun-90,73423,Group stage
+55,13,4,2,25,14-Jun-90,73303,Group stage
+56,13,4,2,19,19-Jun-90,73303,Round of 16
+57,13,4,2,35,25-Jun-90,73303,Quarter-finals
+58,14,4,2,1,30-Jun-90,59978,Semi-finals
+59,15,4,2,22,3-Jul-90,51426,Third-place match
+60,16,4,27,25,7-Jul-90,33266,Group stage
+61,16,4,26,25,10-Jun-90,38962,Group stage
+62,15,4,25,30,15-Jun-90,47673,Round of 16
+63,17,4,18,25,23-Jun-90,73347,Quarter-finals
+64,16,4,26,27,1-Jul-90,34857,Group stage
+65,17,4,1,28,19-Jun-90,73780,Group stage
+66,15,4,28,29,8-Jun-90,38687,Group stage
+67,15,4,28,9,14-Jun-90,37307,Group stage
+68,14,4,28,33,18-Jun-90,50026,Round of 16
+69,14,4,22,28,23-Jun-90,55205,Quarter-finals
+70,15,4,9,29,1-Jul-90,42907,Group stage
+71,14,4,1,29,9-Jun-90,52733,Group stage
+72,18,4,35,29,18-Jun-90,31818,Round of 16
+73,14,4,1,9,25-Jun-90,55759,Group stage
+74,19,4,13,1,13-Jun-90,61381,Round of 16
+75,16,4,32,1,24-Jun-90,38971,Quarter-finals
+76,13,4,18,1,30-Jun-90,73603,Final
+77,19,4,13,31,8-Jul-90,62628,Group stage
+78,19,4,13,30,10-Jun-90,58007,Group stage
+79,19,4,13,20,16-Jun-90,62502,Group stage
+80,18,4,30,20,20-Jun-90,30867,Group stage
+81,18,4,31,30,11-Jun-90,30223,Group stage
+82,18,4,31,20,20-Jun-90,31823,Group stage
+83,17,4,18,32,16-Jun-90,74765,Group stage
+84,17,4,18,34,10-Jun-90,71169,Group stage
+85,17,4,18,33,15-Jun-90,72510,Group stage
+86,17,4,18,36,19-Jun-90,74559,Round of 16
+87,19,4,18,22,24-Jun-90,62628,Semi-finals
+88,20,4,32,33,4-Jul-90,32257,Group stage
+89,20,4,32,34,14-Jun-90,27833,Group stage
+90,21,4,14,32,19-Jun-90,35500,Round of 16
+91,20,4,34,33,26-Jun-90,30791,Group stage
+92,22,4,19,14,9-Jun-90,35713,Group stage
+93,22,4,4,14,13-Jun-90,32733,Group stage
+94,21,4,7,14,6/17/1990,35950,Group stage
+95,21,4,7,4,21-Jun-90,32790,Group stage
+96,21,4,7,19,12-Jun-90,33759,Group stage
+97,20,4,22,7,17-Jun-90,34520,Round of 16
+98,23,4,4,19,26-Jun-90,29039,Group stage
+99,24,4,22,35,21-Jun-90,35238,Group stage
+100,24,4,22,36,11-Jun-90,35267,Group stage
+101,24,4,22,37,16-Jun-90,34959,Group stage
+102,25,4,35,37,21-Jun-90,33288,Group stage
+103,25,4,35,36,17-Jun-90,33288,Group stage
+104,25,4,36,37,21-Jun-90,33288,Group stage
+105,26,8,33,29,12-Jun-90,91856,Group stage
+106,27,8,29,38,18-Jun-94,61428,Group stage
+107,26,8,27,29,22-Jun-94,93869,Group stage
+108,26,8,29,1,26-Jun-94,90469,Round of 16
+109,28,8,29,31,3-Jul-94,83500,Quarter-finals
+110,27,8,27,38,10-Jul-94,73425,Group stage
+111,28,8,38,33,18-Jun-94,83401,Group stage
+112,29,8,14,38,26-Jun-94,53121,Round of 16
+113,26,8,27,33,2-Jul-94,93869,Group stage
+114,28,8,13,27,22-Jun-94,84147,Round of 16
+115,28,8,13,39,4-Jul-94,81061,Group stage
+116,28,8,13,28,20-Jun-94,83401,Group stage
+117,27,8,13,31,24-Jun-94,77217,Group stage
+118,30,8,36,13,28-Jun-94,63500,Quarter-finals
+119,26,8,31,13,9-Jul-94,91856,Semi-finals
+120,26,8,13,2,13-Jul-94,94194,Final
+121,26,8,28,31,17-Jul-94,93194,Group stage
+122,27,8,31,39,19-Jun-94,71528,Group stage
+123,30,8,45,31,24-Jun-94,60277,Round of 16
+124,26,8,31,3,3-Jul-94,91500,Third-place match
+125,28,8,39,28,16-Jul-94,74914,Group stage
+126,31,8,40,41,28-Jun-94,63117,Group stage
+127,31,8,40,14,17-Jun-94,63113,Group stage
+128,30,8,40,4,21-Jun-94,63998,Group stage
+129,31,8,40,7,27-Jun-94,60246,Round of 16
+130,32,8,3,40,2-Jul-94,72000,Quarter-finals
+131,30,8,14,4,10-Jul-94,56247,Group stage
+132,31,8,41,14,17-Jun-94,63089,Group stage
+133,33,8,2,14,27-Jun-94,53400,Quarter-finals
+134,33,8,4,41,9-Jul-94,54453,Group stage
+135,30,8,42,3,23-Jun-94,44132,Group stage
+136,33,8,1,42,21-Jun-94,54453,Group stage
+137,33,8,43,42,25-Jun-94,53001,Group stage
+138,33,8,42,2,30-Jun-94,54367,Round of 16
+139,31,8,3,43,5-Jul-94,63160,Group stage
+140,30,8,1,3,26-Jun-94,63998,Group stage
+141,32,8,5,3,30-Jun-94,71030,Round of 16
+142,32,8,3,2,5-Jul-94,74110,Semi-finals
+143,33,8,1,43,13-Jul-94,54456,Group stage
+144,29,8,44,5,21-Jun-94,52395,Group stage
+145,34,8,5,35,19-Jun-94,60790,Group stage
+146,29,8,2,5,24-Jun-94,52535,Group stage
+147,32,8,2,35,28-Jun-94,75338,Group stage
+148,32,8,35,44,18-Jun-94,72404,Group stage
+149,34,8,36,35,28-Jun-94,61355,Round of 16
+150,32,8,2,44,4-Jul-94,74624,Group stage
+151,29,8,36,45,23-Jun-94,50535,Group stage
+152,34,8,7,36,20-Jun-94,62387,Group stage
+153,34,8,21,36,25-Jun-94,60578,Group stage
+154,32,8,45,21,29-Jun-94,76322,Group stage
+155,29,8,7,45,25-Jun-94,52959,Group stage
+156,34,8,7,21,29-Jun-94,61219,Group stage
+157,35,12,13,20,19-Jun-94,80000,Group stage
+158,36,12,13,21,10-Jun-98,38500,Group stage
+159,37,12,13,44,16-Jun-98,57000,Group stage
+160,38,12,13,46,23-Jun-98,45500,Round of 16
+161,36,12,13,17,27-Jun-98,49500,Quarter-finals
+162,37,12,13,36,3-Jul-98,60000,Semi-finals
+163,35,12,13,10,7-Jul-98,80000,Final
+164,39,12,21,44,12-Jul-98,29750,Group stage
+165,40,12,20,44,10-Jun-98,31800,Group stage
+166,37,12,2,44,16-Jun-98,55000,Round of 16
+167,41,12,20,21,27-Jun-98,36000,Group stage
+168,40,12,2,46,23-Jun-98,35200,Group stage
+169,39,12,2,28,11-Jun-98,35500,Group stage
+170,35,12,2,26,17-Jun-98,80000,Group stage
+171,35,12,2,10,23-Jun-98,80000,Quarter-finals
+172,41,12,46,26,3-Jul-98,36000,Group stage
+173,36,12,46,28,17-Jun-98,39500,Group stage
+174,42,12,28,26,23-Jun-98,36500,Group stage
+175,37,12,10,47,11-Jun-98,55000,Group stage
+176,35,12,10,45,12-Jun-98,80000,Group stage
+177,43,12,10,17,18-Jun-98,39100,Group stage
+178,44,12,10,6,24-Jun-98,31800,Round of 16
+179,35,12,10,51,28-Jun-98,80000,Semi-finals
+180,44,12,45,17,8-Jul-98,38100,Group stage
+181,42,12,47,17,12-Jun-98,33500,Group stage
+182,35,12,42,17,18-Jun-98,77000,Round of 16
+183,40,12,47,45,28-Jun-98,31800,Group stage
+184,36,12,14,42,24-Jun-98,38000,Group stage
+185,38,12,42,3,13-Jun-98,48000,Group stage
+186,42,12,42,6,19-Jun-98,33400,Group stage
+187,39,12,6,3,24-Jun-98,27650,Group stage
+188,41,12,14,6,12-Jun-98,36000,Group stage
+189,44,12,14,3,19-Jun-98,41275,Group stage
+190,35,12,36,7,24-Jun-98,77000,Group stage
+191,37,12,36,4,13-Jun-98,55000,Group stage
+192,41,12,36,5,20-Jun-98,30600,Group stage
+193,42,12,36,48,25-Jun-98,33000,Round of 16
+194,37,12,36,1,29-Jun-98,60000,Quarter-finals
+195,38,12,36,51,4-Jul-98,44000,Third-place match
+196,43,12,4,5,11-Jul-98,39100,Group stage
+197,40,12,7,5,13-Jun-98,31800,Group stage
+198,39,12,40,5,20-Jun-98,29800,Round of 16
+199,38,12,7,4,29-Jun-98,45500,Group stage
+200,38,12,40,27,25-Jun-98,49000,Group stage
+201,44,12,40,48,15-Jun-98,41275,Group stage
+202,39,12,40,49,21-Jun-98,35500,Group stage
+203,43,12,40,51,25-Jun-98,43300,Quarter-finals
+204,41,12,48,49,4-Jul-98,36000,Group stage
+205,36,12,27,48,14-Jun-98,38500,Group stage
+206,43,12,27,49,25-Jun-98,43300,Group stage
+207,43,12,29,33,21-Jun-98,43300,Group stage
+208,42,12,29,22,15-Jun-98,33140,Group stage
+209,35,12,29,50,22-Jun-98,80000,Group stage
+210,40,12,29,51,26-Jun-98,31800,Round of 16
+211,37,12,22,50,30-Jun-98,54587,Group stage
+212,44,12,33,22,15-Jun-98,42000,Group stage
+213,41,12,1,22,26-Jun-98,30600,Round of 16
+214,39,12,33,50,30-Jun-98,35500,Group stage
+215,42,12,1,53,22-Jun-98,33500,Group stage
+216,38,12,1,52,14-Jun-98,45500,Group stage
+217,40,12,1,51,21-Jun-98,31800,Group stage
+218,44,12,52,51,26-Jun-98,38100,Group stage
+219,36,12,53,51,14-Jun-98,35500,Group stage
+220,43,12,53,52,20-Jun-98,39100,Group stage
+221,45,16,19,17,26-Jun-98,30157,Group stage
+222,46,16,17,54,1-Jun-02,43500,Group stage
+223,47,16,17,10,6-Jun-02,48100,Group stage
+224,48,16,17,22,11-Jun-02,40582,Round of 16
+225,49,16,10,54,15-Jun-02,62561,Group stage
+226,50,16,54,19,31-May-02,33681,Group stage
+227,51,16,31,54,11-Jun-02,39747,Round of 16
+228,52,16,54,56,16-Jun-02,44233,Quarter-finals
+229,53,16,10,19,22-Jun-02,38070,Group stage
+230,54,16,14,55,6-Jun-02,28588,Group stage
+231,55,16,14,6,2-Jun-02,24000,Group stage
+232,56,16,47,14,7-Jun-02,31024,Group stage
+233,50,16,14,35,12-Jun-02,38926,Round of 16
+234,54,16,14,4,16-Jun-02,42114,Quarter-finals
+235,53,16,6,47,22-Jun-02,25186,Group stage
+236,57,16,55,6,2-Jun-02,30176,Group stage
+237,57,16,40,6,12-Jun-02,25176,Round of 16
+238,46,16,47,55,15-Jun-02,47226,Group stage
+239,45,16,13,56,8-Jun-02,33842,Group stage
+240,57,16,13,57,3-Jun-02,36750,Group stage
+241,50,16,30,13,8-Jun-02,38524,Group stage
+242,58,16,13,7,13-Jun-02,40440,Round of 16
+243,56,16,22,13,17-Jun-02,47436,Quarter-finals
+244,59,16,13,56,21-Jun-02,61058,Semi-finals
+245,60,16,40,13,26-Jun-02,69029,Final
+246,47,16,30,56,30-Jun-02,42299,Group stage
+247,49,16,56,57,9-Jun-02,43605,Group stage
+248,61,16,53,56,13-Jun-02,45666,Round of 16
+249,46,16,4,56,18-Jun-02,63483,Third-place match
+250,54,16,57,30,29-Jun-02,27217,Group stage
+251,53,16,4,23,4-Jun-02,48760,Group stage
+252,46,16,4,27,4-Jun-02,60778,Group stage
+253,47,16,24,4,10-Jun-02,50239,Group stage
+254,56,16,4,2,14-Jun-02,38588,Round of 16
+255,49,16,40,4,18-Jun-02,65625,Semi-finals
+256,50,16,27,24,25-Jun-02,37306,Group stage
+257,56,16,23,27,5-Jun-02,26482,Group stage
+258,55,16,5,27,14-Jun-02,36380,Round of 16
+259,45,16,40,27,17-Jun-02,37337,Quarter-finals
+260,55,16,24,23,21-Jun-02,31000,Group stage
+261,62,16,40,45,10-Jun-02,32218,Group stage
+262,63,16,40,35,1-Jun-02,35854,Group stage
+263,64,16,28,40,5-Jun-02,47085,Group stage
+264,48,16,35,28,11-Jun-02,33679,Group stage
+265,60,16,45,35,1-Jun-02,65320,Group stage
+266,59,16,28,45,11-Jun-02,52328,Group stage
+267,59,16,22,31,6-Jun-02,52721,Group stage
+268,58,16,31,42,2-Jun-02,36194,Group stage
+269,61,16,31,1,7-Jun-02,45777,Group stage
+270,62,16,1,22,12-Jun-02,35927,Group stage
+271,52,16,42,22,7-Jun-02,44864,Group stage
+272,63,16,1,42,12-Jun-02,34050,Group stage
+273,48,16,51,5,2-Jun-02,32239,Group stage
+274,62,16,5,58,3-Jun-02,45610,Group stage
+275,51,16,5,2,9-Jun-02,39291,Group stage
+276,62,16,2,58,13-Jun-02,31081,Group stage
+277,63,16,2,51,3-Jun-02,36472,Group stage
+278,60,16,58,51,8-Jun-02,65862,Group stage
+279,59,16,53,7,13-Jun-02,55256,Group stage
+280,60,16,53,39,4-Jun-02,66108,Group stage
+281,52,16,50,53,9-Jun-02,45213,Group stage
+282,51,16,50,7,14-Jun-02,39700,Group stage
+283,64,16,7,39,10-Jun-02,46640,Group stage
+284,58,16,39,50,14-Jun-02,30957,Group stage
+285,65,20,40,30,5-Jun-02,64950,Group stage
+286,66,20,40,23,9-Jun-06,65000,Group stage
+287,67,20,58,40,14-Jun-06,72000,Group stage
+288,65,20,40,31,20-Jun-06,66000,Round of 16
+289,67,20,40,1,24-Jun-06,72000,Quarter-finals
+290,66,20,40,2,30-Jun-06,65000,Semi-finals
+291,68,20,40,24,4-Jul-06,52000,Third-place match
+292,69,20,23,58,8-Jul-06,52000,Group stage
+293,69,20,58,30,9-Jun-06,50000,Group stage
+294,68,20,22,58,15-Jun-06,52000,Round of 16
+295,70,20,30,23,25-Jun-06,43000,Group stage
+296,71,20,22,6,20-Jun-06,48000,Group stage
+297,72,20,22,59,10-Jun-06,41000,Group stage
+298,73,20,31,22,15-Jun-06,45000,Group stage
+299,69,20,22,24,20-Jun-06,52000,Quarter-finals
+300,66,20,59,31,1-Jul-06,62959,Group stage
+301,67,20,31,6,10-Jun-06,72000,Group stage
+302,74,20,6,59,15-Jun-06,46000,Group stage
+303,75,20,1,60,20-Jun-06,49480,Group stage
+304,69,20,1,61,10-Jun-06,52000,Group stage
+305,71,20,36,1,16-Jun-06,48000,Group stage
+306,76,20,1,5,21-Jun-06,43000,Round of 16
+307,76,20,61,36,24-Jun-06,37216,Group stage
+308,68,20,36,60,11-Jun-06,52000,Group stage
+309,72,20,24,36,16-Jun-06,41000,Round of 16
+310,65,20,60,61,25-Jun-06,66000,Group stage
+311,73,20,62,24,21-Jun-06,45000,Group stage
+312,71,20,24,49,11-Jun-06,48000,Group stage
+313,69,20,24,5,17-Jun-06,52000,Group stage
+314,65,20,24,10,21-Jun-06,66000,Semi-finals
+315,72,20,5,49,5-Jul-06,41000,Group stage
+316,70,20,5,62,11-Jun-06,43000,Group stage
+317,76,20,49,62,16-Jun-06,38000,Group stage
+318,70,20,2,63,21-Jun-06,43000,Group stage
+319,74,20,2,27,12-Jun-06,46000,Group stage
+320,75,20,64,2,17-Jun-06,50000,Group stage
+321,74,20,2,65,22-Jun-06,46000,Round of 16
+322,75,20,2,67,26-Jun-06,50000,Quarter-finals
+323,67,20,2,10,30-Jun-06,69000,Final
+324,73,20,64,63,9-Jul-06,45000,Group stage
+325,72,20,63,27,17-Jun-06,41000,Group stage
+326,66,20,13,63,22-Jun-06,65000,Round of 16
+327,69,20,27,64,27-Jun-06,52000,Group stage
+328,67,20,13,51,12-Jun-06,72000,Group stage
+329,65,20,13,65,13-Jun-06,66000,Group stage
+330,66,20,53,13,18-Jun-06,65000,Group stage
+331,71,20,13,10,22-Jun-06,48000,Quarter-finals
+332,74,20,65,53,1-Jul-06,46000,Group stage
+333,68,20,51,65,12-Jun-06,52000,Group stage
+334,72,20,53,51,22-Jun-06,41000,Group stage
+335,68,20,10,38,18-Jun-06,52000,Group stage
+336,66,20,66,38,13-Jun-06,65000,Group stage
+337,70,20,38,4,19-Jun-06,43000,Group stage
+338,73,20,38,67,23-Jun-06,45000,Round of 16
+339,76,20,10,4,26-Jun-06,43000,Group stage
+340,73,20,66,10,18-Jun-06,45000,Group stage
+341,70,20,14,10,23-Jun-06,43000,Round of 16
+342,71,20,4,66,27-Jun-06,48000,Group stage
+343,76,20,14,67,13-Jun-06,43000,Group stage
+344,68,20,14,50,14-Jun-06,52000,Group stage
+345,74,20,45,14,19-Jun-06,46000,Group stage
+346,75,20,45,67,23-Jun-06,50000,Group stage
+347,67,20,67,50,19-Jun-06,72000,Group stage
+348,65,20,50,45,23-Jun-06,66000,Group stage
+349,77,24,19,10,14-Jun-06,64100,Group stage
+350,78,24,47,19,11-Jun-10,42658,Group stage
+351,79,24,5,19,16-Jun-10,33425,Group stage
+352,80,24,19,4,22-Jun-10,30597,Round of 16
+353,81,24,19,63,26-Jun-10,84017,Quarter-finals
+354,77,24,19,36,2-Jul-10,62479,Semi-finals
+355,80,24,19,40,6-Jul-10,36254,Third-place match
+356,81,24,47,5,10-Jul-10,84490,Group stage
+357,82,24,10,5,11-Jun-10,35370,Group stage
+358,81,24,1,5,17-Jun-10,84377,Round of 16
+359,83,24,10,47,27-Jun-10,39415,Group stage
+360,84,24,1,42,22-Jun-10,55686,Group stage
+361,81,24,1,4,12-Jun-10,82174,Group stage
+362,82,24,43,1,17-Jun-10,38891,Group stage
+363,77,24,1,40,22-Jun-10,64100,Quarter-finals
+364,80,24,4,43,3-Jul-10,31513,Group stage
+365,85,24,42,4,12-Jun-10,61874,Group stage
+366,83,24,43,42,22-Jun-10,31593,Group stage
+367,79,24,22,27,17-Jun-10,38646,Group stage
+368,84,24,55,27,12-Jun-10,45573,Group stage
+369,78,24,27,16,18-Jun-10,35827,Group stage
+370,79,24,27,63,23-Jun-10,34976,Round of 16
+371,77,24,22,16,26-Jun-10,64100,Group stage
+372,80,24,55,22,18-Jun-10,36893,Group stage
+373,83,24,40,22,23-Jun-10,40510,Round of 16
+374,82,24,16,55,27-Jun-10,30325,Group stage
+375,85,24,40,65,13-Jun-10,62660,Group stage
+376,80,24,40,48,13-Jun-10,38294,Group stage
+377,81,24,63,40,18-Jun-10,83391,Group stage
+378,85,24,40,14,23-Jun-10,60960,Semi-finals
+379,78,24,48,63,7-Jul-10,38833,Group stage
+380,79,24,63,65,13-Jun-10,34812,Group stage
+381,86,24,65,48,19-Jun-10,37836,Group stage
+382,81,24,36,17,23-Jun-10,83465,Group stage
+383,85,24,36,53,14-Jun-10,62010,Group stage
+384,77,24,28,36,19-Jun-10,63093,Group stage
+385,85,24,36,68,24-Jun-10,61962,Round of 16
+386,80,24,36,13,28-Jun-10,40186,Quarter-finals
+387,81,24,36,14,2-Jul-10,84490,Final
+388,83,24,53,28,11-Jul-10,30620,Group stage
+389,79,24,17,53,14-Jun-10,27967,Group stage
+390,78,24,6,53,24-Jun-10,36742,Round of 16
+391,78,24,28,17,29-Jun-10,38074,Group stage
+392,77,24,2,6,19-Jun-10,62869,Group stage
+393,83,24,68,6,14-Jun-10,26643,Group stage
+394,82,24,6,69,20-Jun-10,34850,Group stage
+395,84,24,6,14,24-Jun-10,55359,Quarter-finals
+396,79,24,69,68,3-Jul-10,23871,Group stage
+397,84,24,68,2,15-Jun-10,53412,Group stage
+398,86,24,2,69,24-Jun-10,38229,Group stage
+399,84,24,13,70,20-Jun-10,54331,Group stage
+400,81,24,13,60,15-Jun-10,84455,Group stage
+401,85,24,24,13,20-Jun-10,62712,Group stage
+402,84,24,13,46,25-Jun-10,54096,Round of 16
+403,80,24,60,24,28-Jun-10,37034,Group stage
+404,77,24,24,70,15-Jun-10,63644,Group stage
+405,77,24,14,24,21-Jun-10,62955,Round of 16
+406,86,24,70,60,29-Jun-10,34763,Group stage
+407,85,24,14,38,25-Jun-10,62453,Group stage
+408,84,24,14,71,16-Jun-10,54386,Group stage
+409,78,24,46,14,21-Jun-10,41958,Group stage
+410,86,24,71,46,25-Jun-10,32664,Group stage
+411,80,24,46,38,16-Jun-10,34872,Group stage
+412,83,24,38,71,21-Jun-10,28042,Group stage
+413,77,24,2,6,25-Jun-10,62869,Group stage
+414,83,24,68,6,14-Jun-10,26643,Group stage
+415,82,24,6,69,20-Jun-10,34850,Group stage
+416,84,24,6,14,24-Jun-10,55359,Quarter-finals
+417,79,24,69,68,3-Jul-10,23871,Group stage
+418,84,24,68,2,15-Jun-10,53412,Group stage
+419,86,24,2,69,24-Jun-10,38229,Group stage
+420,84,24,13,70,20-Jun-10,54331,Group stage
+421,81,24,13,60,15-Jun-10,84455,Group stage
+422,85,24,24,13,20-Jun-10,62712,Group stage
+423,84,24,13,46,25-Jun-10,54096,Round of 16
+424,80,24,60,24,28-Jun-10,37034,Group stage
+425,77,24,24,70,15-Jun-10,63644,Group stage
+426,77,24,14,24,21-Jun-10,62955,Round of 16
+427,86,24,70,60,29-Jun-10,34763,Group stage
+428,85,24,14,38,25-Jun-10,62453,Group stage
+429,84,24,14,71,16-Jun-10,54386,Group stage
+430,78,24,46,14,21-Jun-10,41958,Group stage
+431,86,24,71,46,25-Jun-10,32664,Group stage
+432,80,24,46,38,16-Jun-10,34872,Group stage
+433,86,24,38,71,21-Jun-10,28042,Group stage
